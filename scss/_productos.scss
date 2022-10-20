@@ -42,40 +42,37 @@
 
         .pronavegacion__lista{
             display: flex;
-            text-align: end;
+            text-align: center;
 
             .plista__uno{
-                font-size: $texto;
-                font-family: $roboto400;
-                color: black;
+                @include btnheader;
+                border-bottom: solid 4px black;
+            }
+            .plista__uno:hover {
+                @include btnhover;
             }
             .plista__dos{
-                font-size: $texto;
-                font-family: $antontitulo;
-                background-image:$tricolor;
-                color: black;
-                padding: 8px;
-                outline: solid black;
+                @include btnheader;
+            }
+            .plista__dos:hover{
+                @include btnhover;
             }
             .plista__tres{
-                font-size: $texto;
-                font-family: $scriptletras;
-                background-image:$tricolor;
-                color: black;
-                padding: 8px;
-                outline: solid black;
+                @include btnheader;
+            }
+            .plista__tres:hover{
+                @include btnhover;
             }
             .plista__cuatro{
-                font-size: $texto;
-                background-image:$tricolor;
-                color: black;
-                padding: 8px;
-                outline: solid black;
+                @include btnheader;
+            }
+            .plista__cuatro:hover{
+                @include btnhover;
             }
         }
     }
 }
-main {
+.pro__main {
     grid-area:main;
     .prod__subt {
         display: flex;
@@ -148,11 +145,11 @@ main {
     }
 }
 
-footer{
+.pro__footer{
     grid-area:footer;
     background-color: $colorbase;
     margin-top: 10px;
-    address {
+    .pro__address {
         display: flex;
         background-color:$colorbase;
         .lista__foo{

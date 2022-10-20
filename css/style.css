@@ -37,25 +37,25 @@
       display: flex;
       text-align: center; }
       .indheader .nav__ind .navegacion__lista .lista__uno {
-        font-size: 25px;
+        font-size: 26px;
         background-image: linear-gradient(to left, #EDDEC9, #cfb896, #5c5751);
         color: black;
         padding: 8px;
         outline: solid black; }
       .indheader .nav__ind .navegacion__lista .lista__dos {
-        font-size: 25px;
+        font-size: 26px;
         background-image: linear-gradient(to left, #EDDEC9, #cfb896, #5c5751);
         color: black;
         padding: 8px;
         outline: solid black; }
       .indheader .nav__ind .navegacion__lista .lista__tres {
-        font-size: 25px;
+        font-size: 26px;
         background-image: linear-gradient(to left, #EDDEC9, #cfb896, #5c5751);
         color: black;
         padding: 8px;
         outline: solid black; }
       .indheader .nav__ind .navegacion__lista .lista__cuatro {
-        font-size: 25px;
+        font-size: 26px;
         background-image: linear-gradient(to left, #EDDEC9, #cfb896, #5c5751);
         color: black;
         padding: 8px;
@@ -72,7 +72,7 @@ main {
       width: 90%;
       max-height: 600px; }
   main .text--img {
-    font-size: 25px;
+    font-size: 26px;
     font-weight: bold;
     text-align: center;
     font-family: 'Oswald', sans-serif;
@@ -239,25 +239,25 @@ footer {
         display: flex;
         text-align: center; }
         .indheader .nav__ind .navegacion__lista .lista__uno {
-          font-size: 20px;
+          font-size: 21px;
           background-image: linear-gradient(to left, #EDDEC9, #cfb896, #5c5751);
           color: black;
           padding: 6px;
           outline: solid black; }
         .indheader .nav__ind .navegacion__lista .lista__dos {
-          font-size: 20px;
+          font-size: 21px;
           background-image: linear-gradient(to left, #EDDEC9, #cfb896, #5c5751);
           color: black;
           padding: 6px;
           outline: solid black; }
         .indheader .nav__ind .navegacion__lista .lista__tres {
-          font-size: 20px;
+          font-size: 21px;
           background-image: linear-gradient(to left, #EDDEC9, #cfb896, #5c5751);
           color: black;
           padding: 6px;
           outline: solid black; }
         .indheader .nav__ind .navegacion__lista .lista__cuatro {
-          font-size: 20px;
+          font-size: 21px;
           background-image: linear-gradient(to left, #EDDEC9, #cfb896, #5c5751);
           color: black;
           padding: 6px;
@@ -294,25 +294,25 @@ footer {
         text-align: center;
         margin-top: 20px; }
         .indheader .nav__ind .navegacion__lista .lista__uno {
-          font-size: 25px;
+          font-size: 26px;
           background-image: linear-gradient(to left, #EDDEC9, #cfb896, #5c5751);
           color: black;
           padding: 6px;
           outline: solid black; }
         .indheader .nav__ind .navegacion__lista .lista__dos {
-          font-size: 25px;
+          font-size: 26px;
           background-image: linear-gradient(to left, #EDDEC9, #cfb896, #5c5751);
           color: black;
           padding: 6px;
           outline: solid black; }
         .indheader .nav__ind .navegacion__lista .lista__tres {
-          font-size: 25px;
+          font-size: 26px;
           background-image: linear-gradient(to left, #EDDEC9, #cfb896, #5c5751);
           color: black;
           padding: 6px;
           outline: solid black; }
         .indheader .nav__ind .navegacion__lista .lista__cuatro {
-          font-size: 25px;
+          font-size: 26px;
           background-image: linear-gradient(to left, #EDDEC9, #cfb896, #5c5751);
           color: black;
           padding: 6px;
@@ -357,25 +357,25 @@ footer {
         text-align: center;
         margin-top: 20px; }
         .indheader .nav__ind .navegacion__lista .lista__uno {
-          font-size: 17px;
+          font-size: 18px;
           background-image: linear-gradient(to left, #EDDEC9, #cfb896, #5c5751);
           color: black;
           padding: 5px;
           outline: solid black; }
         .indheader .nav__ind .navegacion__lista .lista__dos {
-          font-size: 17px;
+          font-size: 18px;
           background-image: linear-gradient(to left, #EDDEC9, #cfb896, #5c5751);
           color: black;
           padding: 5px;
           outline: solid black; }
         .indheader .nav__ind .navegacion__lista .lista__tres {
-          font-size: 17px;
+          font-size: 18px;
           background-image: linear-gradient(to left, #EDDEC9, #cfb896, #5c5751);
           color: black;
           padding: 5px;
           outline: solid black; }
         .indheader .nav__ind .navegacion__lista .lista__cuatro {
-          font-size: 17px;
+          font-size: 18px;
           background-image: linear-gradient(to left, #EDDEC9, #cfb896, #5c5751);
           color: black;
           padding: 6px;
@@ -394,7 +394,7 @@ footer {
         width: 90%;
         max-height: 600px; }
     main .text--img {
-      font-size: 17px;
+      font-size: 18px;
       font-weight: bold;
       text-align: center;
       font-family: 'Oswald', sans-serif;
@@ -601,35 +601,56 @@ footer {
     align-items: center; }
     .pronavegacion .pronavegacion__nav .pronavegacion__lista {
       display: flex;
-      text-align: end; }
+      text-align: center; }
       .pronavegacion .pronavegacion__nav .pronavegacion__lista .plista__uno {
-        font-size: 25px;
+        font-size: 26px;
         font-family: "Roboto Mono", monospace;
-        color: black; }
+        color: black;
+        border-bottom: solid 4px #EDDEC9;
+        border-bottom: solid 4px black; }
+      .pronavegacion .pronavegacion__nav .pronavegacion__lista .plista__uno:hover {
+        background: #EDDEC9;
+        padding: 6px;
+        color: black;
+        border-radius: 6px;
+        transition: .3s; }
       .pronavegacion .pronavegacion__nav .pronavegacion__lista .plista__dos {
-        font-size: 25px;
-        font-family: "Anton", sans-serif;
-        background-image: linear-gradient(to left, #EDDEC9, #cfb896, #5c5751);
+        font-size: 26px;
+        font-family: "Roboto Mono", monospace;
         color: black;
-        padding: 8px;
-        outline: solid black; }
+        border-bottom: solid 4px #EDDEC9; }
+      .pronavegacion .pronavegacion__nav .pronavegacion__lista .plista__dos:hover {
+        background: #EDDEC9;
+        padding: 6px;
+        color: black;
+        border-radius: 6px;
+        transition: .3s; }
       .pronavegacion .pronavegacion__nav .pronavegacion__lista .plista__tres {
-        font-size: 25px;
-        font-family: "Dancing Script", cursive;
-        background-image: linear-gradient(to left, #EDDEC9, #cfb896, #5c5751);
+        font-size: 26px;
+        font-family: "Roboto Mono", monospace;
         color: black;
-        padding: 8px;
-        outline: solid black; }
+        border-bottom: solid 4px #EDDEC9; }
+      .pronavegacion .pronavegacion__nav .pronavegacion__lista .plista__tres:hover {
+        background: #EDDEC9;
+        padding: 6px;
+        color: black;
+        border-radius: 6px;
+        transition: .3s; }
       .pronavegacion .pronavegacion__nav .pronavegacion__lista .plista__cuatro {
-        font-size: 25px;
-        background-image: linear-gradient(to left, #EDDEC9, #cfb896, #5c5751);
+        font-size: 26px;
+        font-family: "Roboto Mono", monospace;
         color: black;
-        padding: 8px;
-        outline: solid black; }
+        border-bottom: solid 4px #EDDEC9; }
+      .pronavegacion .pronavegacion__nav .pronavegacion__lista .plista__cuatro:hover {
+        background: #EDDEC9;
+        padding: 6px;
+        color: black;
+        border-radius: 6px;
+        transition: .3s; }
 
-main {
+.pro__main {
   grid-area: main; }
-  main .prod__subt {
+  .pro__main .prod__subt {
     display: flex;
     justify-content: center;
     font-family: 'Oswald', sans-serif;
@@ -663,75 +684,75 @@ main {
     color: #000000;
     text-shadow: 2px 2px 1px #fefefe;
     transform: translateY(50px, 50px); } }
-  main .imgp {
+  .pro__main .imgp {
     display: flex;
     justify-content: baseline; }
-    main .imgp .div__prod {
+    .pro__main .imgp .div__prod {
       display: flex;
       flex-direction: column;
       text-align: center;
       align-items: center; }
-      main .imgp .div__prod .imgpe {
+      .pro__main .imgp .div__prod .imgpe {
         max-width: 300px;
         height: 300px;
         border: .4em outset #EDDEC9;
         padding: .7rem;
         background-image: linear-gradient(to left, #EDDEC9, #D4C6B4, #a39787);
         margin: 1rem; }
-      main .imgp .div__prod .div__pa {
+      .pro__main .imgp .div__prod .div__pa {
         font-size: 1.3em;
         font-family: 'Courier New', Courier, monospace;
         font-weight: bold;
         margin-bottom: 8px; }
 
-footer {
+.pro__footer {
   grid-area: footer;
   background-color: #EDDEC9;
   margin-top: 10px; }
-  footer address {
+  .pro__footer .pro__address {
     display: flex;
     background-color: #EDDEC9; }
-    footer address .lista__foo {
+    .pro__footer .pro__address .lista__foo {
       background-color: #EDDEC9;
       display: flex;
       justify-content: center;
       flex-direction: column; }
-      footer address .lista__foo .lista__b {
+      .pro__footer .pro__address .lista__foo .lista__b {
         background-color: #EDDEC9;
         font-family: 'Courier New', Courier, monospace;
         font-size: 23px; }
-      footer address .lista__foo .lista__fooli {
+      .pro__footer .pro__address .lista__foo .lista__fooli {
         background-color: #EDDEC9;
         display: flex;
         text-align: center;
         font-family: bold;
         font-size: 20px; }
-        footer address .lista__foo .lista__fooli .lista__a {
+        .pro__footer .pro__address .lista__foo .lista__fooli .lista__a {
           background-color: #EDDEC9;
           color: #ffffff;
           text-shadow: 3px 3px 3px black; }
-    footer address .divfoo {
+    .pro__footer .pro__address .divfoo {
       background-color: #EDDEC9; }
-      footer address .divfoo .lista__foo {
+      .pro__footer .pro__address .divfoo .lista__foo {
         background-color: #EDDEC9;
         display: flex;
         justify-content: center;
         flex-direction: column; }
-        footer address .divfoo .lista__foo .lista__b {
+        .pro__footer .pro__address .divfoo .lista__foo .lista__b {
           background-color: #EDDEC9;
           font-family: 'Courier New', Courier, monospace;
           font-size: 23px; }
-        footer address .divfoo .lista__foo .lista__fooli {
+        .pro__footer .pro__address .divfoo .lista__foo .lista__fooli {
           background-color: #EDDEC9;
           display: flex;
           text-align: center;
           font-family: bold;
           font-size: 20px; }
-          footer address .divfoo .lista__foo .lista__fooli .lista__a {
+          .pro__footer .pro__address .divfoo .lista__foo .lista__fooli .lista__a {
             background-color: #EDDEC9;
             color: #ffffff;
             text-shadow: 3px 3px 3px black; }
-          footer address .divfoo .lista__foo .lista__fooli .lista__a {
+          .pro__footer .pro__address .divfoo .lista__foo .lista__fooli .lista__a {
             background-color: #EDDEC9;
             font-family: 'Courier New', Courier, monospace;
             font-size: 23px; }
@@ -765,26 +786,26 @@ footer {
         display: flex;
         text-align: start; }
         .pronavegacion .pronavegacion__nav .pronavegacion__lista .plista__uno {
-          font-size: 25px;
+          font-size: 26px;
           background-image: linear-gradient(to left, #EDDEC9, #cfb896, #5c5751);
           color: black;
           padding: 8px;
           outline: solid black; }
         .pronavegacion .pronavegacion__nav .pronavegacion__lista .plista__dos {
-          font-size: 25px;
+          font-size: 26px;
           background-image: linear-gradient(to left, #EDDEC9, #cfb896, #5c5751);
           color: black;
           padding: 8px;
           outline: solid black; }
         .pronavegacion .pronavegacion__nav .pronavegacion__lista .plista__tres {
-          font-size: 25px;
+          font-size: 26px;
           background-image: linear-gradient(to left, #EDDEC9, #cfb896, #5c5751);
           color: black;
           padding: 8px;
           outline: solid black;
           margin-right: 5px; }
         .pronavegacion .pronavegacion__nav .pronavegacion__lista .plista__cuatro {
-          font-size: 25px;
+          font-size: 26px;
           background-image: linear-gradient(to left, #EDDEC9, #cfb896, #5c5751);
           color: black;
           padding: 8px;
@@ -824,27 +845,27 @@ footer {
         display: flex;
         text-align: center; }
         .pronavegacion .pronavegacion__nav .pronavegacion__lista .plista__uno {
-          font-size: 25px;
+          font-size: 26px;
           background-image: linear-gradient(to left, #EDDEC9, #cfb896, #5c5751);
           color: black;
           padding: 8px;
           outline: solid black;
           margin-left: 20px; }
         .pronavegacion .pronavegacion__nav .pronavegacion__lista .plista__dos {
-          font-size: 25px;
+          font-size: 26px;
           background-image: linear-gradient(to left, #EDDEC9, #cfb896, #5c5751);
           color: black;
           padding: 8px;
           outline: solid black; }
         .pronavegacion .pronavegacion__nav .pronavegacion__lista .plista__tres {
-          font-size: 25px;
+          font-size: 26px;
           background-image: linear-gradient(to left, #EDDEC9, #cfb896, #5c5751);
           color: black;
           padding: 8px;
           outline: solid black;
           margin-right: 5px; }
         .pronavegacion .pronavegacion__nav .pronavegacion__lista .plista__cuatro {
-          font-size: 25px;
+          font-size: 26px;
           background-image: linear-gradient(to left, #EDDEC9, #cfb896, #5c5751);
           color: black;
           padding: 8px;
@@ -972,25 +993,25 @@ footer {
       display: flex;
       text-align: center; }
       .crenavegacion .crenavegacion__nav .crenavegacion__lista .lista__uno {
-        font-size: 25px;
+        font-size: 26px;
         background-image: linear-gradient(to left, #EDDEC9, #cfb896, #5c5751);
         color: black;
         padding: 8px;
         outline: solid black; }
       .crenavegacion .crenavegacion__nav .crenavegacion__lista .lista__dos {
-        font-size: 25px;
+        font-size: 26px;
         background-image: linear-gradient(to left, #EDDEC9, #cfb896, #5c5751);
         color: black;
         padding: 8px;
         outline: solid black; }
       .crenavegacion .crenavegacion__nav .crenavegacion__lista .lista__tres {
-        font-size: 25px;
+        font-size: 26px;
         background-image: linear-gradient(to left, #EDDEC9, #cfb896, #5c5751);
         color: black;
         padding: 8px;
         outline: solid black; }
       .crenavegacion .crenavegacion__nav .crenavegacion__lista .lista__cuatro {
-        font-size: 25px;
+        font-size: 26px;
         background-image: linear-gradient(to left, #EDDEC9, #cfb896, #5c5751);
         color: black;
         padding: 8px;
@@ -1133,25 +1154,25 @@ footer {
         display: flex;
         text-align: center; }
         .crenavegacion .crenavegacion__nav .crenavegacion__lista .lista__uno {
-          font-size: 20px;
+          font-size: 21px;
           background-image: linear-gradient(to left, #EDDEC9, #cfb896, #5c5751);
           color: black;
           padding: 8px;
           outline: solid black; }
         .crenavegacion .crenavegacion__nav .crenavegacion__lista .lista__dos {
-          font-size: 20px;
+          font-size: 21px;
           background-image: linear-gradient(to left, #EDDEC9, #cfb896, #5c5751);
           color: black;
           padding: 8px;
           outline: solid black; }
         .crenavegacion .crenavegacion__nav .crenavegacion__lista .lista__tres {
-          font-size: 20px;
+          font-size: 21px;
           background-image: linear-gradient(to left, #EDDEC9, #cfb896, #5c5751);
           color: black;
           padding: 8px;
           outline: solid black; }
         .crenavegacion .crenavegacion__nav .crenavegacion__lista .lista__cuatro {
-          font-size: 20px;
+          font-size: 21px;
           background-image: linear-gradient(to left, #EDDEC9, #cfb896, #5c5751);
           color: black;
           padding: 8px;
@@ -1220,25 +1241,25 @@ footer {
         display: flex;
         text-align: center; }
         .crenavegacion .crenavegacion__nav .crenavegacion__lista .lista__uno {
-          font-size: 20px;
+          font-size: 21px;
           background-image: linear-gradient(to left, #EDDEC9, #cfb896, #5c5751);
           color: black;
           padding: 8px;
           outline: solid black; }
         .crenavegacion .crenavegacion__nav .crenavegacion__lista .lista__dos {
-          font-size: 20px;
+          font-size: 21px;
           background-image: linear-gradient(to left, #EDDEC9, #cfb896, #5c5751);
           color: black;
           padding: 8px;
           outline: solid black; }
         .crenavegacion .crenavegacion__nav .crenavegacion__lista .lista__tres {
-          font-size: 20px;
+          font-size: 21px;
           background-image: linear-gradient(to left, #EDDEC9, #cfb896, #5c5751);
           color: black;
           padding: 8px;
           outline: solid black; }
         .crenavegacion .crenavegacion__nav .crenavegacion__lista .lista__cuatro {
-          font-size: 20px;
+          font-size: 21px;
           background-image: linear-gradient(to left, #EDDEC9, #cfb896, #5c5751);
           color: black;
           padding: 8px;
@@ -1329,25 +1350,25 @@ footer {
         display: flex;
         text-align: center; }
         .crenavegacion .crenavegacion__nav .crenavegacion__lista .lista__uno {
-          font-size: 25px;
+          font-size: 26px;
           background-image: linear-gradient(to left, #EDDEC9, #cfb896, #5c5751);
           color: black;
           padding: 8px;
           outline: solid black; }
         .crenavegacion .crenavegacion__nav .crenavegacion__lista .lista__dos {
-          font-size: 25px;
+          font-size: 26px;
           background-image: linear-gradient(to left, #EDDEC9, #cfb896, #5c5751);
           color: black;
           padding: 8px;
           outline: solid black; }
         .crenavegacion .crenavegacion__nav .crenavegacion__lista .lista__tres {
-          font-size: 25px;
+          font-size: 26px;
           background-image: linear-gradient(to left, #EDDEC9, #cfb896, #5c5751);
           color: black;
           padding: 8px;
           outline: solid black; }
         .crenavegacion .crenavegacion__nav .crenavegacion__lista .lista__cuatro {
-          font-size: 25px;
+          font-size: 26px;
           background-image: linear-gradient(to left, #EDDEC9, #cfb896, #5c5751);
           color: black;
           padding: 8px;
@@ -1438,25 +1459,25 @@ footer {
       display: flex;
       text-align: center; }
       .con__header .con__nav .con__ul .lista__uno {
-        font-size: 25px;
+        font-size: 26px;
         background-image: linear-gradient(to left, #EDDEC9, #cfb896, #5c5751);
         color: black;
         padding: 8px;
         outline: solid black; }
       .con__header .con__nav .con__ul .lista__dos {
-        font-size: 25px;
+        font-size: 26px;
         background-image: linear-gradient(to left, #EDDEC9, #cfb896, #5c5751);
         color: black;
         padding: 8px;
         outline: solid black; }
       .con__header .con__nav .con__ul .lista__tres {
-        font-size: 25px;
+        font-size: 26px;
         background-image: linear-gradient(to left, #EDDEC9, #cfb896, #5c5751);
         color: black;
         padding: 8px;
         outline: solid black; }
       .con__header .con__nav .con__ul .lista__cuatro {
-        font-size: 25px;
+        font-size: 26px;
         background-image: linear-gradient(to left, #EDDEC9, #cfb896, #5c5751);
         color: black;
         padding: 8px;
@@ -1582,25 +1603,25 @@ footer {
       display: flex;
       text-align: center; }
       .sobre__header .sobre__nav .sobre__lista .lista__uno {
-        font-size: 25px;
+        font-size: 26px;
         background-image: linear-gradient(to left, #EDDEC9, #cfb896, #5c5751);
         color: black;
         padding: 8px;
         outline: solid black; }
       .sobre__header .sobre__nav .sobre__lista .lista__dos {
-        font-size: 25px;
+        font-size: 26px;
         background-image: linear-gradient(to left, #EDDEC9, #cfb896, #5c5751);
         color: black;
         padding: 8px;
         outline: solid black; }
       .sobre__header .sobre__nav .sobre__lista .lista__tres {
-        font-size: 25px;
+        font-size: 26px;
         background-image: linear-gradient(to left, #EDDEC9, #cfb896, #5c5751);
         color: black;
         padding: 8px;
         outline: solid black; }
       .sobre__header .sobre__nav .sobre__lista .lista__cuatro {
-        font-size: 25px;
+        font-size: 26px;
         background-image: linear-gradient(to left, #EDDEC9, #cfb896, #5c5751);
         color: black;
         padding: 8px;
@@ -1624,7 +1645,7 @@ footer {
       text-shadow: 4px 4px 4px white; }
     .sobre__main .sobre__section .sobre__p {
       font-family: 'Courier New', Courier, monospace;
-      font-size: 25px;
+      font-size: 26px;
       color: aliceblue;
       text-shadow: 3px 3px 3px #000;
       padding-top: 5rem; }
@@ -1711,25 +1732,25 @@ footer {
         display: flex;
         text-align: center; }
         .sobre__header .sobre__nav .sobre__lista .lista__uno {
-          font-size: 20px;
+          font-size: 21px;
           background-image: linear-gradient(to left, #EDDEC9, #cfb896, #5c5751);
           color: black;
           padding: 8px;
           outline: solid black; }
         .sobre__header .sobre__nav .sobre__lista .lista__dos {
-          font-size: 20px;
+          font-size: 21px;
           background-image: linear-gradient(to left, #EDDEC9, #cfb896, #5c5751);
           color: black;
           padding: 8px;
           outline: solid black; }
         .sobre__header .sobre__nav .sobre__lista .lista__tres {
-          font-size: 20px;
+          font-size: 21px;
           background-image: linear-gradient(to left, #EDDEC9, #cfb896, #5c5751);
           color: black;
           padding: 8px;
           outline: solid black; }
         .sobre__header .sobre__nav .sobre__lista .lista__cuatro {
-          font-size: 20px;
+          font-size: 21px;
           background-image: linear-gradient(to left, #EDDEC9, #cfb896, #5c5751);
           color: black;
           padding: 8px;
@@ -1763,25 +1784,25 @@ footer {
         display: flex;
         text-align: center; }
         .sobre__header .sobre__nav .sobre__lista .lista__uno {
-          font-size: 20px;
+          font-size: 21px;
           background-image: linear-gradient(to left, #EDDEC9, #cfb896, #5c5751);
           color: black;
           padding: 8px;
           outline: solid black; }
         .sobre__header .sobre__nav .sobre__lista .lista__dos {
-          font-size: 20px;
+          font-size: 21px;
           background-image: linear-gradient(to left, #EDDEC9, #cfb896, #5c5751);
           color: black;
           padding: 8px;
           outline: solid black; }
         .sobre__header .sobre__nav .sobre__lista .lista__tres {
-          font-size: 20px;
+          font-size: 21px;
           background-image: linear-gradient(to left, #EDDEC9, #cfb896, #5c5751);
           color: black;
           padding: 8px;
           outline: solid black; }
         .sobre__header .sobre__nav .sobre__lista .lista__cuatro {
-          font-size: 20px;
+          font-size: 21px;
           background-image: linear-gradient(to left, #EDDEC9, #cfb896, #5c5751);
           color: black;
           padding: 8px;
