@@ -14,47 +14,47 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-areas: "pe pe pe pe" "main main main main" "footer footer footer footer"; }
 
-header {
+.indheader {
   grid-area: pe;
   display: flex; }
-  header h1 {
+  .indheader .nav__tit {
     font-size: 90px;
     font-family: 'Oswald', sans-serif;
     padding-left: 30px;
     padding-top: 10px;
     line-height: 90px;
     text-shadow: 6px 4px 1px #EDDEC9; }
-  header .diamante1 {
+  .indheader .diamante1 {
     display: flex;
     width: 200px;
     height: 100px;
     margin-top: 10px;
     align-items: center; }
-  header nav {
+  .indheader .nav__ind {
     display: flex;
     align-items: center; }
-    header nav .navegacion__lista {
+    .indheader .nav__ind .navegacion__lista {
       display: flex;
       text-align: center; }
-      header nav .navegacion__lista .lista__uno {
+      .indheader .nav__ind .navegacion__lista .lista__uno {
         font-size: 25px;
         background-image: linear-gradient(to left, #EDDEC9, #cfb896, #5c5751);
         color: black;
         padding: 8px;
         outline: solid black; }
-      header nav .navegacion__lista .lista__dos {
+      .indheader .nav__ind .navegacion__lista .lista__dos {
         font-size: 25px;
         background-image: linear-gradient(to left, #EDDEC9, #cfb896, #5c5751);
         color: black;
         padding: 8px;
         outline: solid black; }
-      header nav .navegacion__lista .lista__tres {
+      .indheader .nav__ind .navegacion__lista .lista__tres {
         font-size: 25px;
         background-image: linear-gradient(to left, #EDDEC9, #cfb896, #5c5751);
         color: black;
         padding: 8px;
         outline: solid black; }
-      header nav .navegacion__lista .lista__cuatro {
+      .indheader .nav__ind .navegacion__lista .lista__cuatro {
         font-size: 25px;
         background-image: linear-gradient(to left, #EDDEC9, #cfb896, #5c5751);
         color: black;
@@ -222,41 +222,41 @@ footer {
 /* index terminado */
 /* DESKTOP FIRST */
 @media (max-width: 1050px) {
-  header {
+  .indheader {
     grid-area: pe;
     display: flex; }
-    header h1 {
+    .indheader .nav__tit {
       font-size: 70px;
       font-family: 'Oswald', sans-serif;
       padding-left: 30px;
       padding-top: 10px;
       line-height: 90px;
       text-shadow: 6px 4px 1px #eddec9; }
-    header nav {
+    .indheader .nav__ind {
       display: flex;
       align-items: center; }
-      header nav .navegacion__lista {
+      .indheader .nav__ind .navegacion__lista {
         display: flex;
         text-align: center; }
-        header nav .navegacion__lista .lista__uno {
+        .indheader .nav__ind .navegacion__lista .lista__uno {
           font-size: 20px;
           background-image: linear-gradient(to left, #EDDEC9, #cfb896, #5c5751);
           color: black;
           padding: 6px;
           outline: solid black; }
-        header nav .navegacion__lista .lista__dos {
+        .indheader .nav__ind .navegacion__lista .lista__dos {
           font-size: 20px;
           background-image: linear-gradient(to left, #EDDEC9, #cfb896, #5c5751);
           color: black;
           padding: 6px;
           outline: solid black; }
-        header nav .navegacion__lista .lista__tres {
+        .indheader .nav__ind .navegacion__lista .lista__tres {
           font-size: 20px;
           background-image: linear-gradient(to left, #EDDEC9, #cfb896, #5c5751);
           color: black;
           padding: 6px;
           outline: solid black; }
-        header nav .navegacion__lista .lista__cuatro {
+        .indheader .nav__ind .navegacion__lista .lista__cuatro {
           font-size: 20px;
           background-image: linear-gradient(to left, #EDDEC9, #cfb896, #5c5751);
           color: black;
@@ -270,48 +270,48 @@ footer {
     grid-template-rows: 160px 1fr 110px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-areas: "pe pe pe pe" "main main main main" "footer footer footer footer"; }
-  header {
+  .indheader {
     grid-area: pe;
     display: flex;
     flex-direction: column; }
-    header h1 {
+    .indheader .nav__tit {
       font-size: 90px;
       font-family: 'Oswald', sans-serif;
       padding-top: 10px;
       line-height: 90px;
       text-shadow: 6px 4px 1px #eddec9; }
-    header .diamante1 {
+    .indheader .diamante1 {
       position: absolute;
       margin-left: 550px;
       margin-bottom: 30px;
       width: 90px;
       height: 90px; }
-    header nav {
+    .indheader .nav__ind {
       display: flex;
       align-items: center; }
-      header nav .navegacion__lista {
+      .indheader .nav__ind .navegacion__lista {
         display: flex;
         text-align: center;
         margin-top: 20px; }
-        header nav .navegacion__lista .lista__uno {
+        .indheader .nav__ind .navegacion__lista .lista__uno {
           font-size: 25px;
           background-image: linear-gradient(to left, #EDDEC9, #cfb896, #5c5751);
           color: black;
           padding: 6px;
           outline: solid black; }
-        header nav .navegacion__lista .lista__dos {
+        .indheader .nav__ind .navegacion__lista .lista__dos {
           font-size: 25px;
           background-image: linear-gradient(to left, #EDDEC9, #cfb896, #5c5751);
           color: black;
           padding: 6px;
           outline: solid black; }
-        header nav .navegacion__lista .lista__tres {
+        .indheader .nav__ind .navegacion__lista .lista__tres {
           font-size: 25px;
           background-image: linear-gradient(to left, #EDDEC9, #cfb896, #5c5751);
           color: black;
           padding: 6px;
           outline: solid black; }
-        header nav .navegacion__lista .lista__cuatro {
+        .indheader .nav__ind .navegacion__lista .lista__cuatro {
           font-size: 25px;
           background-image: linear-gradient(to left, #EDDEC9, #cfb896, #5c5751);
           color: black;
@@ -334,47 +334,47 @@ footer {
     grid-template-rows: 160px 1fr 110px;
     grid-template-columns: 1fr  1fr;
     grid-template-areas: "pe pe" "main main" "footer footer"; }
-  header {
+  .indheader {
     grid-area: pe;
     display: flex;
     flex-direction: column; }
-    header h1 {
+    .indheader .nav__tit {
       font-size: 90px;
       font-family: 'Oswald', sans-serif;
       padding-top: 10px;
       line-height: 90px;
       text-shadow: 6px 4px 1px #eddec9; }
-    header .diamante1 {
+    .indheader .diamante1 {
       position: absolute;
       margin-left: 520px;
       width: 80px;
       height: 90px; }
-    header nav {
+    .indheader .nav__ind {
       display: flex;
       align-items: center; }
-      header nav .navegacion__lista {
+      .indheader .nav__ind .navegacion__lista {
         display: flex;
         text-align: center;
         margin-top: 20px; }
-        header nav .navegacion__lista .lista__uno {
+        .indheader .nav__ind .navegacion__lista .lista__uno {
           font-size: 17px;
           background-image: linear-gradient(to left, #EDDEC9, #cfb896, #5c5751);
           color: black;
           padding: 5px;
           outline: solid black; }
-        header nav .navegacion__lista .lista__dos {
+        .indheader .nav__ind .navegacion__lista .lista__dos {
           font-size: 17px;
           background-image: linear-gradient(to left, #EDDEC9, #cfb896, #5c5751);
           color: black;
           padding: 5px;
           outline: solid black; }
-        header nav .navegacion__lista .lista__tres {
+        .indheader .nav__ind .navegacion__lista .lista__tres {
           font-size: 17px;
           background-image: linear-gradient(to left, #EDDEC9, #cfb896, #5c5751);
           color: black;
           padding: 5px;
           outline: solid black; }
-        header nav .navegacion__lista .lista__cuatro {
+        .indheader .nav__ind .navegacion__lista .lista__cuatro {
           font-size: 17px;
           background-image: linear-gradient(to left, #EDDEC9, #cfb896, #5c5751);
           color: black;
@@ -504,7 +504,7 @@ footer {
     grid-template-rows: 160px 1fr 110px;
     grid-template-columns: 1fr;
     grid-template-areas: "pe" "main" "footer"; }
-  header h1 {
+  .indheader .nav__tit {
     display: flex;
     justify-content: center;
     font-size: 85px;
@@ -512,7 +512,7 @@ footer {
     padding-top: 10px;
     line-height: 90px;
     text-shadow: 6px 4px 1px #eddec9; }
-  header .diamante1 {
+  .indheader .diamante1 {
     position: absolute;
     display: none;
     width: 80px;
@@ -572,54 +572,55 @@ footer {
               font-size: 17px; } }
 
 /*final index y principio de productos*/
-.grillapro {
+.grillaprodu {
   width: 100%;
   display: grid;
   grid-template-rows: 130px 1fr 1fr 1fr 1fr 1fr 1fr 110px;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas: "pe pe pe" "main main main" "main main main" "main main main" "main main main" "main main main" "main main main" "footer footer footer"; }
 
-header {
+.pronavegacion {
   grid-area: pe;
   display: flex; }
-  header .pronavegacion__titulo {
-    font-size: 90px;
-    font-family: 'Oswald', sans-serif;
-    padding-left: 30px;
-    padding-top: 10px;
-    line-height: 90px;
-    text-shadow: 6px 4px 1px #eddec9; }
-  header .prodiamante {
+  .pronavegacion .pro__div {
     display: flex;
-    width: 200px;
-    height: 100px;
-    margin-top: 10px;
-    align-items: center; }
-  header .pronavegacion__nav {
-    display: flex;
-    align-items: center; }
-    header .pronavegacion__nav .pronavegacion__lista {
+    align-items: center;
+    text-align: center; }
+    .pronavegacion .pro__div .pronavegacion__titulo {
+      font-size: 90px;
+      font-family: "Anton", sans-serif;
+      text-shadow: 5px 5px 5px #EDDEC9; }
+      .pronavegacion .pro__div .pronavegacion__titulo .srl__pronav {
+        color: black; }
+    .pronavegacion .pro__div .pro__diamante {
       display: flex;
-      text-align: center; }
-      header .pronavegacion__nav .pronavegacion__lista .plista__uno {
+      height: 90px;
+      width: 100px; }
+  .pronavegacion .pronavegacion__nav {
+    display: flex;
+    align-items: center; }
+    .pronavegacion .pronavegacion__nav .pronavegacion__lista {
+      display: flex;
+      text-align: end; }
+      .pronavegacion .pronavegacion__nav .pronavegacion__lista .plista__uno {
         font-size: 25px;
+        font-family: "Roboto Mono", monospace;
+        color: black; }
+      .pronavegacion .pronavegacion__nav .pronavegacion__lista .plista__dos {
+        font-size: 25px;
+        font-family: "Anton", sans-serif;
         background-image: linear-gradient(to left, #EDDEC9, #cfb896, #5c5751);
         color: black;
         padding: 8px;
         outline: solid black; }
-      header .pronavegacion__nav .pronavegacion__lista .plista__dos {
+      .pronavegacion .pronavegacion__nav .pronavegacion__lista .plista__tres {
         font-size: 25px;
+        font-family: "Dancing Script", cursive;
         background-image: linear-gradient(to left, #EDDEC9, #cfb896, #5c5751);
         color: black;
         padding: 8px;
         outline: solid black; }
-      header .pronavegacion__nav .pronavegacion__lista .plista__tres {
-        font-size: 25px;
-        background-image: linear-gradient(to left, #EDDEC9, #cfb896, #5c5751);
-        color: black;
-        padding: 8px;
-        outline: solid black; }
-      header .pronavegacion__nav .pronavegacion__lista .plista__cuatro {
+      .pronavegacion .pronavegacion__nav .pronavegacion__lista .plista__cuatro {
         font-size: 25px;
         background-image: linear-gradient(to left, #EDDEC9, #cfb896, #5c5751);
         color: black;

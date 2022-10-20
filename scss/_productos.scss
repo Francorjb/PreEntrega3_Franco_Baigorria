@@ -1,4 +1,4 @@
-.grillapro {
+.grillaprodu {
     width: 100%;
     display: grid;
     grid-template-rows: 130px 1fr 1fr 1fr 1fr 1fr 1fr 110px;
@@ -14,41 +14,44 @@
 
 }
 
-header{
+.pronavegacion{
     grid-area:pe;
     display: flex;
-    .pronavegacion__titulo {
-        font-size: $titulo;
-        font-family:'Oswald', sans-serif;
-        padding-left: 30px;
-        padding-top: 10px;
-        line-height: 90px;
-        text-shadow: 6px 4px 1px #eddec9;
-    }
-    .prodiamante{
+    .pro__div{
+        display: flex;
+        align-items: center;
+        text-align: center;
+        .pronavegacion__titulo{
+            font-size: $titulo;
+            font-family: $antontitulo;
+            text-shadow: 5px 5px 5px $colorbase;
+            .srl__pronav{
+                color: black;
+            }
+        }
+        .pro__diamante{
             display: flex;
-            width: 200px;
-            height: 100px;
-            margin-top: 10px;
-            align-items: center;
+            height: 90px;
+            width: 100px;
+        }
     }
+
     .pronavegacion__nav{
         display:flex;
         align-items: center;
 
         .pronavegacion__lista{
             display: flex;
-            text-align: center;
+            text-align: end;
 
             .plista__uno{
                 font-size: $texto;
-                background-image:$tricolor;
+                font-family: $roboto400;
                 color: black;
-                padding: 8px;
-                outline: solid black;
             }
             .plista__dos{
                 font-size: $texto;
+                font-family: $antontitulo;
                 background-image:$tricolor;
                 color: black;
                 padding: 8px;
@@ -56,6 +59,7 @@ header{
             }
             .plista__tres{
                 font-size: $texto;
+                font-family: $scriptletras;
                 background-image:$tricolor;
                 color: black;
                 padding: 8px;

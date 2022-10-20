@@ -16,10 +16,10 @@
                         "footer footer footer footer";
 }
 
-header{
+.indheader{
     grid-area:pe;
     display: flex;
-    h1 {
+    .nav__tit {
         font-size: $titulo;
         font-family:'Oswald', sans-serif;
         padding-left: 30px;
@@ -34,7 +34,7 @@ header{
             margin-top: 10px;
             align-items: center;
     }
-    nav {
+    .nav__ind {
         display:flex;
         align-items: center;
 
@@ -283,10 +283,10 @@ footer{
 /* DESKTOP FIRST */
 
 @media ( max-width:1050px ) {
-    header{
+    .indheader{
         grid-area:pe;
         display: flex;
-        h1 {
+        .nav__tit {
             font-size: ($titulo)-20px;
             font-family:'Oswald', sans-serif;
             padding-left: 30px;
@@ -294,7 +294,7 @@ footer{
             line-height: 90px;
             text-shadow: 6px 4px 1px #eddec9;
         }
-        nav {
+        .nav__ind{
             display:flex;
             align-items: center;
     
@@ -347,11 +347,11 @@ footer{
                             "footer footer footer footer";
     }
 
-    header{
+    .indheader{
         grid-area:pe;
         display: flex;
         flex-direction: column;
-        h1 {
+        .nav__tit {
             font-size: $titulo;
             font-family:'Oswald', sans-serif;
             padding-top: 10px;
@@ -365,7 +365,7 @@ footer{
                 width: 90px;
                 height: 90px;
         }
-        nav {
+        .nav__ind{
             display:flex;
             align-items: center;
     
@@ -434,11 +434,11 @@ footer{
                             "main main"
                             "footer footer";
     }
-    header{
+    .indheader{
         grid-area:pe;
         display: flex;
         flex-direction: column;
-        h1 {
+        .nav__tit {
             font-size: $titulo;
             font-family:'Oswald', sans-serif;
             padding-top: 10px;
@@ -451,7 +451,7 @@ footer{
                 width: 80px;
                 height: 90px;
         }
-        nav {
+        .nav__ind {
             display:flex;
             align-items: center;
     
@@ -654,8 +654,8 @@ footer{
                             "main"
                             "footer";
     }
-    header{
-        h1 {
+    .indheader{
+        .nav__tit {
             display: flex;
             justify-content: center;
             font-size: ($titulo)-5;
