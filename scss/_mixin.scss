@@ -12,3 +12,13 @@
     border-radius: 6px;
     transition: .3s;
 }
+
+@mixin btncompra {
+    width:100px;
+    height:35px;
+    color: $colorbase;
+    background-color: $negro;
+    outline: solid 4px $colorbase;
+    font-family: $roboto400;
+    border-radius: 5px;
+}

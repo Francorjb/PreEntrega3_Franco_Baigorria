@@ -280,8 +280,7 @@ footer{
 
 /* index terminado */
 
-/* DESKTOP FIRST */
-
+/* DESKTOP FIRST 
 @media ( max-width:1050px ) {
     .indheader{
         grid-area:pe;
@@ -522,7 +521,6 @@ footer{
                 text-shadow: 3px 3px 1px #EDDEC9;
                 border-bottom: solid #EDDEC9;
             
-                /*Animacion */
                 animation-name: cambiarcolor ;
                 animation-duration: 5s;
                 animation-iteration-count: infinite;
@@ -738,4 +736,4 @@ footer{
             }
         }
     }
-}
+}*/

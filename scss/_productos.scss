@@ -26,7 +26,7 @@
             font-family: $antontitulo;
             text-shadow: 5px 5px 5px $colorbase;
             .srl__pronav{
-                color: black;
+                color: $negro;
             }
         }
         .pro__diamante{
@@ -77,11 +77,10 @@
     .prod__subt {
         display: flex;
         justify-content: center;
-        font-family:'Oswald', sans-serif;
+        font-family:$roboto400;
         font-size: 35px;
-        background-image:linear-gradient( to left, #EDDEC9,#D4C6B4, #a39787);
-        color: #000000;
-    
+        background-image:$tricolor;
+        color: $negro;
             /*Animacion */
             animation-name: cambiarcolor ;
             animation-duration: 5s;
@@ -98,7 +97,6 @@
                     color: #EDDEC9;
                     text-shadow: 2px 2px 1px rgb(0, 0, 0);
                     transform: translateY(30px, 30px);
-            
                 }
                 50% {
                     color: rgb(0, 0, 0)#EDDEC9;
@@ -115,14 +113,14 @@
                     color: #000000;
                     text-shadow: 2px 2px 1px #fefefe;
                     transform: translateY(50px , 50px) ;
-            } 
+                } 
         
-        }
-    }
+            }
+         }
     .imgp{
         display: flex;
         justify-content: baseline;
-        .div__prod { 
+        .div__prod {
             display: flex;
             flex-direction: column;
             text-align: center;
@@ -130,16 +128,24 @@
             .imgpe {
                 max-width: 300px;
                 height: 300px;
-                border: .4em outset #EDDEC9;
-                padding: .7rem;
-                background-image:linear-gradient( to left, #EDDEC9,#D4C6B4, #a39787);
+                border: .3em outset #EDDEC9;
+                padding: .6rem;
+                background-image:$tricolor;
                 margin: 1rem;
             }
             .div__pa{
-                font-size: 1.3em;
-                font-family: 'Courier New', Courier, monospace;
-                font-weight: bold;
-                margin-bottom: 8px;
+                font-size: 1.5em;
+                font-family: $scriptletras;
+                font-weight: 700;
+                margin-bottom: 10px;
+            }
+            .boton{
+                @include btncompra;
+            }
+            .boton:hover{
+                @include btncompra;
+                color: $negro;
+                background-color: $colorbase;
             }
         }
     }
@@ -148,9 +154,7 @@
 .pro__footer{
     grid-area:footer;
     background-color: $colorbase;
-    margin-top: 10px;
     .pro__address {
-        display: flex;
         background-color:$colorbase;
         .lista__foo{
             background-color:$colorbase;
@@ -181,6 +185,7 @@
                 background-color:$colorbase;
                 display: flex;
                 justify-content: center;
+                text-align: center;
                 flex-direction: column;
                 .lista__b {
                     background-color:$colorbase;
@@ -190,7 +195,6 @@
                 .lista__fooli{
                     background-color:$colorbase;
                     display: flex;
-                    text-align: center;
                     font-family: bold;
                     font-size: 20px;
                     .lista__a {
@@ -209,10 +213,9 @@
         }
     }
 }
-
+/*
 @media ( max-width:1050px) {
     .grillapro {
-        width: 100%;
         display: grid;
         grid-template-rows: 130px 1fr 1fr 1fr 1fr 1fr 1fr 110px;
         grid-template-columns: 1fr 1fr 1fr;
@@ -488,4 +491,4 @@
             }
         }
     }
-}
+}*/
