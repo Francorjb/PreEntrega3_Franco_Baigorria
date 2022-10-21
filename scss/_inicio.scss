@@ -71,7 +71,7 @@
     }
 }
 
-main {
+.ind__main {
     grid-area:main;
     .container {
         display: flex;
@@ -79,18 +79,18 @@ main {
         align-items: center;
         .container__img {
             display: flex;
-            width: 90%;
-            max-height: 600px;
+            width: 95%;
+            height: 600px;
         }
 
     }
     .text--img{
+        font-family: $roboto400;
         font-size: $texto;
         font-weight: bold;
         text-align: center;
-        font-family: 'Oswald', sans-serif;
-        padding-top: 10px;
-        padding-bottom: 10px;
+        padding-top: 5px;
+        padding-bottom: 15px;
         .botonemis {
             outline: none;
             border: none;
@@ -141,29 +141,25 @@ main {
         .img1 {
             width: 300px;
             height: 300px;
+            border-radius:  90% 90% 90% 90%;
+            border: .5em outset $colorbase;
         }
         .div__uno {
             display: flex;
             flex-direction: column;
             align-items: center;
-            background-image: $tricolor;
-            padding-top: 20px;
         
         }
         .div__dos {
             display: flex;
             flex-direction: column;
             align-items: center;
-            background-image: $tricolor;
-            padding-top: 20px;
 
         }
         .div__tres {
             display: flex;
             flex-direction: column;
             align-items: center;
-            background-image: $tricolor;
-            padding-top: 20px;
         }
 
     }
@@ -172,36 +168,32 @@ main {
         .img1 {
             width: 300px;
             height: 300px;
+            border-radius:  90% 90% 90% 90%;
+            border: .5em outset $colorbase;
         }
         .div__cuatro {
             display: flex;
             flex-direction: column;
             align-items: center;
-            background-image: $tricolor;
-            padding-top: 20px;
         }
         .div__cinco {
             display: flex;
             flex-direction: column;
             align-items: center;
-            background-image: $tricolor;
-            padding-top: 20px;
         }
         .div__seis {
             display: flex;
             flex-direction: column;
-            align-items: center; 
-            background-image: $tricolor;
-            padding-top: 20px;
+            align-items: center;
         }
     }
     .priparrafo{
         display: flex;
-        font-size: 20px;
-        font-family: fantasy;
-        color: $colorbase;
-        text-shadow: 2px 2px 2px black;
         justify-content: center;
+        font-size: $texto;
+        font-weight: 600;
+        font-family: $scriptletras;
+        color: $negro;
         padding-bottom: 12px;
         padding-top: 8px;
     }

@@ -80,24 +80,24 @@
         border-radius: 6px;
         transition: .3s; }
 
-main {
+.ind__main {
   grid-area: main; }
-  main .container {
+  .ind__main .container {
     display: flex;
     flex-direction: column;
     align-items: center; }
-    main .container .container__img {
+    .ind__main .container .container__img {
       display: flex;
-      width: 90%;
-      max-height: 600px; }
-  main .text--img {
+      width: 95%;
+      height: 600px; }
+  .ind__main .text--img {
+    font-family: "Roboto Mono", monospace;
     font-size: 26px;
     font-weight: bold;
     text-align: center;
-    font-family: 'Oswald', sans-serif;
-    padding-top: 10px;
-    padding-bottom: 10px; }
-    main .text--img .botonemis {
+    padding-top: 5px;
+    padding-bottom: 15px; }
+    .ind__main .text--img .botonemis {
       outline: none;
       border: none;
       cursor: pointer;
@@ -130,59 +130,51 @@ main {
     text-shadow: 3px 3px 1px #b98f54;
     border-bottom: solid black;
     transform: translateY(50px, 50px); } }
-  main .container__dos {
+  .ind__main .container__dos {
     display: flex; }
-    main .container__dos .img1 {
+    .ind__main .container__dos .img1 {
       width: 300px;
-      height: 300px; }
-    main .container__dos .div__uno {
+      height: 300px;
+      border-radius: 90% 90% 90% 90%;
+      border: 0.5em outset #EDDEC9; }
+    .ind__main .container__dos .div__uno {
       display: flex;
       flex-direction: column;
-      align-items: center;
-      background-image: linear-gradient(to left, #EDDEC9, #cfb896, #5c5751);
-      padding-top: 20px; }
-    main .container__dos .div__dos {
+      align-items: center; }
+    .ind__main .container__dos .div__dos {
       display: flex;
       flex-direction: column;
-      align-items: center;
-      background-image: linear-gradient(to left, #EDDEC9, #cfb896, #5c5751);
-      padding-top: 20px; }
-    main .container__dos .div__tres {
+      align-items: center; }
+    .ind__main .container__dos .div__tres {
       display: flex;
       flex-direction: column;
-      align-items: center;
-      background-image: linear-gradient(to left, #EDDEC9, #cfb896, #5c5751);
-      padding-top: 20px; }
-  main .container__tres {
+      align-items: center; }
+  .ind__main .container__tres {
     display: flex; }
-    main .container__tres .img1 {
+    .ind__main .container__tres .img1 {
       width: 300px;
-      height: 300px; }
-    main .container__tres .div__cuatro {
+      height: 300px;
+      border-radius: 90% 90% 90% 90%;
+      border: 0.5em outset #EDDEC9; }
+    .ind__main .container__tres .div__cuatro {
       display: flex;
       flex-direction: column;
-      align-items: center;
-      background-image: linear-gradient(to left, #EDDEC9, #cfb896, #5c5751);
-      padding-top: 20px; }
-    main .container__tres .div__cinco {
+      align-items: center; }
+    .ind__main .container__tres .div__cinco {
       display: flex;
       flex-direction: column;
-      align-items: center;
-      background-image: linear-gradient(to left, #EDDEC9, #cfb896, #5c5751);
-      padding-top: 20px; }
-    main .container__tres .div__seis {
+      align-items: center; }
+    .ind__main .container__tres .div__seis {
       display: flex;
       flex-direction: column;
-      align-items: center;
-      background-image: linear-gradient(to left, #EDDEC9, #cfb896, #5c5751);
-      padding-top: 20px; }
-  main .priparrafo {
+      align-items: center; }
+  .ind__main .priparrafo {
     display: flex;
-    font-size: 20px;
-    font-family: fantasy;
-    color: #EDDEC9;
-    text-shadow: 2px 2px 2px black;
     justify-content: center;
+    font-size: 26px;
+    font-weight: 600;
+    font-family: "Dancing Script", cursive;
+    color: #000000;
     padding-bottom: 12px;
     padding-top: 8px; }
 
