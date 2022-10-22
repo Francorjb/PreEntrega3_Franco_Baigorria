@@ -9,13 +9,13 @@
 }
 .grilla {
     display: grid;
-    grid-template-rows: 130px 1fr 110px ;
+    grid-template-rows: 130px 1fr 70px ;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-areas:"pe pe pe pe"
                         "main main main main"
                         "footer footer footer footer";
 }
-
+/*LOS HEADER SE REPITEN EN TODAS LAS PAGINAS*/
 .ind__header{
     grid-area:pe;
     display: flex;
@@ -201,528 +201,48 @@
     
 }
 
-
-footer{
+/*COPIAR LISTAS FINALES EN TODOS LOS PIE DE PAGINA*/
+.ind__footer{
     grid-area:footer;
     background-color: $colorbase;
-    margin-top: 10px;
-    address {
-        display: flex;
+    .ind__add {
         background-color:$colorbase;
-        .lista__foo{
-            background-color:$colorbase;
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            .lista__b {
-                background-color:$colorbase;
-                font-family: 'Courier New', Courier, monospace;
-                font-size: 23px;
-            }
-            .lista__fooli{
-                background-color:$colorbase;
-                display: flex;
-                text-align: center;
-                font-family: bold;
-                font-size: 20px;
-                .lista__a {
-                    background-color:$colorbase;
-                    color: #ffffff;
-                    text-shadow: 3px 3px 3px black;
-                }
-            }
-        }
-        .divfoo {
-            background-color:$colorbase;
-            .lista__foo{
-                background-color:$colorbase;
-                display: flex;
-                justify-content: center;
-                flex-direction: column;
-                .lista__b {
-                    background-color:$colorbase;
-                    font-family: 'Courier New', Courier, monospace;
-                    font-size: 23px;
-                }
-                .lista__fooli{
-                    background-color:$colorbase;
-                    display: flex;
-                    text-align: center;
-                    font-family: bold;
-                    font-size: 20px;
-                    .lista__a {
-                        background-color:$colorbase;
-                        color: #ffffff;
-                        text-shadow: 3px 3px 3px black;
-                    }
-                    .lista__a {
-                        background-color:$colorbase;
-                        font-family: 'Courier New', Courier, monospace;
-                        font-size: 23px;
-                    }
-                }
-                
-            }
-        }
-    }
-}
-
-/* index terminado */
-
-/* DESKTOP FIRST 
-@media ( max-width:1050px ) {
-    .indheader{
-        grid-area:pe;
         display: flex;
-        .nav__tit {
-            font-size: ($titulo)-20px;
-            font-family:'Oswald', sans-serif;
-            padding-left: 30px;
-            padding-top: 10px;
-            line-height: 90px;
-            text-shadow: 6px 4px 1px #eddec9;
-        }
-        .nav__ind{
-            display:flex;
-            align-items: center;
-    
-            .navegacion__lista{
-                display: flex;
-                text-align: center;
-    
-                .lista__uno{
-                    font-size: ($texto)-5;
-                    background-image:$tricolor;
-                    color: black;
-                    padding: 6px;
-                    outline: solid black;
-                }
-                .lista__dos{
-                    font-size: ($texto)-5;
-                    background-image:$tricolor;
-                    color: black;
-                    padding: 6px;
-                    outline: solid black;
-                }
-                .lista__tres{
-                    font-size: ($texto)-5;
-                    background-image:$tricolor;
-                    color: black;
-                    padding: 6px;
-                    outline: solid black;
-                }
-                .lista__cuatro{
-                    font-size: ($texto)-5;
-                    background-image:$tricolor;
-                    color: black;
-                    padding: 6px;
-                    outline: solid black;
-                    margin-right: 4px;
-                }
-            }
-        }
-    }
-    
-}
-
-@media ( max-width:870px) {
-    .grilla {
-        display: grid;
-        grid-template-rows: 160px 1fr 110px ;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-areas:"pe pe pe pe"
-                            "main main main main"
-                            "footer footer footer footer";
-    }
-
-    .indheader{
-        grid-area:pe;
-        display: flex;
-        flex-direction: column;
-        .nav__tit {
-            font-size: $titulo;
-            font-family:'Oswald', sans-serif;
-            padding-top: 10px;
-            line-height: 90px;
-            text-shadow: 6px 4px 1px #eddec9;
-        }
-        .diamante1{
-                position:absolute;
-                margin-left: 550px;
-                margin-bottom: 30px;
-                width: 90px;
-                height: 90px;
-        }
-        .nav__ind{
-            display:flex;
-            align-items: center;
-    
-            .navegacion__lista{
-                display: flex;
-                text-align: center;
-                margin-top: 20px;
-    
-                .lista__uno{
-                    font-size: $texto;
-                    background-image:$tricolor;
-                    color: black;
-                    padding: 6px;
-                    outline: solid black;
-                }
-                .lista__dos{
-                    font-size: $texto;
-                    background-image:$tricolor;
-                    color: black;
-                    padding: 6px;
-                    outline: solid black;
-                }
-                .lista__tres{
-                    font-size: $texto;
-                    background-image:$tricolor;
-                    color: black;
-                    padding: 6px;
-                    outline: solid black;
-                }
-                .lista__cuatro{
-                    font-size: $texto;
-                    background-image:$tricolor;
-                    color: black;
-                    padding: 6px;
-                    outline: solid black;
-                }
-            }
-        }
-    }
-    
-    main{
-        .container__dos {
+        .ind__div-a{
             display: flex;
-            .img1 {
-                max-width: 200px;
-                max-height: 200px;
-            }
-        }
-        .container__tres {
-            display: flex;
-            .img1 {
-                max-width: 200px;
-                max-height: 200px;
-            }
-    }
-    
-}
-}
-
-@media ( max-width:670px) {
-    .grilla {
-        display: grid;
-        grid-template-rows: 160px 1fr 110px ;
-        grid-template-columns: 1fr  1fr;
-        grid-template-areas:"pe pe"
-                            "main main"
-                            "footer footer";
-    }
-    .indheader{
-        grid-area:pe;
-        display: flex;
-        flex-direction: column;
-        .nav__tit {
-            font-size: $titulo;
-            font-family:'Oswald', sans-serif;
-            padding-top: 10px;
-            line-height: 90px;
-            text-shadow: 6px 4px 1px #eddec9;
-        }
-        .diamante1{
-                position:absolute;
-                margin-left: 520px;
-                width: 80px;
-                height: 90px;
-        }
-        .nav__ind {
-            display:flex;
-            align-items: center;
-    
-            .navegacion__lista{
-                display: flex;
-                text-align: center;
-                margin-top: 20px;
-    
-                .lista__uno{
-                    font-size: ($texto)-8;
-                    background-image:$tricolor;
-                    color: black;
-                    padding: 5px;
-                    outline: solid black;
-                }
-                .lista__dos{
-                    font-size: ($texto)-8;
-                    background-image:$tricolor;
-                    color: black;
-                    padding: 5px;
-                    outline: solid black;
-                }
-                .lista__tres{
-                    font-size:($texto)-8;
-                    background-image:$tricolor;
-                    color: black;
-                    padding: 5px;
-                    outline: solid black;
-                }
-                .lista__cuatro{
-                    font-size:($texto)-8;
-                    background-image:$tricolor;
-                    color: black;
-                    padding: 6px;
-                    outline: solid black;
-                }
-            }
-        }
-    }
-    main {
-        grid-area:main;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        .container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            .container__img {
-                display: flex;
-                width: 90%;
-                max-height: 600px;
-            }
-    
-        }
-        .text--img{
-            font-size:($texto)-8px;
-            font-weight: bold;
             text-align: center;
-            font-family: 'Oswald', sans-serif;
-            padding-top: 10px;
-            padding-bottom: 10px;
-            .botonemis {
-                outline: none;
-                border: none;
-                cursor: pointer;
-                color: rgb(0, 0, 0);
-                text-shadow: 3px 3px 1px #EDDEC9;
-                border-bottom: solid #EDDEC9;
-            
-                animation-name: cambiarcolor ;
-                animation-duration: 5s;
-                animation-iteration-count: infinite;
-            } 
-            
-            @keyframes cambiarcolor {
-            
-                0% {
-                    color: rgb(0, 0, 0);
-                    text-shadow: 3px 3px 1px #EDDEC9;
-                    border-bottom: solid #EDDEC9;
-                    transform: translateY(20px , 20px);
+            .ind__ula{
+                display: flex;
+                padding-top: 8px;
+                .ind__tituloa{
+                    @include fottitulo;
                 }
-                40% {
-                    color: #EDDEC9;
-                    text-shadow: 3px 3px 1px rgb(0, 0, 0);
-                    border-bottom: solid rgb(0, 0, 0);
-                    transform: translateY(30px, 30px);
-            
-                }
-                70% {
-                    color: rgb(0, 0, 0)#EDDEC9;
-                    text-shadow: 3px 3px 1px #b98f54;
-                    border-bottom: solid rgb(0, 0, 0 );
-                    transform: translateY(40px, 40px) ;
-                }
-            
-                100% {
-                    color: rgb(0, 0, 0)#EDDEC9;
-                    text-shadow: 3px 3px 1px #b98f54;
-                    border-bottom: solid rgb(0, 0, 0 );
-                    transform: translateY(50px , 50px) ;
+                .ind--lista{
+                    @include fotlista;
+                    .ind--link{
+                        @include fotlink;
+                    }
                 }
             }
-            
         }
-        .container__dos {
+        .ind__div-b{
             display: flex;
-            flex-direction: column;
-            width: 80%;
-
-
-            .img1 {
-                width: 400px;
-                height: 400px;
-            }
-            .div__uno {
+            text-align: center;
+            .ind__ulb{
                 display: flex;
-                flex-direction: column;
-                align-items: center;
-                background-image: $tricolor;
-                padding-top: 20px;
-                margin-bottom: 10px;
-            
-            }
-            .div__dos {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                background-image: $tricolor;
-                padding-top: 20px;
-                margin-bottom: 10px;
-    
-            }
-            .div__tres {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                background-image: $tricolor;
-                padding-top: 20px;
-                margin-bottom: 10px;
-            }
-    
-        }
-        .container__tres {
-            display: flex;
-            flex-direction: column;
-            width: 80%;
-            .img1 {
-                width: 400px;
-                height: 400px;
-            }
-            .div__cuatro {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                background-image: $tricolor;
-                padding-top: 20px;
-                margin-bottom: 10px;
-            }
-            .div__cinco {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                background-image: $tricolor;
-                padding-top: 20px;
-                margin-bottom: 10px;
-            }
-            .div__seis {
-                display: flex;
-                flex-direction: column;
-                align-items: center; 
-                background-image: $tricolor;
-                padding-top: 20px;
-                margin-bottom: 10px;
+                padding-top: 8px;
+                .ind__titulob{
+                    @include fottitulo;
+                }
+                .ind--lista{
+                    @include fotlista;
+                    .ind--link{
+                        @include fotlink;
+                    }
+                }
             }
         }
-        .priparrafo{
-            display: flex;
-            font-size: 20px;
-            font-family: fantasy;
-            color: $colorbase;
-            text-shadow: 2px 2px 2px black;
-            justify-content: center;
-            padding-bottom: 12px;
-            padding-top: 8px;
-        }
-    
-        
     }
 }
 
-@media ( max-width:556px) {
-    .grilla {
-        display: grid;
-        grid-template-rows: 160px 1fr 110px ;
-        grid-template-columns: 1fr;
-        grid-template-areas:"pe"
-                            "main"
-                            "footer";
-    }
-    .indheader{
-        .nav__tit {
-            display: flex;
-            justify-content: center;
-            font-size: ($titulo)-5;
-            font-family:'Oswald', sans-serif;
-            padding-top: 10px;
-            line-height: 90px;
-            text-shadow: 6px 4px 1px #eddec9;
-        }
-        .diamante1{
-            position:absolute;
-            display: none;
-            width: 80px;
-            height: 90px;
-    }
-    }
-}
-
-@media ( max-width:320px) {
-    footer{
-        grid-area:footer;
-        background-color: #EDDEC9;
-        margin-top: 10px;
-        address {
-            display: flex;
-            background-color:#EDDEC9;
-            .lista__foo{
-                background-color:#EDDEC9;
-                display: flex;
-                justify-content: center;
-                flex-direction: column;
-                .lista__b {
-                    background-color:#EDDEC9;
-                    font-family: 'Courier New', Courier, monospace;
-                    font-size: 17px;
-                }
-                .lista__fooli{
-                    background-color:#EDDEC9;
-                    display: flex;
-                    text-align: center;
-                    font-family: bold;
-                    font-size: 17px;
-                    .lista__a {
-                        background-color:#EDDEC9;
-                        color: #ffffff;
-                        text-shadow: 3px 3px 3px black;
-                    }
-                }
-            }
-            .divfoo {
-                background-color:#EDDEC9;
-                .lista__foo{
-                    background-color:#EDDEC9;
-                    display: flex;
-                    justify-content: center;
-                    flex-direction: column;
-                    .lista__b {
-                        background-color:#EDDEC9;
-                        font-family: 'Courier New', Courier, monospace;
-                        font-size: 17px;
-                    }
-                    .lista__fooli{
-                        background-color:#EDDEC9;
-                        display: flex;
-                        text-align: center;
-                        font-family: bold;
-                        font-size: 17px;
-                        .lista__a {
-                            background-color:#EDDEC9;
-                            color: #ffffff;
-                            text-shadow: 3px 3px 3px black;
-                        }
-                        .lista__a {
-                            background-color:#EDDEC9;
-                            font-family: 'Courier New', Courier, monospace;
-                            font-size: 17px;
-                        }
-                    }
-                    
-                }
-            }
-        }
-    }
-}*/
+/*DESKTOP FIRST INICIO*/

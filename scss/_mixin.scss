@@ -22,3 +22,25 @@
     font-family: $roboto400;
     border-radius: 5px;
 }
+
+@mixin fottitulo{
+    display: flex;
+    justify-content: center;
+    font-family: $roboto400;
+    font-size: ($texto)-8px;
+}
+
+@mixin fotlista{
+    display: flex;
+    justify-content: space-around;
+    font-family: $roboto400;
+    padding-top: 12px;
+    font-size: ($texto)-10px;
+    color: $negro;
+}
+@mixin fotlink{
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 2px $negro;
+    padding-left: 10px;
+    padding-right: 10px;
+}

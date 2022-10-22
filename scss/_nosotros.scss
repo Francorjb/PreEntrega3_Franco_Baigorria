@@ -1,290 +1,117 @@
 .sobre__grilla {
     display: grid;
-    grid-template-rows: 150px 900px 140px ;
+    grid-template-rows: 130px 1000px 70px ;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas:"header header"
-                        "main main "
-                        "footer footer ";
+    grid-template-areas:"nip nip"
+                        "nop nop"
+                        "nup nup";
 }
 
-.sobre__header{
+.nos__header{
+    grid-area: nip;
     display: flex;
-    grid-area: header;
-    .sobre__h1{
-        font-size: $titulo;
-        font-family:'Oswald', sans-serif;
-        padding-left: 30px;
-        padding-top: 10px;
-        line-height: 90px;
-        text-shadow: 6px 4px 1px $colorbase;
-    }
-    .sobre__diamante{
+    .nos__div{
         display: flex;
-        width: 200px;
-        height: 100px;
-        margin-top: 10px;
         align-items: center;
+        text-align: center;
+        .nos__titulo{
+            font-size: $titulo;
+            font-family: $antontitulo;
+            text-shadow: 5px 5px 5px $colorbase;
+            .nos__srl{
+                color: $negro;
+            }
+        }
+        .nos__diamante{
+            display: flex;
+            height: 90px;
+            width: 100px;
+        }
     }
-    .sobre__nav{
+    .nos__nav{
         display:flex;
         align-items: center;
-        .sobre__lista{
+        .nos__nav-ul{
             display: flex;
             text-align: center;
-            .lista__uno{
-                font-size: $texto;
-                background-image:$tricolor;
-                color: black;
-                padding: 8px;
-                outline: solid black;
+            .link--uno{
+                @include btnheader;
             }
-            .lista__dos{
-                font-size: $texto;
-                background-image:$tricolor;
-                color: black;
-                padding: 8px;
-                outline: solid black;
+            .link--uno:hover{
+                @include btnhover;
             }
-            .lista__tres{
-                font-size: $texto;
-                background-image:$tricolor;
-                color: black;
-                padding: 8px;
-                outline: solid black;
+            .link--dos{
+                @include btnheader;
+                border-bottom: solid 4px black;
             }
-            .lista__cuatro{
-                font-size: $texto;
-                background-image:$tricolor;
-                color: black;
-                padding: 8px;
-                outline: solid black;
+            .link--dos:hover{
+                @include btnhover;
             }
+            .link--tres{
+                @include btnheader;
+            }
+            .link--tres:hover{
+                @include btnhover;
+            }
+            .link--cuatro{
+                @include btnheader;
+            }
+            .link--cuatro:hover{
+                @include btnhover;
+            }      
         }
     }
 }
 
-.sobre__main {
-    grid-area: main;
+.nos__main {
+    grid-area: nop;
     background-color: $colorbase;
-    background-image: url( ../asset/logocopia.jpg);
+    background-image: url( ../asset/nosotros.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    .sobre__section{
-        display: flex;
-        flex-direction: column;
-        .sobre__h2{
-            display: flex;
-            justify-content: center;
-            font-size: 50px;
-            font-family: 'Oswald', sans-serif;
-            background-image: $tricolor ;
-            text-shadow: 4px 4px 4px rgb(255, 255, 255);
-        }
-
-        .sobre__p{
-            font-family: 'Courier New', Courier, monospace;
-            font-size: $texto;
-            color: aliceblue;
-            text-shadow: 3px 3px 3px #000;
-            padding-top: 5rem;
-        }
-    }
+    background-size:contain;
 }
 
-.sobre__footer{
-    grid-area: footer;
-        grid-area:footer;
-        background-color: $colorbase;
-        margin-top: 10px;
-        address {
-            display: flex;
-            background-color:$colorbase;
-            .lista__foo{
-                background-color:$colorbase;
-                display: flex;
-                justify-content: center;
-                flex-direction: column;
-                .lista__b {
-                    background-color:$colorbase;
-                    font-family: 'Courier New', Courier, monospace;
-                    font-size: 23px;
-                }
-                .lista__fooli{
-                    background-color:$colorbase;
-                    display: flex;
-                    text-align: center;
-                    font-family: bold;
-                    font-size: 20px;
-                    .lista__a {
-                        background-color:$colorbase;
-                        color: #ffffff;
-                        text-shadow: 3px 3px 3px black;
-                    }
-                }
-            }
-            .divfoo {
-                background-color:$colorbase;
-                .lista__foo{
-                    background-color:$colorbase;
-                    display: flex;
-                    justify-content: center;
-                    flex-direction: column;
-                    .lista__b {
-                        background-color:$colorbase;
-                        font-family: 'Courier New', Courier, monospace;
-                        font-size: 23px;
-                    }
-                    .lista__fooli{
-                        background-color:$colorbase;
-                        display: flex;
-                        text-align: center;
-                        font-family: bold;
-                        font-size: 20px;
-                        .lista__a {
-                            background-color:$colorbase;
-                            color: #ffffff;
-                            text-shadow: 3px 3px 3px black;
-                        }
-                        .lista__a {
-                            background-color:$colorbase;
-                            font-family: 'Courier New', Courier, monospace;
-                            font-size: 23px;
-                        }
-                    }
-                    
-                }
-            }
-        }
-    }
-/*
-@media (max-width:1100px) {
-    .sobre__grilla {
-        display: grid;
-        grid-template-rows: 150px 1fr 140px ;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas:"header header"
-                            "main main "
-                            "footer footer ";
-    }
-    .sobre__header{
+.nos__footer{
+    grid-area: nup;
+    background-color: $colorbase;
+    .nos__add{
+        background-color:$colorbase;
         display: flex;
-        grid-area: header;
-        .sobre__h1{
-            font-size: ($titulo)-30px;
-            font-family:'Oswald', sans-serif;
-            padding-left: 30px;
-            padding-top: 10px;
-            line-height: 90px;
-            text-shadow: 6px 4px 1px $colorbase;
-        }
-        .sobre__diamante{
-            display: none;
-            width: 200px;
-            height: 100px;
-            margin-top: 10px;
-            align-items: center;
-        }
-        .sobre__nav{
-            display:flex;
-            align-items: center;
-            .sobre__lista{
-                display: flex;
-                text-align: center;
-                .lista__uno{
-                    font-size: ($texto)-5;
-                    background-image:$tricolor;
-                    color: black;
-                    padding: 8px;
-                    outline: solid black;
-                }
-                .lista__dos{
-                    font-size: ($texto)-5;
-                    background-image:$tricolor;
-                    color: black;
-                    padding: 8px;
-                    outline: solid black;
-                }
-                .lista__tres{
-                    font-size: ($texto)-5;
-                    background-image:$tricolor;
-                    color: black;
-                    padding: 8px;
-                    outline: solid black;
-                }
-                .lista__cuatro{
-                    font-size: ($texto)-5;
-                    background-image:$tricolor;
-                    color: black;
-                    padding: 8px;
-                    outline: solid black;
-                }
-            }
-        }
-    }
-}
-
-@media (max-width:870px) {
-    .sobre__grilla {
-        display: grid;
-        grid-template-rows: 150px 1fr 140px ;
-        grid-template-columns: 1fr;
-        grid-template-areas:"header"
-                            "main"
-                            "footer ";
-    }
-
-    .sobre__header{
-        display: flex;
-        grid-area: header;
-        .sobre__h1{
+        .nos__div-a{
             display: flex;
             text-align: center;
-            font-size: ($titulo);
-            font-family:'Oswald', sans-serif;
-            padding-left: 30px;
-            padding-top: 10px;
-            line-height: 90px;
-            margin-bottom: 10px;
-            text-shadow: 6px 4px 1px $colorbase;
-        }
-        .sobre__diamante{
-            display: none;
-        }
-        .sobre__nav{
-            display:flex;
-            align-items: center;
-            .sobre__lista{
+            .nos__ul-a{
                 display: flex;
-                text-align: center;
-                .lista__uno{
-                    font-size: ($texto)-5;
-                    background-image:$tricolor;
-                    color: black;
-                    padding: 8px;
-                    outline: solid black;
+                padding-top: 8px;
+                .nos__titulo{
+                    @include fottitulo;
                 }
-                .lista__dos{
-                    font-size: ($texto)-5;
-                    background-image:$tricolor;
-                    color: black;
-                    padding: 8px;
-                    outline: solid black;
+                .nos__lista{
+                    @include fotlista;
+                    .nos--links{
+                        @include fotlink;
+                    }
                 }
-                .lista__tres{
-                    font-size: ($texto)-5;
-                    background-image:$tricolor;
-                    color: black;
-                    padding: 8px;
-                    outline: solid black;
+            }
+        }
+        .nos__div-b{
+            display: flex;
+            text-align: center;
+            .nos__ul-b{
+                display: flex;
+                padding-top: 8px;
+                .nos__titulo{
+                    @include fottitulo;
                 }
-                .lista__cuatro{
-                    font-size: ($texto)-5;
-                    background-image:$tricolor;
-                    color: black;
-                    padding: 8px;
-                    outline: solid black;
+                .nos__lista{
+                    @include fotlista;
+                    .nos--links{
+                        @include fotlink;
+                    }
                 }
             }
         }
     }
-} */
+}
+    /*DESKTOP FIRST NOSOTROS*/
