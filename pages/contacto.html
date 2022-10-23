@@ -13,24 +13,24 @@
 </head>
 <body class="con__grilla">
     <header class="con__header">
-        <h1 class="con__h1">Emis'Diamond</h1>
-        <li class="lista--uno"><a class="lista__uno" href="../index.html">inicio</a></li>
-        <div class="con__diamante">
-            <img src="../asset/diamante.png" alt="diamante">
+        <div class="con__div">
+            <h1 class="con__titulo"><a class="con__srl" href="../index.html">Emis'Diamond</a></h1>
+            <img class="con__diamante" src="../asset/diamante.png" alt="diamante">
         </div>
         <nav class="con__nav">
             <ul class="con__ul">
-                <li class="lista--uno"><a class="lista__uno" href="../pages/productos.html">Productos</a></li>
-                <li class="lista--dos"><a class="lista__dos" href="../pages/sobrenosotros.html">Nosotros</a></li>
-                <li class="lista--tres"><a class="lista__tres" href="../pages/creacion.html">Creacion</a></li>
-                <li class="lista--cuatro"><a class="lista__cuatro" href="../pages/contacto.html">Contacto</a></li>
+                <li class="con_lista-uno"><a class="links_uno" href="../pages/productos.html">Productos</a></li>
+                <li class="con_lista-dos"><a class="links_dos" href="../pages/sobrenosotros.html">Nosotros</a></li>
+                <li class="con_lista-tres"><a class="links_tres" href="../pages/creacion.html">Creacion</a></li>
+                <li class="con_lista-cuatro"><a class="links_cuatro" href="../pages/contacto.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
     <main class="con__main">
+        <h1 class="con__legend">Formulario de contacto</h1>
         <form class="con__form" action="formulario" method="post">
             <fieldset class="con__fieldset">
-            <legend class="con__legend">Formulario de contacto</legend>
+            <div class="con__div5">
                 <label class="con__nom" for="nombre">Nombres:</label>
                 <input class="con__inp" type="text" required><br>
                 <label class="con__nom" for="apellido">Apellido:</label>
@@ -43,33 +43,27 @@
                 <input class="con__inp" type="email" name="email" required><br>
                 <label class="con__nom" for="info">Datos que necesite informar:</label><br>
                 <input type="text" name="info"><br>
-                <input class="boton" type="submit" name="enviar" value="enviar datos">
-                <input class="boton" type="reset" name="restablecer" value="borrar datos">
-    
+                <input class="boton1" type="submit" name="enviar" value="enviar datos">
+                <input class="boton2" type="reset" name="restablecer" value="borrar datos">
+            </div>
             </fieldset>
         </form>
     </main>
     <footer class="con__footer">
-        <address>
-            <div>
-                <ul class="lista__foo">
-                    <b class="lista__b">Seguinos en:</b>
-                    <li class="lista__fooli">instagram:
-                        <a class="lista__a"  href="https://www.instagram.com/">Emis'Diamond</a>
-                    </li>
-                    <li class="lista__fooli">Twitter
-                        <a class="lista__a"  href="https://twitter.com/?lang=es">Emis'Diamond</a>
-                    </li>
-                    <li class="lista__fooli">facebook
-                        <a class="lista__a"  href="https://es-la.facebook.com/">Emis'Diamond</a>
-                    </li>
+        <address class="con__add">
+            <div class="con__div-a">
+                <ul class="con__ul-a">
+                    <b class="con__titulo">Seguinos en:</b>
+                    <li class="con__lista">Istagram:<a class="con--links"  href="https://www.instagram.com">Emis'Diamond</a></li>
+                    <li class="con__lista">Twitter:<a class="con--links"  href="https://twitter.com/?lang=es">Emis'Diamond</a></li>
+                    <li class="con__lista">Facebook:<a class="con--links"  href="https://es-la.facebook.com/">Emis'Diamond</a></li>
                 </ul>
             </div>
-            <div class="divfoo">
-                <ul class="lista__foo">
-                    <b class="lista__b"> Te ayudamos:</b>
-                    <li class="lista__fooli"> Mail: <a class="lista__a"  href="https://mail.google.com/mail">EmisDiamond@gmail.com</a></li>
-                    <li class="lista__fooli"> Wsp: <a class="lista__a" href="https://web.whatsapp.com/">1156578754</a></li>
+            <div class="con__div-b">
+                <ul class="con__ul-b">
+                    <b class="con__titulo"> Te ayudamos:</b>
+                    <li class="con__lista"> Mail: <a class="con--links"  href="https://mail.google.com/mail">EmisDiamond@gmail.com</a></li>
+                    <li class="con__lista"> Wsp: <a class="con--links" href="https://web.whatsapp.com/">1156578754</a></li>
                 </ul>
             </div>
         </address>

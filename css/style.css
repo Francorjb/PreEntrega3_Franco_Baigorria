@@ -1,5 +1,7 @@
 /*letras*/
 /*colores*/
+/*CODIGOS DEL HEADER*/
+/*CODIGOS DEL FOOTERR*/
 * {
   box-sizing: border-box;
   margin: 0;
@@ -234,7 +236,7 @@
             padding-right: 10px; }
 
 /*DESKTOP FIRST INICIO*/
-/*final index y principio de productos*/
+/*FINAL DEL INICIO*/
 .grillaprodu {
   width: 100%;
   display: grid;
@@ -442,707 +444,271 @@
             padding-right: 10px; }
 
 /*DESKTOP FIRST PRODUCTOS*/
-/*final productos y principio de creacion*/
+/*FINAL DE PRODUCTOS*/
 .grilla__cre {
   display: grid;
-  grid-template-rows: 140px 1fr 100px;
+  grid-template-rows: 130px 1fr 70px;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas: "pa pa pa" "po po po" "pi pi pi"; }
 
-.crenavegacion {
+.cre__header {
   grid-area: pa;
   display: flex; }
-  .crenavegacion .crenavegacion__titulo {
-    font-size: 90px;
-    font-family: 'Oswald', sans-serif;
-    padding-left: 30px;
-    padding-top: 10px;
-    line-height: 90px;
-    text-shadow: 6px 4px 1px #EDDEC9; }
-  .crenavegacion .crediamante {
+  .cre__header .cre__div-uno {
     display: flex;
-    width: 200px;
-    height: 100px;
-    margin-top: 10px;
-    align-items: center; }
-  .crenavegacion .crenavegacion__nav {
+    align-items: center;
+    text-align: center; }
+    .cre__header .cre__div-uno .cre__titulo {
+      font-size: 90px;
+      font-family: "Anton", sans-serif;
+      text-shadow: 5px 5px 5px #EDDEC9; }
+      .cre__header .cre__div-uno .cre__titulo .cre__srl {
+        color: #000000; }
+    .cre__header .cre__div-uno .cre__diamante {
+      display: flex;
+      height: 90px;
+      width: 100px; }
+  .cre__header .cre__nav {
     display: flex;
     align-items: center; }
-    .crenavegacion .crenavegacion__nav .crenavegacion__lista {
+    .cre__header .cre__nav .cre__nav-ul {
       display: flex;
       text-align: center; }
-      .crenavegacion .crenavegacion__nav .crenavegacion__lista .lista__uno {
+      .cre__header .cre__nav .cre__nav-ul .cre_link-uno {
         font-size: 26px;
-        background-image: linear-gradient(to left, #EDDEC9, #cfb896, #5c5751);
+        font-family: "Roboto Mono", monospace;
         color: black;
-        padding: 8px;
-        outline: solid black; }
-      .crenavegacion .crenavegacion__nav .crenavegacion__lista .lista__dos {
+        border-bottom: solid 4px #EDDEC9; }
+      .cre__header .cre__nav .cre__nav-ul .cre_link-uno:hover {
+        background: #EDDEC9;
+        padding: 6px;
+        color: black;
+        border-radius: 6px;
+        transition: .3s; }
+      .cre__header .cre__nav .cre__nav-ul .cre_link-dos {
         font-size: 26px;
-        background-image: linear-gradient(to left, #EDDEC9, #cfb896, #5c5751);
+        font-family: "Roboto Mono", monospace;
         color: black;
-        padding: 8px;
-        outline: solid black; }
-      .crenavegacion .crenavegacion__nav .crenavegacion__lista .lista__tres {
+        border-bottom: solid 4px #EDDEC9; }
+      .cre__header .cre__nav .cre__nav-ul .cre_link-dos:hover {
+        background: #EDDEC9;
+        padding: 6px;
+        color: black;
+        border-radius: 6px;
+        transition: .3s; }
+      .cre__header .cre__nav .cre__nav-ul .cre_link-tres {
         font-size: 26px;
-        background-image: linear-gradient(to left, #EDDEC9, #cfb896, #5c5751);
+        font-family: "Roboto Mono", monospace;
         color: black;
-        padding: 8px;
-        outline: solid black; }
-      .crenavegacion .crenavegacion__nav .crenavegacion__lista .lista__cuatro {
+        border-bottom: solid 4px #EDDEC9;
+        border-bottom: solid 4px black; }
+      .cre__header .cre__nav .cre__nav-ul .cre_link-tres:hover {
+        background: #EDDEC9;
+        padding: 6px;
+        color: black;
+        border-radius: 6px;
+        transition: .3s; }
+      .cre__header .cre__nav .cre__nav-ul .cre_link-cuatro {
         font-size: 26px;
-        background-image: linear-gradient(to left, #EDDEC9, #cfb896, #5c5751);
+        font-family: "Roboto Mono", monospace;
         color: black;
-        padding: 8px;
-        outline: solid black; }
+        border-bottom: solid 4px #EDDEC9; }
+      .cre__header .cre__nav .cre__nav-ul .cre_link-cuatro:hover {
+        background: #EDDEC9;
+        padding: 6px;
+        color: black;
+        border-radius: 6px;
+        transition: .3s; }
 
-.creacion__main {
+.cre__main {
   grid-area: po; }
-  .creacion__main .cre__articulo {
-    display: flex;
-    flex-direction: column;
-    background-color: #EDDEC9; }
-    .creacion__main .cre__articulo .cre__div {
-      display: flex;
-      flex-direction: column;
-      align-items: center; }
-      .creacion__main .cre__articulo .cre__div .cre__divh2 {
-        display: flex;
-        justify-content: center;
-        font-size: 40px;
-        color: #ffffff;
-        text-shadow: 3px 3px 3px black;
-        border-bottom: solid #ffffff; }
-      .creacion__main .cre__articulo .cre__div .cre__divh2:hover {
-        display: flex;
-        justify-content: center;
-        font-size: 40px;
-        background-color: rgba(121, 110, 92, 0.818);
-        color: #EDDEC9;
-        text-shadow: 3px 3px 3px black; }
-      .creacion__main .cre__articulo .cre__div .cre__divp {
-        display: flex;
-        text-align: center;
-        font-size: 26px;
-        font-family: 'Courier New', Courier, monospace; }
-      .creacion__main .cre__articulo .cre__div .video {
-        height: 30rem;
-        width: 80rem;
-        border: solid 30px #ffffff; }
-    .creacion__main .cre__articulo .cre__div2 .cre_divh3 {
-      display: flex;
-      justify-content: center;
-      font-size: 40px; }
-    .creacion__main .cre__articulo .cre__div2 .cre__div3 {
-      display: flex; }
-      .creacion__main .cre__articulo .cre__div2 .cre__div3 .div_1 {
-        display: flex;
-        text-align: center; }
-        .creacion__main .cre__articulo .cre__div2 .cre__div3 .div_1 .cre__divp2 {
-          font-family: 'Courier New', Courier, monospace;
-          font-size: 20px; }
-        .creacion__main .cre__articulo .cre__div2 .cre__div3 .div_1 .cre__ul {
-          display: flex;
-          flex-direction: column;
-          justify-content: stretch;
-          font-family: 'Courier New', Courier, monospace;
-          font-size: 20px; }
-      .creacion__main .cre__articulo .cre__div2 .cre__div3 .div_2 {
-        display: flex;
-        text-align: center; }
-        .creacion__main .cre__articulo .cre__div2 .cre__div3 .div_2 .cre__ol {
-          font-family: 'Courier New', Courier, monospace;
-          font-size: 20px; }
-        .creacion__main .cre__articulo .cre__div2 .cre__div3 .div_2 .cre__olp {
-          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-          font-size: 25px; }
 
 .cre__footer {
   grid-area: pi;
-  background-color: #EDDEC9;
-  margin-top: 10px; }
-  .cre__footer address {
-    display: flex;
-    background-color: #EDDEC9; }
-    .cre__footer address .lista__foo {
-      background-color: #EDDEC9;
+  background-color: #EDDEC9; }
+  .cre__footer .cre__add {
+    background-color: #EDDEC9;
+    display: flex; }
+    .cre__footer .cre__add .cre__div {
       display: flex;
-      justify-content: center;
-      flex-direction: column; }
-      .cre__footer address .lista__foo .lista__b {
-        background-color: #EDDEC9;
-        font-family: 'Courier New', Courier, monospace;
-        font-size: 23px; }
-      .cre__footer address .lista__foo .lista__fooli {
-        background-color: #EDDEC9;
+      text-align: center; }
+      .cre__footer .cre__add .cre__div .cre__ul1 {
         display: flex;
-        text-align: center;
-        font-family: bold;
-        font-size: 20px; }
-        .cre__footer address .lista__foo .lista__fooli .lista__a {
-          background-color: #EDDEC9;
-          color: #ffffff;
-          text-shadow: 3px 3px 3px black; }
-    .cre__footer address .divfoo {
-      background-color: #EDDEC9; }
-      .cre__footer address .divfoo .lista__foo {
-        background-color: #EDDEC9;
-        display: flex;
-        justify-content: center;
-        flex-direction: column; }
-        .cre__footer address .divfoo .lista__foo .lista__b {
-          background-color: #EDDEC9;
-          font-family: 'Courier New', Courier, monospace;
-          font-size: 23px; }
-        .cre__footer address .divfoo .lista__foo .lista__fooli {
-          background-color: #EDDEC9;
+        padding-top: 8px; }
+        .cre__footer .cre__add .cre__div .cre__ul1 .cre__parrafo1 {
           display: flex;
-          text-align: center;
-          font-family: bold;
-          font-size: 20px; }
-          .cre__footer address .divfoo .lista__foo .lista__fooli .lista__a {
-            background-color: #EDDEC9;
-            color: #ffffff;
-            text-shadow: 3px 3px 3px black; }
-          .cre__footer address .divfoo .lista__foo .lista__fooli .lista__a {
-            background-color: #EDDEC9;
-            font-family: 'Courier New', Courier, monospace;
-            font-size: 23px; }
-
-/*destok fist
-
-@media ( max-width:1100px) {
-    
-    .crenavegacion{
-        grid-area: pa;
+          justify-content: center;
+          font-family: "Roboto Mono", monospace;
+          font-size: 18px; }
+        .cre__footer .cre__add .cre__div .cre__ul1 .cre_lista {
+          display: flex;
+          justify-content: space-around;
+          font-family: "Roboto Mono", monospace;
+          padding-top: 12px;
+          font-size: 16px;
+          color: #000000; }
+          .cre__footer .cre__add .cre__div .cre__ul1 .cre_lista .cre__links {
+            color: white;
+            text-shadow: 2px 2px 2px #000000;
+            padding-left: 10px;
+            padding-right: 10px; }
+    .cre__footer .cre__add .cre__div2 {
+      display: flex;
+      text-align: center; }
+      .cre__footer .cre__add .cre__div2 .cre__ul2 {
         display: flex;
-    
-        .crenavegacion__titulo{
-            font-size: ($titulo)-15;
-            font-family:'Oswald', sans-serif;
-            padding-left: 30px;
-            padding-top: 10px; 
-            text-shadow: 6px 4px 1px $colorbase;
-        }
-        .crediamante{
-            display: none;
-            width: 200px;
-            height: 100px;
-            margin-top: 10px;
-            align-items: center;
-        }
-        .crenavegacion__nav{
-            display:flex;
-            align-items: center;
-            .crenavegacion__lista {
-                display: flex;
-                text-align: center;
-                .lista__uno{
-                    font-size: ($texto)-5;
-                    background-image:$tricolor;
-                    color: black;
-                    padding: 8px;
-                    outline: solid black;
-                }
-                .lista__dos{
-                    font-size: ($texto)-5;
-                    background-image:$tricolor;
-                    color: black;
-                    padding: 8px;
-                    outline: solid black;
-                }
-                .lista__tres{
-                    font-size: ($texto)-5;
-                    background-image:$tricolor;
-                    color: black;
-                    padding: 8px;
-                    outline: solid black;
-                }
-                .lista__cuatro{
-                    font-size: ($texto)-5;
-                    background-image:$tricolor;
-                    color: black;
-                    padding: 8px;
-                    outline: solid black;
-                }
-            }
-        }
-    }
-    .creacion__main {
-        grid-area: po;
-        .cre__articulo{
-            display: flex;
-            flex-direction: column;
-            background-color: $colorbase;
-            .cre__div {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                .cre__divh2 {
-                    display: flex;
-                    justify-content: center;
-                    font-size: 40px;
-                    color: #ffffff;
-                    text-shadow: 3px 3px 3px black;
-                    border-bottom:solid #ffffff
-                }
-                .cre__divh2:hover {
-                    display: flex;
-                    justify-content: center;
-                    font-size: 40px;
-                    background-color: rgba(121, 110, 92, 0.818);
-                    color: $colorbase;
-                    text-shadow: 3px 3px 3px rgb(0, 0, 0);
-                }
-                .cre__divp{
-                    display: flex;
-                    text-align: center;
-                    font-size: 26px;
-                    font-family: 'Courier New', Courier, monospace;
-                }
-    
-                .video{
-                    height: 30rem;
-                    width: 58rem;
-                    border: solid 25px #ffffff
-                }
-            }
-        }
-    }
+        padding-top: 8px; }
+        .cre__footer .cre__add .cre__div2 .cre__ul2 .cre__parrafo2 {
+          display: flex;
+          justify-content: center;
+          font-family: "Roboto Mono", monospace;
+          font-size: 18px; }
+        .cre__footer .cre__add .cre__div2 .cre__ul2 .cre_lista {
+          display: flex;
+          justify-content: space-around;
+          font-family: "Roboto Mono", monospace;
+          padding-top: 12px;
+          font-size: 16px;
+          color: #000000; }
+          .cre__footer .cre__add .cre__div2 .cre__ul2 .cre_lista .cre__links {
+            color: white;
+            text-shadow: 2px 2px 2px #000000;
+            padding-left: 10px;
+            padding-right: 10px; }
 
-}
-
-@media ( max-width:920px) {
-    .grilla__cre {
-        display: grid;
-        grid-template-rows: 150px 1fr 100px;
-        grid-template-columns:1fr 1fr ;
-        grid-template-areas:"pa pa"
-                            "po po"
-                            "pi pi";
-    }
-    
-    .crenavegacion{
-        grid-area: pa;
-        display: flex;
-        flex-direction: column;
-    
-        .crenavegacion__titulo{
-            font-size: ($titulo)-15;
-            font-family:'Oswald', sans-serif;
-            padding-left: 30px;
-            padding-top: 10px; 
-            text-shadow: 6px 4px 1px $colorbase;
-            margin-bottom: 13px;
-        }
-        .crediamante{
-            position: absolute;
-            display: flex;
-            margin-left: 550px;
-            width: 90px;
-            height: 90px;
-        }
-        .crenavegacion__nav{
-            display:flex;
-            align-items: center;
-            .crenavegacion__lista {
-                display: flex;
-                text-align: center;
-                .lista__uno{
-                    font-size: ($texto)-5;
-                    background-image:$tricolor;
-                    color: black;
-                    padding: 8px;
-                    outline: solid black;
-                }
-                .lista__dos{
-                    font-size: ($texto)-5;
-                    background-image:$tricolor;
-                    color: black;
-                    padding: 8px;
-                    outline: solid black;
-                }
-                .lista__tres{
-                    font-size: ($texto)-5;
-                    background-image:$tricolor;
-                    color: black;
-                    padding: 8px;
-                    outline: solid black;
-                }
-                .lista__cuatro{
-                    font-size: ($texto)-5;
-                    background-image:$tricolor;
-                    color: black;
-                    padding: 8px;
-                    outline: solid black;
-                }
-            }
-        }
-    }
-    .creacion__main {
-        grid-area: po;
-        .cre__articulo{
-            display: flex;
-            flex-direction: column;
-            background-color: $colorbase;
-            .cre__div {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                .cre__divh2 {
-                    display: flex;
-                    justify-content: center;
-                    font-size: 40px;
-                    color: #ffffff;
-                    text-shadow: 3px 3px 3px black;
-                    border-bottom:solid #ffffff
-                }
-                .cre__divh2:hover {
-                    display: flex;
-                    justify-content: center;
-                    font-size: 40px;
-                    background-color: rgba(121, 110, 92, 0.818);
-                    color: $colorbase;
-                    text-shadow: 3px 3px 3px rgb(0, 0, 0);
-                }
-                .cre__divp{
-                    display: flex;
-                    text-align: center;
-                    font-size: 26px;
-                    font-family: 'Courier New', Courier, monospace;
-                }
-    
-                .video{
-                    height: 30rem;
-                    width: 50rem;
-                }
-    
-            }
-            .cre__div2 {
-                .cre_divh3 {
-                    display: flex;
-                    justify-content: center;
-                    font-size: 30px;
-                }
-                .cre__div3{
-                    display: flex;
-                        .div_1{
-                            display:flex;
-                            text-align: center;
-                            .cre__divp2{
-                                font-family: 'Courier New', Courier, monospace;
-                                font-size: 18px;
-                            }
-                            .cre__ul{
-                                display: flex;
-                                flex-direction: column;
-                                justify-content: stretch;
-                                font-family: 'Courier New', Courier, monospace;
-                                font-size: 18px;
-                            }
-                        }
-                        .div_2{
-                            display: flex;
-                            text-align: center;
-                            .cre__ol{
-                                font-family: 'Courier New', Courier, monospace;
-                                font-size: 18px;
-                            }
-                            .cre__olp{
-                                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-                                font-size: 20px;
-                            }
-                        }
-                }
-            }
-        }
-    
-    
-    }
-}
-
-@media ( max-width:670px){
-    .grilla__cre {
-        display: grid;
-        grid-template-rows: 150px 1fr 100px;
-        grid-template-columns:1fr ;
-        grid-template-areas:"pa"
-                            "po"
-                            "pi";
-    }
-    .crenavegacion{
-        grid-area: pa;
-        display: flex;
-    
-        .crenavegacion__titulo{
-            font-size: $titulo;
-            font-family:'Oswald', sans-serif;
-            padding-left: 30px;
-            padding-top: 10px;
-            line-height: 90px;
-            text-shadow: 6px 4px 1px $colorbase;
-        }
-        .crediamante{
-            display: none;
-        }
-        .crenavegacion__nav{
-            display:flex;
-            align-items: center;
-            margin-bottom: 5px;
-            .crenavegacion__lista {
-                display: flex;
-                text-align: center;
-                .lista__uno{
-                    font-size: $texto;
-                    background-image:$tricolor;
-                    color: black;
-                    padding: 8px;
-                    outline: solid black;
-                }
-                .lista__dos{
-                    font-size: $texto;
-                    background-image:$tricolor;
-                    color: black;
-                    padding: 8px;
-                    outline: solid black;
-                }
-                .lista__tres{
-                    font-size: $texto;
-                    background-image:$tricolor;
-                    color: black;
-                    padding: 8px;
-                    outline: solid black;
-                }
-                .lista__cuatro{
-                    font-size: $texto;
-                    background-image:$tricolor;
-                    color: black;
-                    padding: 8px;
-                    outline: solid black;
-                }
-            }
-        }
-    }
-    .creacion__main {
-        grid-area: po;
-        .cre__articulo{
-            display: flex;
-            flex-direction: column;
-            background-color: $colorbase;
-            .cre__div {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                .cre__divh2 {
-                    display: flex;
-                    justify-content: center;
-                    font-size: 40px;
-                    color: #ffffff;
-                    text-shadow: 3px 3px 3px black;
-                    border-bottom:solid #ffffff
-                }
-                .cre__divh2:hover {
-                    display: flex;
-                    justify-content: center;
-                    font-size: 40px;
-                    background-color: rgba(121, 110, 92, 0.818);
-                    color: $colorbase;
-                    text-shadow: 3px 3px 3px rgb(0, 0, 0);
-                }
-                .cre__divp{
-                    display: flex;
-                    text-align: center;
-                    font-size: 26px;
-                    font-family: 'Courier New', Courier, monospace;
-                }
-            }
-            .cre__div2 {
-                display: flex;
-                flex-direction: column;
-                .cre_divh3 {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    font-size: 40px;
-                }
-                .cre__div3{
-                    display: flex;
-                        .div_1{
-                            display:flex;
-                            text-align: center;
-                            .cre__divp2{
-                                font-family: 'Courier New', Courier, monospace;
-                                font-size: 20px;
-                            }
-                            .cre__ul{
-                                display: flex;
-                                flex-direction: column;
-                                justify-content: stretch;
-                                font-family: 'Courier New', Courier, monospace;
-                                font-size: 20px;
-                            }
-                        }
-                        .div_2{
-                            display: flex;
-                            text-align: center;
-                            .cre__ol{
-                                font-family: 'Courier New', Courier, monospace;
-                                font-size: 20px;
-                            }
-                            .cre__olp{
-                                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-                                font-size: 25px;
-                            }
-                        }
-                }
-            }
-        }
-    
-    
-    }
-}
-*/
-/*final creacion y contactanos de creacion*/
+/*FINAL DE CREACION*/
 .con__grilla {
   display: grid;
+  grid-template-rows: 130px 1fr 70px;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 150px 1fr 120px;
-  grid-template-areas: "header header header" "main main main" "footer footer footer"; }
+  grid-template-areas: "head head head" "ma ma ma" "foo foo foo"; }
 
 .con__header {
-  grid-area: header;
+  grid-area: head;
   display: flex; }
-  .con__header .con__h1 {
-    display: flex; }
-  .con__header .con__diamante {
+  .con__header .con__div {
     display: flex;
-    justify-items: center;
-    padding-top: 20px;
-    width: 200px;
-    height: 100px; }
+    align-items: center;
+    text-align: center; }
+    .con__header .con__div .con__titulo {
+      font-size: 90px;
+      font-family: "Anton", sans-serif;
+      text-shadow: 5px 5px 5px #EDDEC9; }
+      .con__header .con__div .con__titulo .con__srl {
+        color: #000000; }
+    .con__header .con__div .con__diamante {
+      display: flex;
+      height: 90px;
+      width: 100px; }
   .con__header .con__nav {
     display: flex;
     align-items: center; }
     .con__header .con__nav .con__ul {
       display: flex;
       text-align: center; }
-      .con__header .con__nav .con__ul .lista__uno {
+      .con__header .con__nav .con__ul .links_uno {
         font-size: 26px;
-        background-image: linear-gradient(to left, #EDDEC9, #cfb896, #5c5751);
+        font-family: "Roboto Mono", monospace;
         color: black;
-        padding: 8px;
-        outline: solid black; }
-      .con__header .con__nav .con__ul .lista__dos {
+        border-bottom: solid 4px #EDDEC9; }
+      .con__header .con__nav .con__ul .links_uno:hover {
+        background: #EDDEC9;
+        padding: 6px;
+        color: black;
+        border-radius: 6px;
+        transition: .3s; }
+      .con__header .con__nav .con__ul .links_dos {
         font-size: 26px;
-        background-image: linear-gradient(to left, #EDDEC9, #cfb896, #5c5751);
+        font-family: "Roboto Mono", monospace;
         color: black;
-        padding: 8px;
-        outline: solid black; }
-      .con__header .con__nav .con__ul .lista__tres {
+        border-bottom: solid 4px #EDDEC9; }
+      .con__header .con__nav .con__ul .links_dos:hover {
+        background: #EDDEC9;
+        padding: 6px;
+        color: black;
+        border-radius: 6px;
+        transition: .3s; }
+      .con__header .con__nav .con__ul .links_tres {
         font-size: 26px;
-        background-image: linear-gradient(to left, #EDDEC9, #cfb896, #5c5751);
+        font-family: "Roboto Mono", monospace;
         color: black;
-        padding: 8px;
-        outline: solid black; }
-      .con__header .con__nav .con__ul .lista__cuatro {
+        border-bottom: solid 4px #EDDEC9; }
+      .con__header .con__nav .con__ul .links_tres:hover {
+        background: #EDDEC9;
+        padding: 6px;
+        color: black;
+        border-radius: 6px;
+        transition: .3s; }
+      .con__header .con__nav .con__ul .links_cuatro {
         font-size: 26px;
-        background-image: linear-gradient(to left, #EDDEC9, #cfb896, #5c5751);
+        font-family: "Roboto Mono", monospace;
         color: black;
-        padding: 8px;
-        outline: solid black; }
+        border-bottom: solid 4px #EDDEC9;
+        border-bottom: solid 4px black; }
+      .con__header .con__nav .con__ul .links_cuatro:hover {
+        background: #EDDEC9;
+        padding: 6px;
+        color: black;
+        border-radius: 6px;
+        transition: .3s; }
 
 .con__main {
-  grid-area: main;
-  display: flex;
-  justify-content: center;
-  background-color: #EDDEC9; }
-  .con__main .con__form {
-    border: solid 2rem #EDDEC9;
-    width: 80%;
-    height: 50rem;
-    display: flex;
-    align-items: center;
-    text-align: center; }
-    .con__main .con__form .con__fieldset {
-      border: solid 10px #EDDEC9; }
-    .con__main .con__form .con__legend {
-      font-family: 'Courier New', Courier, monospace;
-      font-size: 60px;
-      font-weight: bolder;
-      padding-bottom: 50px;
-      color: black;
-      text-shadow: 3px 3px 3px white;
-      border-bottom: solid 10px #EDDEC9; }
-  .con__main label {
-    display: flex;
-    justify-content: center;
-    font-size: 25px;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: bolder;
-    text-shadow: 3px 3px 3px #ffffff; }
-  .con__main input {
-    width: 50%;
-    height: 40px; }
-    .con__main input .boton {
-      display: flex;
-      align-items: center;
-      width: 200px;
-      height: 200px; }
+  grid-area: ma; }
 
 .con__footer {
-  grid-area: footer;
-  background-color: #EDDEC9;
-  margin-top: 10px; }
-  .con__footer address {
-    display: flex;
-    background-color: #EDDEC9; }
-    .con__footer address .lista__foo {
-      background-color: #EDDEC9;
+  grid-area: foo; }
+  .con__footer .con__add {
+    background-color: #EDDEC9;
+    display: flex; }
+    .con__footer .con__add .con__div-a {
       display: flex;
-      justify-content: center;
-      flex-direction: column; }
-      .con__footer address .lista__foo .lista__b {
-        background-color: #EDDEC9;
-        font-family: 'Courier New', Courier, monospace;
-        font-size: 23px; }
-      .con__footer address .lista__foo .lista__fooli {
-        background-color: #EDDEC9;
+      text-align: center; }
+      .con__footer .con__add .con__div-a .con__ul-a {
         display: flex;
-        text-align: center;
-        font-family: bold;
-        font-size: 20px; }
-        .con__footer address .lista__foo .lista__fooli .lista__a {
-          background-color: #EDDEC9;
-          color: #ffffff;
-          text-shadow: 3px 3px 3px black; }
-    .con__footer address .divfoo {
-      background-color: #EDDEC9; }
-      .con__footer address .divfoo .lista__foo {
-        background-color: #EDDEC9;
-        display: flex;
-        justify-content: center;
-        flex-direction: column; }
-        .con__footer address .divfoo .lista__foo .lista__b {
-          background-color: #EDDEC9;
-          font-family: 'Courier New', Courier, monospace;
-          font-size: 23px; }
-        .con__footer address .divfoo .lista__foo .lista__fooli {
-          background-color: #EDDEC9;
+        padding-top: 8px; }
+        .con__footer .con__add .con__div-a .con__ul-a .con__titulo1 {
           display: flex;
-          text-align: center;
-          font-family: bold;
-          font-size: 20px; }
-          .con__footer address .divfoo .lista__foo .lista__fooli .lista__a {
-            background-color: #EDDEC9;
-            color: #ffffff;
-            text-shadow: 3px 3px 3px black; }
-          .con__footer address .divfoo .lista__foo .lista__fooli .lista__a {
-            background-color: #EDDEC9;
-            font-family: 'Courier New', Courier, monospace;
-            font-size: 23px; }
+          justify-content: center;
+          font-family: "Roboto Mono", monospace;
+          font-size: 18px; }
+        .con__footer .con__add .con__div-a .con__ul-a .con__lista {
+          display: flex;
+          justify-content: space-around;
+          font-family: "Roboto Mono", monospace;
+          padding-top: 12px;
+          font-size: 16px;
+          color: #000000; }
+          .con__footer .con__add .con__div-a .con__ul-a .con__lista .con--links {
+            color: white;
+            text-shadow: 2px 2px 2px #000000;
+            padding-left: 10px;
+            padding-right: 10px; }
+    .con__footer .con__add .con__div-b {
+      display: flex;
+      text-align: center; }
+      .con__footer .con__add .con__div-b .con__ul-b {
+        display: flex;
+        padding-top: 8px; }
+        .con__footer .con__add .con__div-b .con__ul-b .con__titulo2 {
+          display: flex;
+          justify-content: center;
+          font-family: "Roboto Mono", monospace;
+          font-size: 18px; }
+        .con__footer .con__add .con__div-b .con__ul-b .con__lista {
+          display: flex;
+          justify-content: space-around;
+          font-family: "Roboto Mono", monospace;
+          padding-top: 12px;
+          font-size: 16px;
+          color: #000000; }
+          .con__footer .con__add .con__div-b .con__ul-b .con__lista .con--links {
+            color: white;
+            text-shadow: 2px 2px 2px #000000;
+            padding-left: 10px;
+            padding-right: 10px; }
 
-/*destok firts*/
-/*final contactanos y nosotros de creacion*/
+/*DESTOK FIRTS*/
+/*FINAL DE CONTACTOS*/
 .sobre__grilla {
   display: grid;
   grid-template-rows: 130px 1000px 70px;

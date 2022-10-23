@@ -1,60 +1,111 @@
 .con__grilla{
     display: grid;
+    grid-template-rows: 130px 1fr 70px;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 150px 1fr 120px;
-    grid-template-areas: "header header header"
-                         "main main main"
-                         "footer footer footer";
+    grid-template-areas: "head head head"
+                         "ma ma ma"
+                         "foo foo foo";
 }
 
-
-.con__main{
-    grid-area: main;
+.con__header{
+    grid-area: head;
     display: flex;
-    justify-content: center;
-    background-color: $colorbase;
-    .con__form{
-        border: solid 2rem $colorbase;
-        width: 80%;
-        height: 50rem;
+    .con__div{
         display: flex;
         align-items: center;
         text-align: center;
-        .con__fieldset{
-            border:solid 10px $colorbase;
+        .con__titulo{
+            font-size: $titulo;
+            font-family: $antontitulo;
+            text-shadow: 5px 5px 5px $colorbase;
+            .con__srl{
+                color: $negro;
+            }
         }
-        .con__legend{
-            font-family: 'Courier New', Courier, monospace;
-            font-size: 60px;
-            font-weight: bolder;
-            padding-bottom: 50px;
-            color:black;
-            text-shadow: 3px 3px 3px rgb(255, 255, 255);
-            border-bottom:solid 10px $colorbase ;
-        }
-
-    }
-
-    label{
-        display: flex;
-        justify-content: center;
-        font-size: 25px;
-        font-family: 'Courier New', Courier, monospace;
-        font-weight: bolder;
-        text-shadow:3px 3px 3px #ffffff;
-    }
-    input{
-        width: 50%;
-        height:40px ;
-        .boton{
+        .con__diamante{
             display: flex;
-            align-items: center;
-            width: 200px;
-            height: 200px;
+            height: 90px;
+            width: 100px;
         }
     }
-
+    .con__nav{
+        display:flex;
+        align-items: center;
+        .con__ul{
+            display: flex;
+            text-align: center;
+            .links_uno{
+                @include btnheader;
+            }
+            .links_uno:hover{
+                @include btnhover;
+            }
+            .links_dos{
+                @include btnheader;
+            }
+            .links_dos:hover{
+                @include btnhover;
+            }
+            .links_tres{
+                @include btnheader;
+            }
+            .links_tres:hover{
+                @include btnhover;
+            }
+            .links_cuatro{
+                @include btnheader;
+                border-bottom: solid 4px black;
+            }
+            .links_cuatro:hover{
+                @include btnhover;
+            }
+        }
+    }
 }
 
+.con__main{
+    grid-area: ma;
+}
 
-/*destok firts*/
+.con__footer{
+    grid-area: foo;
+    .con__add{
+        background-color:$colorbase;
+        display: flex;
+        .con__div-a{
+            display: flex;
+            text-align: center;
+            .con__ul-a{
+                display: flex;
+                padding-top: 8px;
+                .con__titulo1{
+                    @include fottitulo;
+                }
+                .con__lista{
+                    @include fotlista;
+                    .con--links{
+                        @include fotlink;
+                    }
+                }
+            }
+        }
+        .con__div-b{
+            display: flex;
+            text-align: center;
+            .con__ul-b{
+                display: flex;
+                padding-top: 8px;
+                .con__titulo2{
+                    @include fottitulo;
+                }
+                .con__lista{
+                    @include fotlista;
+                    .con--links{
+                        @include fotlink;
+                    }
+                }
+            }
+        }
+    }
+}
+/*DESTOK FIRTS*/

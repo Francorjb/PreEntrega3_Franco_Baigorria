@@ -1,403 +1,111 @@
 .grilla__cre {
     display: grid;
-    grid-template-rows: 140px 1fr 100px;
+    grid-template-rows: 130px 1fr 70px;
     grid-template-columns:1fr 1fr 1fr ;
     grid-template-areas:"pa pa pa"
                         "po po po"
                         "pi pi pi";
 }
-
-
-/*destok fist
-
-@media ( max-width:1100px) {
-    
-    .crenavegacion{
-        grid-area: pa;
+.cre__header{
+    grid-area: pa;
+    display: flex;
+    .cre__div-uno{
         display: flex;
-    
-        .crenavegacion__titulo{
-            font-size: ($titulo)-15;
-            font-family:'Oswald', sans-serif;
-            padding-left: 30px;
-            padding-top: 10px; 
-            text-shadow: 6px 4px 1px $colorbase;
-        }
-        .crediamante{
-            display: none;
-            width: 200px;
-            height: 100px;
-            margin-top: 10px;
-            align-items: center;
-        }
-        .crenavegacion__nav{
-            display:flex;
-            align-items: center;
-            .crenavegacion__lista {
-                display: flex;
-                text-align: center;
-                .lista__uno{
-                    font-size: ($texto)-5;
-                    background-image:$tricolor;
-                    color: black;
-                    padding: 8px;
-                    outline: solid black;
-                }
-                .lista__dos{
-                    font-size: ($texto)-5;
-                    background-image:$tricolor;
-                    color: black;
-                    padding: 8px;
-                    outline: solid black;
-                }
-                .lista__tres{
-                    font-size: ($texto)-5;
-                    background-image:$tricolor;
-                    color: black;
-                    padding: 8px;
-                    outline: solid black;
-                }
-                .lista__cuatro{
-                    font-size: ($texto)-5;
-                    background-image:$tricolor;
-                    color: black;
-                    padding: 8px;
-                    outline: solid black;
-                }
-            }
-        }
-    }
-    .creacion__main {
-        grid-area: po;
-        .cre__articulo{
-            display: flex;
-            flex-direction: column;
-            background-color: $colorbase;
-            .cre__div {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                .cre__divh2 {
-                    display: flex;
-                    justify-content: center;
-                    font-size: 40px;
-                    color: #ffffff;
-                    text-shadow: 3px 3px 3px black;
-                    border-bottom:solid #ffffff
-                }
-                .cre__divh2:hover {
-                    display: flex;
-                    justify-content: center;
-                    font-size: 40px;
-                    background-color: rgba(121, 110, 92, 0.818);
-                    color: $colorbase;
-                    text-shadow: 3px 3px 3px rgb(0, 0, 0);
-                }
-                .cre__divp{
-                    display: flex;
-                    text-align: center;
-                    font-size: 26px;
-                    font-family: 'Courier New', Courier, monospace;
-                }
-    
-                .video{
-                    height: 30rem;
-                    width: 58rem;
-                    border: solid 25px #ffffff
-                }
-            }
-        }
-    }
-
-}
-
-@media ( max-width:920px) {
-    .grilla__cre {
-        display: grid;
-        grid-template-rows: 150px 1fr 100px;
-        grid-template-columns:1fr 1fr ;
-        grid-template-areas:"pa pa"
-                            "po po"
-                            "pi pi";
-    }
-    
-    .crenavegacion{
-        grid-area: pa;
-        display: flex;
-        flex-direction: column;
-    
-        .crenavegacion__titulo{
-            font-size: ($titulo)-15;
-            font-family:'Oswald', sans-serif;
-            padding-left: 30px;
-            padding-top: 10px; 
-            text-shadow: 6px 4px 1px $colorbase;
-            margin-bottom: 13px;
-        }
-        .crediamante{
-            position: absolute;
-            display: flex;
-            margin-left: 550px;
-            width: 90px;
-            height: 90px;
-        }
-        .crenavegacion__nav{
-            display:flex;
-            align-items: center;
-            .crenavegacion__lista {
-                display: flex;
-                text-align: center;
-                .lista__uno{
-                    font-size: ($texto)-5;
-                    background-image:$tricolor;
-                    color: black;
-                    padding: 8px;
-                    outline: solid black;
-                }
-                .lista__dos{
-                    font-size: ($texto)-5;
-                    background-image:$tricolor;
-                    color: black;
-                    padding: 8px;
-                    outline: solid black;
-                }
-                .lista__tres{
-                    font-size: ($texto)-5;
-                    background-image:$tricolor;
-                    color: black;
-                    padding: 8px;
-                    outline: solid black;
-                }
-                .lista__cuatro{
-                    font-size: ($texto)-5;
-                    background-image:$tricolor;
-                    color: black;
-                    padding: 8px;
-                    outline: solid black;
-                }
-            }
-        }
-    }
-    .creacion__main {
-        grid-area: po;
-        .cre__articulo{
-            display: flex;
-            flex-direction: column;
-            background-color: $colorbase;
-            .cre__div {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                .cre__divh2 {
-                    display: flex;
-                    justify-content: center;
-                    font-size: 40px;
-                    color: #ffffff;
-                    text-shadow: 3px 3px 3px black;
-                    border-bottom:solid #ffffff
-                }
-                .cre__divh2:hover {
-                    display: flex;
-                    justify-content: center;
-                    font-size: 40px;
-                    background-color: rgba(121, 110, 92, 0.818);
-                    color: $colorbase;
-                    text-shadow: 3px 3px 3px rgb(0, 0, 0);
-                }
-                .cre__divp{
-                    display: flex;
-                    text-align: center;
-                    font-size: 26px;
-                    font-family: 'Courier New', Courier, monospace;
-                }
-    
-                .video{
-                    height: 30rem;
-                    width: 50rem;
-                }
-    
-            }
-            .cre__div2 {
-                .cre_divh3 {
-                    display: flex;
-                    justify-content: center;
-                    font-size: 30px;
-                }
-                .cre__div3{
-                    display: flex;
-                        .div_1{
-                            display:flex;
-                            text-align: center;
-                            .cre__divp2{
-                                font-family: 'Courier New', Courier, monospace;
-                                font-size: 18px;
-                            }
-                            .cre__ul{
-                                display: flex;
-                                flex-direction: column;
-                                justify-content: stretch;
-                                font-family: 'Courier New', Courier, monospace;
-                                font-size: 18px;
-                            }
-                        }
-                        .div_2{
-                            display: flex;
-                            text-align: center;
-                            .cre__ol{
-                                font-family: 'Courier New', Courier, monospace;
-                                font-size: 18px;
-                            }
-                            .cre__olp{
-                                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-                                font-size: 20px;
-                            }
-                        }
-                }
-            }
-        }
-    
-    
-    }
-}
-
-@media ( max-width:670px){
-    .grilla__cre {
-        display: grid;
-        grid-template-rows: 150px 1fr 100px;
-        grid-template-columns:1fr ;
-        grid-template-areas:"pa"
-                            "po"
-                            "pi";
-    }
-    .crenavegacion{
-        grid-area: pa;
-        display: flex;
-    
-        .crenavegacion__titulo{
+        align-items: center;
+        text-align: center;
+        .cre__titulo{
             font-size: $titulo;
-            font-family:'Oswald', sans-serif;
-            padding-left: 30px;
-            padding-top: 10px;
-            line-height: 90px;
-            text-shadow: 6px 4px 1px $colorbase;
+            font-family: $antontitulo;
+            text-shadow: 5px 5px 5px $colorbase;
+            .cre__srl{
+                color: $negro;
+            }
         }
-        .crediamante{
-            display: none;
+        .cre__diamante{
+            display: flex;
+            height: 90px;
+            width: 100px;
         }
-        .crenavegacion__nav{
-            display:flex;
-            align-items: center;
-            margin-bottom: 5px;
-            .crenavegacion__lista {
-                display: flex;
-                text-align: center;
-                .lista__uno{
-                    font-size: $texto;
-                    background-image:$tricolor;
-                    color: black;
-                    padding: 8px;
-                    outline: solid black;
-                }
-                .lista__dos{
-                    font-size: $texto;
-                    background-image:$tricolor;
-                    color: black;
-                    padding: 8px;
-                    outline: solid black;
-                }
-                .lista__tres{
-                    font-size: $texto;
-                    background-image:$tricolor;
-                    color: black;
-                    padding: 8px;
-                    outline: solid black;
-                }
-                .lista__cuatro{
-                    font-size: $texto;
-                    background-image:$tricolor;
-                    color: black;
-                    padding: 8px;
-                    outline: solid black;
-                }
+    }
+    .cre__nav{
+        display:flex;
+        align-items: center;
+        .cre__nav-ul{
+            display: flex;
+            text-align: center;
+            .cre_link-uno{
+                @include btnheader;
+            }
+            .cre_link-uno:hover{
+                @include btnhover;
+            }
+            .cre_link-dos{
+                @include btnheader;
+            }
+            .cre_link-dos:hover{
+                @include btnhover;
+            }
+            .cre_link-tres{
+                @include btnheader;
+                border-bottom: solid 4px black;
+            }
+            .cre_link-tres:hover{
+                @include btnhover;
+            }
+            .cre_link-cuatro{
+                @include btnheader;
+            }
+            .cre_link-cuatro:hover{
+                @include btnhover;
             }
         }
     }
-    .creacion__main {
-        grid-area: po;
-        .cre__articulo{
+
+}
+
+.cre__main{
+    grid-area: po;
+}
+
+.cre__footer{
+    grid-area: pi;
+    background-color: $colorbase;
+    .cre__add{
+        background-color:$colorbase;
+        display: flex;
+        .cre__div{
             display: flex;
-            flex-direction: column;
-            background-color: $colorbase;
-            .cre__div {
+            text-align: center;
+            .cre__ul1{
                 display: flex;
-                flex-direction: column;
-                align-items: center;
-                .cre__divh2 {
-                    display: flex;
-                    justify-content: center;
-                    font-size: 40px;
-                    color: #ffffff;
-                    text-shadow: 3px 3px 3px black;
-                    border-bottom:solid #ffffff
+                padding-top: 8px;
+                .cre__parrafo1{
+                    @include fottitulo;
                 }
-                .cre__divh2:hover {
-                    display: flex;
-                    justify-content: center;
-                    font-size: 40px;
-                    background-color: rgba(121, 110, 92, 0.818);
-                    color: $colorbase;
-                    text-shadow: 3px 3px 3px rgb(0, 0, 0);
-                }
-                .cre__divp{
-                    display: flex;
-                    text-align: center;
-                    font-size: 26px;
-                    font-family: 'Courier New', Courier, monospace;
-                }
-            }
-            .cre__div2 {
-                display: flex;
-                flex-direction: column;
-                .cre_divh3 {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    font-size: 40px;
-                }
-                .cre__div3{
-                    display: flex;
-                        .div_1{
-                            display:flex;
-                            text-align: center;
-                            .cre__divp2{
-                                font-family: 'Courier New', Courier, monospace;
-                                font-size: 20px;
-                            }
-                            .cre__ul{
-                                display: flex;
-                                flex-direction: column;
-                                justify-content: stretch;
-                                font-family: 'Courier New', Courier, monospace;
-                                font-size: 20px;
-                            }
-                        }
-                        .div_2{
-                            display: flex;
-                            text-align: center;
-                            .cre__ol{
-                                font-family: 'Courier New', Courier, monospace;
-                                font-size: 20px;
-                            }
-                            .cre__olp{
-                                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-                                font-size: 25px;
-                            }
-                        }
+                .cre_lista{
+                    @include fotlista;
+                    .cre__links{
+                        @include fotlink;
+                    }
                 }
             }
         }
-    
-    
+        .cre__div2{
+            display: flex;
+            text-align: center;
+            .cre__ul2{
+                display: flex;
+                padding-top: 8px;
+                .cre__parrafo2{
+                    @include fottitulo;
+                }
+                .cre_lista{
+                    @include fotlista;
+                    .cre__links{
+                        @include fotlink;
+                    }
+                }
+            }
+        }
     }
 }
-*/
