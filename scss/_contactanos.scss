@@ -7,57 +7,6 @@
                          "footer footer footer";
 }
 
-.con__header{
-    grid-area: header;
-    display: flex;
-    .con__h1{
-        display: flex;
-    }
-    .con__diamante{
-        display: flex;
-        justify-items: center;
-        padding-top: 20px;
-        width: 200px;
-        height: 100px;
-    }
-
-    .con__nav{
-        display:flex;
-        align-items: center;
-        .con__ul{
-            display: flex;
-            text-align: center;
-            .lista__uno{
-                font-size: $texto;
-                background-image:$tricolor;
-                color: black;
-                padding: 8px;
-                outline: solid black;
-            }
-            .lista__dos{
-                font-size: $texto;
-                background-image:$tricolor;
-                color: black;
-                padding: 8px;
-                outline: solid black;
-            }
-            .lista__tres{
-                font-size: $texto;
-                background-image:$tricolor;
-                color: black;
-                padding: 8px;
-                outline: solid black;
-            }
-            .lista__cuatro{
-                font-size: $texto;
-                background-image:$tricolor;
-                color: black;
-                padding: 8px;
-                outline: solid black;
-            }
-        }
-    }
-}
 
 .con__main{
     grid-area: main;
@@ -107,68 +56,5 @@
 
 }
 
-.con__footer{
-    grid-area: footer;
-    background-color: $colorbase;
-    margin-top: 10px;
-    address {
-        display: flex;
-        background-color:$colorbase;
-        .lista__foo{
-            background-color:$colorbase;
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            .lista__b {
-                background-color:$colorbase;
-                font-family: 'Courier New', Courier, monospace;
-                font-size: 23px;
-            }
-            .lista__fooli{
-                background-color:$colorbase;
-                display: flex;
-                text-align: center;
-                font-family: bold;
-                font-size: 20px;
-                .lista__a {
-                    background-color:$colorbase;
-                    color: #ffffff;
-                    text-shadow: 3px 3px 3px black;
-                }
-            }
-        }
-        .divfoo {
-            background-color:$colorbase;
-            .lista__foo{
-                background-color:$colorbase;
-                display: flex;
-                justify-content: center;
-                flex-direction: column;
-                .lista__b {
-                    background-color:$colorbase;
-                    font-family: 'Courier New', Courier, monospace;
-                    font-size: 23px;
-                }
-                .lista__fooli{
-                    background-color:$colorbase;
-                    display: flex;
-                    text-align: center;
-                    font-family: bold;
-                    font-size: 20px;
-                    .lista__a {
-                        background-color:$colorbase;
-                        color: #ffffff;
-                        text-shadow: 3px 3px 3px black;
-                    }
-                    .lista__a {
-                        background-color:$colorbase;
-                        font-family: 'Courier New', Courier, monospace;
-                        font-size: 23px;
-                    }
-                }
-                
-            }
-        }
-    }
-}
+
 /*destok firts*/

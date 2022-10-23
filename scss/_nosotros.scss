@@ -65,11 +65,28 @@
 
 .nos__main {
     grid-area: nop;
-    background-color: $colorbase;
-    background-image: url( ../asset/nosotros.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size:contain;
+    .nos__h2{
+        display:flex;
+        text-align: center;
+        font-size: 35px;
+        background-color: $colorbase;
+        font-family: $roboto400;
+        justify-content: center;
+    }
+    .nos__section{
+        background-color: white;
+        width: 90%;
+        margin-left: 60px;
+        .nos__p{
+            background-color: $colorbase;
+            display: flex;
+            font-family: $roboto400;
+            font-size: ($texto)-5px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+    }
 }
 
 .nos__footer{

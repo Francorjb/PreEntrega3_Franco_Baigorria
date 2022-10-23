@@ -1,3 +1,4 @@
+/*CODIGOS DEL HEADER*/
 @mixin btnheader {
     font-size: $texto;
     font-family: $roboto400;
@@ -23,6 +24,7 @@
     border-radius: 5px;
 }
 
+/*CODIGOS DEL FOOTERR*/
 @mixin fottitulo{
     display: flex;
     justify-content: center;

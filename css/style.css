@@ -1219,12 +1219,26 @@
         transition: .3s; }
 
 .nos__main {
-  grid-area: nop;
-  background-color: #EDDEC9;
-  background-image: url(../asset/nosotros.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain; }
+  grid-area: nop; }
+  .nos__main .nos__h2 {
+    display: flex;
+    text-align: center;
+    font-size: 35px;
+    background-color: #EDDEC9;
+    font-family: "Roboto Mono", monospace;
+    justify-content: center; }
+  .nos__main .nos__section {
+    background-color: white;
+    width: 90%;
+    margin-left: 60px; }
+    .nos__main .nos__section .nos__p {
+      background-color: #EDDEC9;
+      display: flex;
+      font-family: "Roboto Mono", monospace;
+      font-size: 21px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      text-align: center; }
 
 .nos__footer {
   grid-area: nup;
