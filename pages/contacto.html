@@ -27,33 +27,36 @@
         </nav>
     </header>
     <main class="con__main">
-        <h1 class="con__legend">Formulario de contacto</h1>
+        <h1 class="con__h1">Formulario de contacto</h1>
+        <div class="con__div-central">
         <form class="con__form" action="formulario" method="post">
             <fieldset class="con__fieldset">
-            <div class="con__div5">
-                <label class="con__nom" for="nombre">Nombres:</label>
+                <label class="con__nom"  for="nombre">Nombres:</label>
                 <input class="con__inp" type="text" required><br>
                 <label class="con__nom" for="apellido">Apellido:</label>
                 <input class="con__inp" type="text" required><br>
-                <label class="con__nom" for="dni">DNI:</label>
-                <input class="con__inp" type="number" name="dni"required><br>
                 <label class="con__nom" for="celular">Celular:</label>
                 <input class="con__inp" type="number" name="celular"required><br>
-                <label class="con__nom" for="email">Ingrese un email:</label>
+                <label class="con__nom" for="email">Email:</label>
                 <input class="con__inp" type="email" name="email" required><br>
-                <label class="con__nom" for="info">Datos que necesite informar:</label><br>
-                <input type="text" name="info"><br>
-                <input class="boton1" type="submit" name="enviar" value="enviar datos">
-                <input class="boton2" type="reset" name="restablecer" value="borrar datos">
-            </div>
+                <label class="con__nom" for="info">Comentarios:</label><br>
+                <input class="comentarios" type="text" name="info"><br>
+                <div class="divbtn">
+                    <input class="boton1" type="submit" name="enviar" value="Enviar">
+                    <input class="boton2" type="reset" name="restablecer" value="Borrar"></div>
             </fieldset>
         </form>
+        <div class="con__maps">
+            <h3 class="ubi">Ubicacion</h3>
+             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11626.26737225673!2d-58.73081546132962!3d-34.669583453607125!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbff7a6313949%3A0xd2b401ec60381cb!2sM%C3%A1stil%20de%20la%20Ciudad%20de%20Merlo!5e0!3m2!1ses-419!2sar!4v1666553848016!5m2!1ses-419!2sar" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
     </main>
     <footer class="con__footer">
         <address class="con__add">
             <div class="con__div-a">
                 <ul class="con__ul-a">
-                    <b class="con__titulo">Seguinos en:</b>
+                    <b class="con__titulo1">Seguinos en:</b>
                     <li class="con__lista">Istagram:<a class="con--links"  href="https://www.instagram.com">Emis'Diamond</a></li>
                     <li class="con__lista">Twitter:<a class="con--links"  href="https://twitter.com/?lang=es">Emis'Diamond</a></li>
                     <li class="con__lista">Facebook:<a class="con--links"  href="https://es-la.facebook.com/">Emis'Diamond</a></li>
@@ -61,7 +64,7 @@
             </div>
             <div class="con__div-b">
                 <ul class="con__ul-b">
-                    <b class="con__titulo"> Te ayudamos:</b>
+                    <b class="con__titulo2"> Te ayudamos:</b>
                     <li class="con__lista"> Mail: <a class="con--links"  href="https://mail.google.com/mail">EmisDiamond@gmail.com</a></li>
                     <li class="con__lista"> Wsp: <a class="con--links" href="https://web.whatsapp.com/">1156578754</a></li>
                 </ul>

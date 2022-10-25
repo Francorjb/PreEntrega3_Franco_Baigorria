@@ -209,8 +209,7 @@
           .ind__footer .ind__add .ind__div-a .ind__ula .ind--lista .ind--link {
             color: white;
             text-shadow: 2px 2px 2px #000000;
-            padding-left: 10px;
-            padding-right: 10px; }
+            padding-left: 10px; }
     .ind__footer .ind__add .ind__div-b {
       display: flex;
       text-align: center; }
@@ -232,8 +231,7 @@
           .ind__footer .ind__add .ind__div-b .ind__ulb .ind--lista .ind--link {
             color: white;
             text-shadow: 2px 2px 2px #000000;
-            padding-left: 10px;
-            padding-right: 10px; }
+            padding-left: 10px; }
 
 /*DESKTOP FIRST INICIO*/
 /*FINAL DEL INICIO*/
@@ -321,7 +319,7 @@
     justify-content: center;
     font-family: "Roboto Mono", monospace;
     font-size: 35px;
-    background-image: linear-gradient(to left, #EDDEC9, #cfb896, #5c5751);
+    background-color: #EDDEC9;
     color: #000000;
     /*Animacion */
     animation-name: cambiarcolor;
@@ -417,8 +415,7 @@
           .pro__footer .pro__add .pro__div-a .pro__ul-a .pro__list .pro--link {
             color: white;
             text-shadow: 2px 2px 2px #000000;
-            padding-left: 10px;
-            padding-right: 10px; }
+            padding-left: 10px; }
     .pro__footer .pro__add .pro__div-b {
       display: flex;
       text-align: center; }
@@ -440,8 +437,7 @@
           .pro__footer .pro__add .pro__div-b .pro__ul-b .pro__list .pro--link {
             color: white;
             text-shadow: 2px 2px 2px #000000;
-            padding-left: 10px;
-            padding-right: 10px; }
+            padding-left: 10px; }
 
 /*DESKTOP FIRST PRODUCTOS*/
 /*FINAL DE PRODUCTOS*/
@@ -550,8 +546,7 @@
           .cre__footer .cre__add .cre__div .cre__ul1 .cre_lista .cre__links {
             color: white;
             text-shadow: 2px 2px 2px #000000;
-            padding-left: 10px;
-            padding-right: 10px; }
+            padding-left: 10px; }
     .cre__footer .cre__add .cre__div2 {
       display: flex;
       text-align: center; }
@@ -573,8 +568,7 @@
           .cre__footer .cre__add .cre__div2 .cre__ul2 .cre_lista .cre__links {
             color: white;
             text-shadow: 2px 2px 2px #000000;
-            padding-left: 10px;
-            padding-right: 10px; }
+            padding-left: 10px; }
 
 /*FINAL DE CREACION*/
 .con__grilla {
@@ -653,10 +647,118 @@
         transition: .3s; }
 
 .con__main {
-  grid-area: ma; }
+  grid-area: ma;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .con__main .con__h1 {
+    display: flex;
+    justify-content: center;
+    background-color: #EDDEC9;
+    font-family: "Roboto Mono", monospace;
+    font-size: 35px; }
+  .con__main .con__div-central {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center; }
+    .con__main .con__div-central .con__form {
+      width: 500px;
+      height: 450px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: start;
+      color: #000000; }
+      .con__main .con__div-central .con__form .con__fieldset {
+        background-color: #EDDEC9;
+        height: 380px;
+        width: 400px;
+        border-radius: 6px;
+        box-shadow: 2px 2px 3px black;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center; }
+        .con__main .con__div-central .con__form .con__fieldset .con__nom {
+          font-family: "Roboto Mono", monospace;
+          font-size: 16px; }
+        .con__main .con__div-central .con__form .con__fieldset .con__inp {
+          width: 300px;
+          border-radius: 6px; }
+        .con__main .con__div-central .con__form .con__fieldset .comentarios {
+          width: 300px;
+          height: 50px;
+          border-radius: 6px; }
+        .con__main .con__div-central .con__form .con__fieldset .divbtn {
+          display: flex;
+          justify-content: space-evenly;
+          margin-bottom: 10px; }
+          .con__main .con__div-central .con__form .con__fieldset .divbtn .boton1 {
+            width: 100px;
+            height: 35px;
+            color: #EDDEC9;
+            background-color: #000000;
+            outline: solid 4px #EDDEC9;
+            font-family: "Roboto Mono", monospace;
+            border-radius: 5px;
+            font-family: "Roboto Mono", monospace;
+            width: 90px;
+            height: 30px; }
+          .con__main .con__div-central .con__form .con__fieldset .divbtn .boton1:hover {
+            width: 100px;
+            height: 35px;
+            color: #EDDEC9;
+            background-color: #000000;
+            outline: solid 4px #EDDEC9;
+            font-family: "Roboto Mono", monospace;
+            border-radius: 5px;
+            color: #000000;
+            background-color: #EDDEC9;
+            width: 90px;
+            height: 30px; }
+          .con__main .con__div-central .con__form .con__fieldset .divbtn .boton2 {
+            width: 100px;
+            height: 35px;
+            color: #EDDEC9;
+            background-color: #000000;
+            outline: solid 4px #EDDEC9;
+            font-family: "Roboto Mono", monospace;
+            border-radius: 5px;
+            font-family: "Roboto Mono", monospace;
+            width: 90px;
+            height: 30px; }
+          .con__main .con__div-central .con__form .con__fieldset .divbtn .boton2:hover {
+            width: 100px;
+            height: 35px;
+            color: #EDDEC9;
+            background-color: #000000;
+            outline: solid 4px #EDDEC9;
+            font-family: "Roboto Mono", monospace;
+            border-radius: 5px;
+            color: #000000;
+            background-color: #EDDEC9;
+            width: 90px;
+            height: 30px; }
+    .con__main .con__div-central .con__maps {
+      width: 400px;
+      height: 380px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      flex-direction: column;
+      border: solid 1px #000000;
+      background-color: #EDDEC9;
+      border-radius: 6px;
+      box-shadow: 2px 2px 3px black; }
+      .con__main .con__div-central .con__maps .ubi {
+        font-family: "Roboto Mono", monospace;
+        margin-bottom: 30px; }
 
 .con__footer {
-  grid-area: foo; }
+  grid-area: foo;
+  background-color: #EDDEC9; }
   .con__footer .con__add {
     background-color: #EDDEC9;
     display: flex; }
@@ -682,7 +784,7 @@
             color: white;
             text-shadow: 2px 2px 2px #000000;
             padding-left: 10px;
-            padding-right: 10px; }
+            padding-right: 5px; }
     .con__footer .con__add .con__div-b {
       display: flex;
       text-align: center; }
@@ -700,12 +802,12 @@
           font-family: "Roboto Mono", monospace;
           padding-top: 12px;
           font-size: 16px;
-          color: #000000; }
+          color: #000000;
+          padding-left: 5px; }
           .con__footer .con__add .con__div-b .con__ul-b .con__lista .con--links {
             color: white;
             text-shadow: 2px 2px 2px #000000;
-            padding-left: 10px;
-            padding-right: 10px; }
+            padding-left: 10px; }
 
 /*DESTOK FIRTS*/
 /*FINAL DE CONTACTOS*/
@@ -833,8 +935,7 @@
           .nos__footer .nos__add .nos__div-a .nos__ul-a .nos__lista .nos--links {
             color: white;
             text-shadow: 2px 2px 2px #000000;
-            padding-left: 10px;
-            padding-right: 10px; }
+            padding-left: 10px; }
     .nos__footer .nos__add .nos__div-b {
       display: flex;
       text-align: center; }
@@ -856,7 +957,6 @@
           .nos__footer .nos__add .nos__div-b .nos__ul-b .nos__lista .nos--links {
             color: white;
             text-shadow: 2px 2px 2px #000000;
-            padding-left: 10px;
-            padding-right: 10px; }
+            padding-left: 10px; }
 
 /*DESKTOP FIRST NOSOTROS*/

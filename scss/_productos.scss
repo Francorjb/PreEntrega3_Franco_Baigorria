@@ -79,8 +79,8 @@
         margin-top: 10px;
         justify-content: center;
         font-family:$roboto400;
-        font-size: 35px;
-        background-image:$tricolor;
+        font-size: $subtitulos;
+        background-color:$colorbase;
         color: $negro;
             /*Animacion */
             animation-name: cambiarcolor ;

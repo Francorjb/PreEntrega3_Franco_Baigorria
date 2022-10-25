@@ -65,10 +65,112 @@
 
 .con__main{
     grid-area: ma;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .con__h1{
+        display: flex;
+        justify-content: center;
+        background-color: $colorbase;
+        font-family: $roboto400;
+        font-size: $subtitulos;
+    }
+    .con__div-central{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        .con__form{
+            width: 500px;
+            height: 450px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: start;
+            color: $negro;
+            
+            .con__fieldset{
+                background-color: $colorbase; 
+                height: 380px;
+                width: 400px;
+                border-radius: 6px;
+                box-shadow: 2px 2px 3px black;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                align-items: center;
+                .con__nom{
+                    font-family: $roboto400;
+                    font-size: 16px;
+                }
+                .con__inp{
+                    width: 300px;
+                    border-radius: 6px;
+                }
+                .comentarios{
+                    width: 300px;
+                    height: 50px;
+                    border-radius: 6px;
+                }
+
+                .divbtn{
+                    display: flex;
+                    justify-content: space-evenly;
+                    margin-bottom: 10px;
+                    .boton1{ 
+                        @include btncompra;
+                        font-family:$roboto400;
+                        width: 90px;
+                        height: 30px;
+                    }
+                    .boton1:hover{
+                        @include btncompra;
+                        color: $negro;
+                        background-color: $colorbase;
+                        width: 90px;
+                        height: 30px;
+                    }
+
+                    .boton2{
+                        @include btncompra;
+                        font-family:$roboto400;
+                        width: 90px;
+                        height: 30px;
+                    }
+                    .boton2:hover{
+                        @include btncompra;
+                        color: $negro;
+                        background-color: $colorbase;
+                        width: 90px;
+                        height: 30px;
+                    }
+                }
+
+            }
+        }
+        .con__maps{
+            width: 400px;
+            height: 380px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+            border: solid 1px $negro;
+            background-color: $colorbase;
+            border-radius: 6px;
+            box-shadow: 2px 2px 3px black;
+            .ubi{
+                font-family: $roboto400;
+                margin-bottom: 30px;
+            }
+        }
+    }
 }
 
 .con__footer{
     grid-area: foo;
+    background-color: $colorbase;
     .con__add{
         background-color:$colorbase;
         display: flex;
@@ -85,6 +187,7 @@
                     @include fotlista;
                     .con--links{
                         @include fotlink;
+                        padding-right: 5px;
                     }
                 }
             }
@@ -100,6 +203,7 @@
                 }
                 .con__lista{
                     @include fotlista;
+                    padding-left: 5px;
                     .con--links{
                         @include fotlink;
                     }
