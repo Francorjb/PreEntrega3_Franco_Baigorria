@@ -204,41 +204,32 @@
 /*COPIAR LISTAS FINALES EN TODOS LOS PIE DE PAGINA*/
 .ind__footer{
     grid-area:footer;
-    background-color: $colorbase;
+    @include foo;
     .ind__add {
-        background-color:$colorbase;
-        display: flex;
+        @include add;
         .ind__div-a{
             display: flex;
-            text-align: center;
-            .ind__ula{
-                display: flex;
-                padding-top: 8px;
-                .ind__tituloa{
-                    @include fottitulo;
-                }
-                .ind--lista{
-                    @include fotlista;
-                    .ind--link{
-                        @include fotlink;
-                    }
+            align-items: center;
+            .ind__tituloa{
+                @include fottitulo;
+            }
+            .ind--link{
+                @include link;
+                .link-logo{
+                    @include logo;
                 }
             }
         }
         .ind__div-b{
             display: flex;
-            text-align: center;
-            .ind__ulb{
-                display: flex;
-                padding-top: 8px;
-                .ind__titulob{
-                    @include fottitulo;
+            align-items: center;
+            .ind__titulob{
+                @include fottitulo;
                 }
-                .ind--lista{
-                    @include fotlista;
-                    .ind--link{
-                        @include fotlink;
-                    }
+            .ind--link{
+                @include link;
+                .link-logo{
+                    @include logo;
                 }
             }
         }

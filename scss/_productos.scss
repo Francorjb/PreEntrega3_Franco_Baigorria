@@ -154,46 +154,6 @@
 
 .pro__footer{
     grid-area:footer;
-    background-color: $colorbase;
-    margin-top: 10px;
-    .pro__add{
-        background-color:$colorbase;
-        display: flex;
-        .pro__div-a{
-            display: flex;
-            text-align: center;
-            .pro__ul-a{
-                display: flex;
-                padding-top: 8px;
-                .pro__titulo-a{
-                    @include fottitulo;
-                }
-                .pro__list{
-                    @include fotlista;
-                    .pro--link{
-                        @include fotlink;
-                    }
-                }
-            }
-        }
-        .pro__div-b{
-            display: flex;
-            text-align: center;
-            .pro__ul-b{
-                display: flex;
-                padding-top: 8px;
-                .pro__titulo-b{
-                    @include fottitulo;
-                }
-                .pro__list{
-                    @include fotlista;
-                    .pro--link{
-                        @include fotlink;
-                    }
-                }
-            }
-        }
-    }
 }
 
 /*DESKTOP FIRST PRODUCTOS*/

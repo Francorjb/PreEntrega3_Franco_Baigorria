@@ -65,6 +65,78 @@
 
 .cre__main{
     grid-area: po;
+    .cre__articulo{
+        .cre_div-h1{
+            background-color: $colorbase;
+            font-family: $roboto400;
+            display: flex;
+            justify-content: center;
+            font-size: $subtitulos;
+        }
+        .cre_art-div{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            align-content: center;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            .cre_div-parra{
+                font-family: $roboto400;
+                font-size:($texto)-4px;
+                width: 400px;
+            }
+            .video{
+                width: 800px;
+                height: 300px;
+                border: solid 3px $colorbase;
+            }
+        }
+        .cre_div-h2{
+            background-color: $colorbase;
+            font-family: $roboto400;
+            display: flex;
+            justify-content: center;
+            font-size: ($subtitulos)-5px;
+        }
+        .div2--div{
+            display: flex;
+            margin-top: 5px;
+            margin-bottom: 5px;
+
+            .div2__final1{
+                font-family: $roboto400;
+                display: flex;
+                justify-content: space-evenly;
+                .div2__fin-parrafo1{
+                    font-size: ($texto)-4px;
+                }
+            }
+            .div2__final2{
+                font-family: $roboto400;
+                .cre__ulparra{
+                    display: flex;
+                    text-align: center;
+                    font-size: $texto;
+                    font-weight:bold;
+                }
+                .cre__ul1{
+                    font-size: ($texto)-4px;
+                }
+            }
+            .div2__final3{
+                font-family: $roboto400;
+                .cre__ulparra2{
+                    display: flex;
+                    justify-content: center;
+                    font-size: $texto;
+                    font-weight:bold;
+                }
+                .cre__ul2{
+                    font-size: ($texto)-4px;
+                }
+            }
+        }
+    }
 }
 
 .cre__footer{
