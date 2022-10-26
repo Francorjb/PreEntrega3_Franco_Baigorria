@@ -10,9 +10,8 @@
     grid-area: pa;
     display: flex;
     .cre__div-uno{
-        display: flex;
-        align-items: center;
-        text-align: center;
+        @include indtitulo;
+        margin-left: 15px;
         .cre__titulo{
             font-size: $titulo;
             font-family: $antontitulo;
@@ -22,9 +21,7 @@
             }
         }
         .cre__diamante{
-            display: flex;
-            height: 90px;
-            width: 100px;
+            @include diamante;
         }
     }
     .cre__nav{
@@ -141,41 +138,34 @@
 
 .cre__footer{
     grid-area: pi;
-    background-color: $colorbase;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    @include foo;
     .cre__add{
-        background-color:$colorbase;
-        display: flex;
-        .cre__div{
+        @include add;
+        .cre__div-a{
             display: flex;
-            text-align: center;
-            .cre__ul1{
-                display: flex;
-                padding-top: 8px;
-                .cre__parrafo1{
-                    @include fottitulo;
-                }
-                .cre_lista{
-                    @include fotlista;
-                    .cre__links{
-                        @include fotlink;
-                    }
+            align-items: center;
+            .cre__tituloa{
+                @include fottitulo;
+            }
+            .cre--link{
+                @include link;
+                .cre_link-logo{
+                    @include logo;
                 }
             }
         }
-        .cre__div2{
+        .cre__div-b{
             display: flex;
-            text-align: center;
-            .cre__ul2{
-                display: flex;
-                padding-top: 8px;
-                .cre__parrafo2{
-                    @include fottitulo;
+            align-items: center;
+            .cre__titulob{
+                @include fottitulo;
                 }
-                .cre_lista{
-                    @include fotlista;
-                    .cre__links{
-                        @include fotlink;
-                    }
+            .cre--link{
+                @include link;
+                .cre_link-logo{
+                    @include logo;
                 }
             }
         }

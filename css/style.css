@@ -23,15 +23,16 @@
   .ind__header .ind__div {
     display: flex;
     align-items: center;
-    text-align: center; }
+    text-align: start;
+    margin-left: 15px; }
     .ind__header .ind__div .nav__tit {
-      font-size: 90px;
+      font-size: 70px;
       font-family: "Anton", sans-serif;
       text-shadow: 5px 5px 5px #EDDEC9; }
     .ind__header .ind__div .ind__diamante {
       display: flex;
-      height: 90px;
-      width: 100px; }
+      height: 80px;
+      width: 90px; }
   .ind__header .ind__nav {
     display: flex;
     align-items: center; }
@@ -39,7 +40,7 @@
       display: flex;
       text-align: center; }
       .ind__header .ind__nav .ind__ul .indlista__uno {
-        font-size: 26px;
+        font-size: 22px;
         font-family: "Roboto Mono", monospace;
         color: black;
         border-bottom: solid 4px #EDDEC9; }
@@ -50,7 +51,7 @@
         border-radius: 6px;
         transition: .3s; }
       .ind__header .ind__nav .ind__ul .indlista__dos {
-        font-size: 26px;
+        font-size: 22px;
         font-family: "Roboto Mono", monospace;
         color: black;
         border-bottom: solid 4px #EDDEC9; }
@@ -61,7 +62,7 @@
         border-radius: 6px;
         transition: .3s; }
       .ind__header .ind__nav .ind__ul .indlista__tres {
-        font-size: 26px;
+        font-size: 22px;
         font-family: "Roboto Mono", monospace;
         color: black;
         border-bottom: solid 4px #EDDEC9; }
@@ -72,7 +73,7 @@
         border-radius: 6px;
         transition: .3s; }
       .ind__header .ind__nav .ind__ul .indlista__cuatro {
-        font-size: 26px;
+        font-size: 22px;
         font-family: "Roboto Mono", monospace;
         color: black;
         border-bottom: solid 4px #EDDEC9; }
@@ -95,7 +96,7 @@
       height: 600px; }
   .ind__main .text--img {
     font-family: "Roboto Mono", monospace;
-    font-size: 26px;
+    font-size: 22px;
     font-weight: bold;
     text-align: center;
     padding-top: 5px;
@@ -174,7 +175,7 @@
   .ind__main .priparrafo {
     display: flex;
     justify-content: center;
-    font-size: 26px;
+    font-size: 22px;
     font-weight: 600;
     font-family: "Dancing Script", cursive;
     color: #000000;
@@ -199,7 +200,7 @@
         display: flex;
         justify-content: center;
         font-family: "Roboto Mono", monospace;
-        font-size: 18px; }
+        font-size: 14px; }
       .ind__footer .ind__add .ind__div-a .ind--link {
         margin-right: 30px;
         width: 50px;
@@ -214,7 +215,7 @@
         display: flex;
         justify-content: center;
         font-family: "Roboto Mono", monospace;
-        font-size: 18px; }
+        font-size: 14px; }
       .ind__footer .ind__add .ind__div-b .ind--link {
         margin-right: 30px;
         width: 50px;
@@ -238,17 +239,18 @@
   .pronavegacion .pro__div {
     display: flex;
     align-items: center;
-    text-align: center; }
+    text-align: start;
+    margin-left: 15px; }
     .pronavegacion .pro__div .pronavegacion__titulo {
-      font-size: 90px;
+      font-size: 70px;
       font-family: "Anton", sans-serif;
       text-shadow: 5px 5px 5px #EDDEC9; }
       .pronavegacion .pro__div .pronavegacion__titulo .srl__pronav {
         color: #000000; }
     .pronavegacion .pro__div .pro__diamante {
       display: flex;
-      height: 90px;
-      width: 100px; }
+      height: 80px;
+      width: 90px; }
   .pronavegacion .pronavegacion__nav {
     display: flex;
     align-items: center; }
@@ -256,7 +258,7 @@
       display: flex;
       text-align: center; }
       .pronavegacion .pronavegacion__nav .pronavegacion__lista .plista__uno {
-        font-size: 26px;
+        font-size: 22px;
         font-family: "Roboto Mono", monospace;
         color: black;
         border-bottom: solid 4px #EDDEC9;
@@ -268,7 +270,7 @@
         border-radius: 6px;
         transition: .3s; }
       .pronavegacion .pronavegacion__nav .pronavegacion__lista .plista__dos {
-        font-size: 26px;
+        font-size: 22px;
         font-family: "Roboto Mono", monospace;
         color: black;
         border-bottom: solid 4px #EDDEC9; }
@@ -279,7 +281,7 @@
         border-radius: 6px;
         transition: .3s; }
       .pronavegacion .pronavegacion__nav .pronavegacion__lista .plista__tres {
-        font-size: 26px;
+        font-size: 22px;
         font-family: "Roboto Mono", monospace;
         color: black;
         border-bottom: solid 4px #EDDEC9; }
@@ -290,7 +292,7 @@
         border-radius: 6px;
         transition: .3s; }
       .pronavegacion .pronavegacion__nav .pronavegacion__lista .plista__cuatro {
-        font-size: 26px;
+        font-size: 22px;
         font-family: "Roboto Mono", monospace;
         color: black;
         border-bottom: solid 4px #EDDEC9; }
@@ -379,55 +381,45 @@
 
 .pro__footer {
   grid-area: footer;
+  margin-top: 10px;
   background-color: #EDDEC9;
-  margin-top: 10px; }
+  display: flex;
+  justify-content: center; }
   .pro__footer .pro__add {
     background-color: #EDDEC9;
-    display: flex; }
+    width: 60%;
+    display: flex;
+    align-items: center; }
     .pro__footer .pro__add .pro__div-a {
       display: flex;
-      text-align: center; }
-      .pro__footer .pro__add .pro__div-a .pro__ul-a {
+      align-items: center; }
+      .pro__footer .pro__add .pro__div-a .pro__tituloa {
         display: flex;
-        padding-top: 8px; }
-        .pro__footer .pro__add .pro__div-a .pro__ul-a .pro__titulo-a {
-          display: flex;
-          justify-content: center;
-          font-family: "Roboto Mono", monospace;
-          font-size: 18px; }
-        .pro__footer .pro__add .pro__div-a .pro__ul-a .pro__list {
-          display: flex;
-          justify-content: space-around;
-          font-family: "Roboto Mono", monospace;
-          padding-top: 12px;
-          font-size: 16px;
-          color: #000000; }
-          .pro__footer .pro__add .pro__div-a .pro__ul-a .pro__list .pro--link {
-            color: white;
-            text-shadow: 2px 2px 2px #000000;
-            padding-left: 10px; }
+        justify-content: center;
+        font-family: "Roboto Mono", monospace;
+        font-size: 14px; }
+      .pro__footer .pro__add .pro__div-a .pro--link {
+        margin-right: 30px;
+        width: 50px;
+        height: 50px; }
+        .pro__footer .pro__add .pro__div-a .pro--link .pro_link-logo {
+          width: 50px;
+          height: 50px; }
     .pro__footer .pro__add .pro__div-b {
       display: flex;
-      text-align: center; }
-      .pro__footer .pro__add .pro__div-b .pro__ul-b {
+      align-items: center; }
+      .pro__footer .pro__add .pro__div-b .pro__titulob {
         display: flex;
-        padding-top: 8px; }
-        .pro__footer .pro__add .pro__div-b .pro__ul-b .pro__titulo-b {
-          display: flex;
-          justify-content: center;
-          font-family: "Roboto Mono", monospace;
-          font-size: 18px; }
-        .pro__footer .pro__add .pro__div-b .pro__ul-b .pro__list {
-          display: flex;
-          justify-content: space-around;
-          font-family: "Roboto Mono", monospace;
-          padding-top: 12px;
-          font-size: 16px;
-          color: #000000; }
-          .pro__footer .pro__add .pro__div-b .pro__ul-b .pro__list .pro--link {
-            color: white;
-            text-shadow: 2px 2px 2px #000000;
-            padding-left: 10px; }
+        justify-content: center;
+        font-family: "Roboto Mono", monospace;
+        font-size: 14px; }
+      .pro__footer .pro__add .pro__div-b .pro--link {
+        margin-right: 30px;
+        width: 50px;
+        height: 50px; }
+        .pro__footer .pro__add .pro__div-b .pro--link .pro_link-logo {
+          width: 50px;
+          height: 50px; }
 
 /*DESKTOP FIRST PRODUCTOS*/
 /*FINAL DE PRODUCTOS*/
@@ -443,17 +435,18 @@
   .cre__header .cre__div-uno {
     display: flex;
     align-items: center;
-    text-align: center; }
+    text-align: start;
+    margin-left: 15px; }
     .cre__header .cre__div-uno .cre__titulo {
-      font-size: 90px;
+      font-size: 70px;
       font-family: "Anton", sans-serif;
       text-shadow: 5px 5px 5px #EDDEC9; }
       .cre__header .cre__div-uno .cre__titulo .cre__srl {
         color: #000000; }
     .cre__header .cre__div-uno .cre__diamante {
       display: flex;
-      height: 90px;
-      width: 100px; }
+      height: 80px;
+      width: 90px; }
   .cre__header .cre__nav {
     display: flex;
     align-items: center; }
@@ -461,7 +454,7 @@
       display: flex;
       text-align: center; }
       .cre__header .cre__nav .cre__nav-ul .cre_link-uno {
-        font-size: 26px;
+        font-size: 22px;
         font-family: "Roboto Mono", monospace;
         color: black;
         border-bottom: solid 4px #EDDEC9; }
@@ -472,7 +465,7 @@
         border-radius: 6px;
         transition: .3s; }
       .cre__header .cre__nav .cre__nav-ul .cre_link-dos {
-        font-size: 26px;
+        font-size: 22px;
         font-family: "Roboto Mono", monospace;
         color: black;
         border-bottom: solid 4px #EDDEC9; }
@@ -483,7 +476,7 @@
         border-radius: 6px;
         transition: .3s; }
       .cre__header .cre__nav .cre__nav-ul .cre_link-tres {
-        font-size: 26px;
+        font-size: 22px;
         font-family: "Roboto Mono", monospace;
         color: black;
         border-bottom: solid 4px #EDDEC9;
@@ -495,7 +488,7 @@
         border-radius: 6px;
         transition: .3s; }
       .cre__header .cre__nav .cre__nav-ul .cre_link-cuatro {
-        font-size: 26px;
+        font-size: 22px;
         font-family: "Roboto Mono", monospace;
         color: black;
         border-bottom: solid 4px #EDDEC9; }
@@ -523,7 +516,7 @@
     margin-bottom: 5px; }
     .cre__main .cre__articulo .cre_art-div .cre_div-parra {
       font-family: "Roboto Mono", monospace;
-      font-size: 22px;
+      font-size: 18px;
       width: 400px; }
     .cre__main .cre__articulo .cre_art-div .video {
       width: 800px;
@@ -544,76 +537,68 @@
       display: flex;
       justify-content: space-evenly; }
       .cre__main .cre__articulo .div2--div .div2__final1 .div2__fin-parrafo1 {
-        font-size: 22px; }
+        font-size: 18px; }
     .cre__main .cre__articulo .div2--div .div2__final2 {
       font-family: "Roboto Mono", monospace; }
       .cre__main .cre__articulo .div2--div .div2__final2 .cre__ulparra {
         display: flex;
         text-align: center;
-        font-size: 26px;
+        font-size: 22px;
         font-weight: bold; }
       .cre__main .cre__articulo .div2--div .div2__final2 .cre__ul1 {
-        font-size: 22px; }
+        font-size: 18px; }
     .cre__main .cre__articulo .div2--div .div2__final3 {
       font-family: "Roboto Mono", monospace; }
       .cre__main .cre__articulo .div2--div .div2__final3 .cre__ulparra2 {
         display: flex;
         justify-content: center;
-        font-size: 26px;
+        font-size: 22px;
         font-weight: bold; }
       .cre__main .cre__articulo .div2--div .div2__final3 .cre__ul2 {
-        font-size: 22px; }
+        font-size: 18px; }
 
 .cre__footer {
   grid-area: pi;
-  background-color: #EDDEC9; }
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background-color: #EDDEC9;
+  display: flex;
+  justify-content: center; }
   .cre__footer .cre__add {
     background-color: #EDDEC9;
-    display: flex; }
-    .cre__footer .cre__add .cre__div {
+    width: 60%;
+    display: flex;
+    align-items: center; }
+    .cre__footer .cre__add .cre__div-a {
       display: flex;
-      text-align: center; }
-      .cre__footer .cre__add .cre__div .cre__ul1 {
+      align-items: center; }
+      .cre__footer .cre__add .cre__div-a .cre__tituloa {
         display: flex;
-        padding-top: 8px; }
-        .cre__footer .cre__add .cre__div .cre__ul1 .cre__parrafo1 {
-          display: flex;
-          justify-content: center;
-          font-family: "Roboto Mono", monospace;
-          font-size: 18px; }
-        .cre__footer .cre__add .cre__div .cre__ul1 .cre_lista {
-          display: flex;
-          justify-content: space-around;
-          font-family: "Roboto Mono", monospace;
-          padding-top: 12px;
-          font-size: 16px;
-          color: #000000; }
-          .cre__footer .cre__add .cre__div .cre__ul1 .cre_lista .cre__links {
-            color: white;
-            text-shadow: 2px 2px 2px #000000;
-            padding-left: 10px; }
-    .cre__footer .cre__add .cre__div2 {
+        justify-content: center;
+        font-family: "Roboto Mono", monospace;
+        font-size: 14px; }
+      .cre__footer .cre__add .cre__div-a .cre--link {
+        margin-right: 30px;
+        width: 50px;
+        height: 50px; }
+        .cre__footer .cre__add .cre__div-a .cre--link .cre_link-logo {
+          width: 50px;
+          height: 50px; }
+    .cre__footer .cre__add .cre__div-b {
       display: flex;
-      text-align: center; }
-      .cre__footer .cre__add .cre__div2 .cre__ul2 {
+      align-items: center; }
+      .cre__footer .cre__add .cre__div-b .cre__titulob {
         display: flex;
-        padding-top: 8px; }
-        .cre__footer .cre__add .cre__div2 .cre__ul2 .cre__parrafo2 {
-          display: flex;
-          justify-content: center;
-          font-family: "Roboto Mono", monospace;
-          font-size: 18px; }
-        .cre__footer .cre__add .cre__div2 .cre__ul2 .cre_lista {
-          display: flex;
-          justify-content: space-around;
-          font-family: "Roboto Mono", monospace;
-          padding-top: 12px;
-          font-size: 16px;
-          color: #000000; }
-          .cre__footer .cre__add .cre__div2 .cre__ul2 .cre_lista .cre__links {
-            color: white;
-            text-shadow: 2px 2px 2px #000000;
-            padding-left: 10px; }
+        justify-content: center;
+        font-family: "Roboto Mono", monospace;
+        font-size: 14px; }
+      .cre__footer .cre__add .cre__div-b .cre--link {
+        margin-right: 30px;
+        width: 50px;
+        height: 50px; }
+        .cre__footer .cre__add .cre__div-b .cre--link .cre_link-logo {
+          width: 50px;
+          height: 50px; }
 
 /*FINAL DE CREACION*/
 .con__grilla {
@@ -628,17 +613,18 @@
   .con__header .con__div {
     display: flex;
     align-items: center;
-    text-align: center; }
+    text-align: start;
+    margin-left: 15px; }
     .con__header .con__div .con__titulo {
-      font-size: 90px;
+      font-size: 70px;
       font-family: "Anton", sans-serif;
       text-shadow: 5px 5px 5px #EDDEC9; }
       .con__header .con__div .con__titulo .con__srl {
         color: #000000; }
     .con__header .con__div .con__diamante {
       display: flex;
-      height: 90px;
-      width: 100px; }
+      height: 80px;
+      width: 90px; }
   .con__header .con__nav {
     display: flex;
     align-items: center; }
@@ -646,7 +632,7 @@
       display: flex;
       text-align: center; }
       .con__header .con__nav .con__ul .links_uno {
-        font-size: 26px;
+        font-size: 22px;
         font-family: "Roboto Mono", monospace;
         color: black;
         border-bottom: solid 4px #EDDEC9; }
@@ -657,7 +643,7 @@
         border-radius: 6px;
         transition: .3s; }
       .con__header .con__nav .con__ul .links_dos {
-        font-size: 26px;
+        font-size: 22px;
         font-family: "Roboto Mono", monospace;
         color: black;
         border-bottom: solid 4px #EDDEC9; }
@@ -668,7 +654,7 @@
         border-radius: 6px;
         transition: .3s; }
       .con__header .con__nav .con__ul .links_tres {
-        font-size: 26px;
+        font-size: 22px;
         font-family: "Roboto Mono", monospace;
         color: black;
         border-bottom: solid 4px #EDDEC9; }
@@ -679,7 +665,7 @@
         border-radius: 6px;
         transition: .3s; }
       .con__header .con__nav .con__ul .links_cuatro {
-        font-size: 26px;
+        font-size: 22px;
         font-family: "Roboto Mono", monospace;
         color: black;
         border-bottom: solid 4px #EDDEC9;
@@ -803,56 +789,46 @@
 
 .con__footer {
   grid-area: foo;
-  background-color: #EDDEC9; }
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background-color: #EDDEC9;
+  display: flex;
+  justify-content: center; }
   .con__footer .con__add {
     background-color: #EDDEC9;
-    display: flex; }
+    width: 60%;
+    display: flex;
+    align-items: center; }
     .con__footer .con__add .con__div-a {
       display: flex;
-      text-align: center; }
-      .con__footer .con__add .con__div-a .con__ul-a {
+      align-items: center; }
+      .con__footer .con__add .con__div-a .con__tituloa {
         display: flex;
-        padding-top: 8px; }
-        .con__footer .con__add .con__div-a .con__ul-a .con__titulo1 {
-          display: flex;
-          justify-content: center;
-          font-family: "Roboto Mono", monospace;
-          font-size: 18px; }
-        .con__footer .con__add .con__div-a .con__ul-a .con__lista {
-          display: flex;
-          justify-content: space-around;
-          font-family: "Roboto Mono", monospace;
-          padding-top: 12px;
-          font-size: 16px;
-          color: #000000; }
-          .con__footer .con__add .con__div-a .con__ul-a .con__lista .con--links {
-            color: white;
-            text-shadow: 2px 2px 2px #000000;
-            padding-left: 10px;
-            padding-right: 5px; }
+        justify-content: center;
+        font-family: "Roboto Mono", monospace;
+        font-size: 14px; }
+      .con__footer .con__add .con__div-a .con--link {
+        margin-right: 30px;
+        width: 50px;
+        height: 50px; }
+        .con__footer .con__add .con__div-a .con--link .con_link-logo {
+          width: 50px;
+          height: 50px; }
     .con__footer .con__add .con__div-b {
       display: flex;
-      text-align: center; }
-      .con__footer .con__add .con__div-b .con__ul-b {
+      align-items: center; }
+      .con__footer .con__add .con__div-b .con__titulob {
         display: flex;
-        padding-top: 8px; }
-        .con__footer .con__add .con__div-b .con__ul-b .con__titulo2 {
-          display: flex;
-          justify-content: center;
-          font-family: "Roboto Mono", monospace;
-          font-size: 18px; }
-        .con__footer .con__add .con__div-b .con__ul-b .con__lista {
-          display: flex;
-          justify-content: space-around;
-          font-family: "Roboto Mono", monospace;
-          padding-top: 12px;
-          font-size: 16px;
-          color: #000000;
-          padding-left: 5px; }
-          .con__footer .con__add .con__div-b .con__ul-b .con__lista .con--links {
-            color: white;
-            text-shadow: 2px 2px 2px #000000;
-            padding-left: 10px; }
+        justify-content: center;
+        font-family: "Roboto Mono", monospace;
+        font-size: 14px; }
+      .con__footer .con__add .con__div-b .con--link {
+        margin-right: 30px;
+        width: 50px;
+        height: 50px; }
+        .con__footer .con__add .con__div-b .con--link .con_link-logo {
+          width: 50px;
+          height: 50px; }
 
 /*DESTOK FIRTS*/
 /*FINAL DE CONTACTOS*/
@@ -868,17 +844,18 @@
   .nos__header .nos__div {
     display: flex;
     align-items: center;
-    text-align: center; }
+    text-align: start;
+    margin-left: 15px; }
     .nos__header .nos__div .nos__titulo {
-      font-size: 90px;
+      font-size: 70px;
       font-family: "Anton", sans-serif;
       text-shadow: 5px 5px 5px #EDDEC9; }
       .nos__header .nos__div .nos__titulo .nos__srl {
         color: #000000; }
     .nos__header .nos__div .nos__diamante {
       display: flex;
-      height: 90px;
-      width: 100px; }
+      height: 80px;
+      width: 90px; }
   .nos__header .nos__nav {
     display: flex;
     align-items: center; }
@@ -886,7 +863,7 @@
       display: flex;
       text-align: center; }
       .nos__header .nos__nav .nos__nav-ul .link--uno {
-        font-size: 26px;
+        font-size: 22px;
         font-family: "Roboto Mono", monospace;
         color: black;
         border-bottom: solid 4px #EDDEC9; }
@@ -897,7 +874,7 @@
         border-radius: 6px;
         transition: .3s; }
       .nos__header .nos__nav .nos__nav-ul .link--dos {
-        font-size: 26px;
+        font-size: 22px;
         font-family: "Roboto Mono", monospace;
         color: black;
         border-bottom: solid 4px #EDDEC9;
@@ -909,7 +886,7 @@
         border-radius: 6px;
         transition: .3s; }
       .nos__header .nos__nav .nos__nav-ul .link--tres {
-        font-size: 26px;
+        font-size: 22px;
         font-family: "Roboto Mono", monospace;
         color: black;
         border-bottom: solid 4px #EDDEC9; }
@@ -920,7 +897,7 @@
         border-radius: 6px;
         transition: .3s; }
       .nos__header .nos__nav .nos__nav-ul .link--cuatro {
-        font-size: 26px;
+        font-size: 22px;
         font-family: "Roboto Mono", monospace;
         color: black;
         border-bottom: solid 4px #EDDEC9; }
@@ -941,6 +918,8 @@
     font-family: "Roboto Mono", monospace;
     justify-content: center; }
   .nos__main .nos__section {
+    margin-bottom: 25px;
+    margin-top: 25px;
     background-color: white;
     width: 90%;
     margin-left: 60px; }
@@ -948,60 +927,52 @@
       background-color: #EDDEC9;
       display: flex;
       font-family: "Roboto Mono", monospace;
-      font-size: 21px;
+      font-size: 17px;
       margin-top: 10px;
       margin-bottom: 10px;
       text-align: center; }
 
 .nos__footer {
   grid-area: nup;
-  background-color: #EDDEC9; }
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background-color: #EDDEC9;
+  display: flex;
+  justify-content: center; }
   .nos__footer .nos__add {
     background-color: #EDDEC9;
-    display: flex; }
+    width: 60%;
+    display: flex;
+    align-items: center; }
     .nos__footer .nos__add .nos__div-a {
       display: flex;
-      text-align: center; }
-      .nos__footer .nos__add .nos__div-a .nos__ul-a {
+      align-items: center; }
+      .nos__footer .nos__add .nos__div-a .nos__tituloa {
         display: flex;
-        padding-top: 8px; }
-        .nos__footer .nos__add .nos__div-a .nos__ul-a .nos__titulo {
-          display: flex;
-          justify-content: center;
-          font-family: "Roboto Mono", monospace;
-          font-size: 18px; }
-        .nos__footer .nos__add .nos__div-a .nos__ul-a .nos__lista {
-          display: flex;
-          justify-content: space-around;
-          font-family: "Roboto Mono", monospace;
-          padding-top: 12px;
-          font-size: 16px;
-          color: #000000; }
-          .nos__footer .nos__add .nos__div-a .nos__ul-a .nos__lista .nos--links {
-            color: white;
-            text-shadow: 2px 2px 2px #000000;
-            padding-left: 10px; }
+        justify-content: center;
+        font-family: "Roboto Mono", monospace;
+        font-size: 14px; }
+      .nos__footer .nos__add .nos__div-a .nos--link {
+        margin-right: 30px;
+        width: 50px;
+        height: 50px; }
+        .nos__footer .nos__add .nos__div-a .nos--link .nos_link-logo {
+          width: 50px;
+          height: 50px; }
     .nos__footer .nos__add .nos__div-b {
       display: flex;
-      text-align: center; }
-      .nos__footer .nos__add .nos__div-b .nos__ul-b {
+      align-items: center; }
+      .nos__footer .nos__add .nos__div-b .nos__titulob {
         display: flex;
-        padding-top: 8px; }
-        .nos__footer .nos__add .nos__div-b .nos__ul-b .nos__titulo {
-          display: flex;
-          justify-content: center;
-          font-family: "Roboto Mono", monospace;
-          font-size: 18px; }
-        .nos__footer .nos__add .nos__div-b .nos__ul-b .nos__lista {
-          display: flex;
-          justify-content: space-around;
-          font-family: "Roboto Mono", monospace;
-          padding-top: 12px;
-          font-size: 16px;
-          color: #000000; }
-          .nos__footer .nos__add .nos__div-b .nos__ul-b .nos__lista .nos--links {
-            color: white;
-            text-shadow: 2px 2px 2px #000000;
-            padding-left: 10px; }
+        justify-content: center;
+        font-family: "Roboto Mono", monospace;
+        font-size: 14px; }
+      .nos__footer .nos__add .nos__div-b .nos--link {
+        margin-right: 30px;
+        width: 50px;
+        height: 50px; }
+        .nos__footer .nos__add .nos__div-b .nos--link .nos_link-logo {
+          width: 50px;
+          height: 50px; }
 
 /*DESKTOP FIRST NOSOTROS*/

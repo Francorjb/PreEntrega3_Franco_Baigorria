@@ -11,9 +11,8 @@
     grid-area: nip;
     display: flex;
     .nos__div{
-        display: flex;
-        align-items: center;
-        text-align: center;
+        @include indtitulo;
+        margin-left: 15px;
         .nos__titulo{
             font-size: $titulo;
             font-family: $antontitulo;
@@ -23,9 +22,7 @@
             }
         }
         .nos__diamante{
-            display: flex;
-            height: 90px;
-            width: 100px;
+            @include diamante;
         }
     }
     .nos__nav{
@@ -74,6 +71,8 @@
         justify-content: center;
     }
     .nos__section{
+        margin-bottom: 25px ;
+        margin-top: 25px;
         background-color: white;
         width: 90%;
         margin-left: 60px;
@@ -91,41 +90,34 @@
 
 .nos__footer{
     grid-area: nup;
-    background-color: $colorbase;
-    .nos__add{
-        background-color:$colorbase;
-        display: flex;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    @include foo;
+    .nos__add {
+        @include add;
         .nos__div-a{
             display: flex;
-            text-align: center;
-            .nos__ul-a{
-                display: flex;
-                padding-top: 8px;
-                .nos__titulo{
-                    @include fottitulo;
-                }
-                .nos__lista{
-                    @include fotlista;
-                    .nos--links{
-                        @include fotlink;
-                    }
+            align-items: center;
+            .nos__tituloa{
+                @include fottitulo;
+            }
+            .nos--link{
+                @include link;
+                .nos_link-logo{
+                    @include logo;
                 }
             }
         }
         .nos__div-b{
             display: flex;
-            text-align: center;
-            .nos__ul-b{
-                display: flex;
-                padding-top: 8px;
-                .nos__titulo{
-                    @include fottitulo;
+            align-items: center;
+            .nos__titulob{
+                @include fottitulo;
                 }
-                .nos__lista{
-                    @include fotlista;
-                    .nos--links{
-                        @include fotlink;
-                    }
+            .nos--link{
+                @include link;
+                .nos_link-logo{
+                    @include logo;
                 }
             }
         }

@@ -20,18 +20,15 @@
     grid-area:pe;
     display: flex;
     .ind__div{
-        display: flex;
-        align-items: center;
-        text-align: center;
+        @include indtitulo;
+        margin-left: 15px;
         .nav__tit{
             font-size: $titulo;
             font-family: $antontitulo;
             text-shadow: 5px 5px 5px $colorbase;
         }
         .ind__diamante{
-            display: flex;
-            height: 90px;
-            width: 100px;
+            @include diamante;
         }
 
     }
@@ -237,3 +234,7 @@
 }
 
 /*DESKTOP FIRST INICIO*/
+
+  @media (max-width:1200px){ 
+
+  }

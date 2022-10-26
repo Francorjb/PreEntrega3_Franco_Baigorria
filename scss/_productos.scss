@@ -18,9 +18,8 @@
     grid-area:pe;
     display: flex;
     .pro__div{
-        display: flex;
-        align-items: center;
-        text-align: center;
+        @include indtitulo;
+        margin-left: 15px;
         .pronavegacion__titulo{
             font-size: $titulo;
             font-family: $antontitulo;
@@ -30,9 +29,7 @@
             }
         }
         .pro__diamante{
-            display: flex;
-            height: 90px;
-            width: 100px;
+            @include diamante;
         }
     }
 
@@ -154,6 +151,37 @@
 
 .pro__footer{
     grid-area:footer;
+    margin-top: 10px;
+    @include foo;
+    .pro__add{
+        @include add;
+        .pro__div-a{
+            display: flex;
+            align-items: center;
+            .pro__tituloa{
+                @include fottitulo;
+            }
+            .pro--link{
+                @include link;
+                .pro_link-logo{
+                    @include logo;
+                }
+            }
+        }
+        .pro__div-b{
+            display: flex;
+            align-items: center;
+            .pro__titulob{
+                @include fottitulo;
+                }
+            .pro--link{
+                @include link;
+                .pro_link-logo{
+                    @include logo;
+                }
+            }
+        }
+    }
 }
 
 /*DESKTOP FIRST PRODUCTOS*/

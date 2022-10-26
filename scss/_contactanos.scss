@@ -11,9 +11,8 @@
     grid-area: head;
     display: flex;
     .con__div{
-        display: flex;
-        align-items: center;
-        text-align: center;
+        @include indtitulo;
+        margin-left: 15px;
         .con__titulo{
             font-size: $titulo;
             font-family: $antontitulo;
@@ -23,9 +22,7 @@
             }
         }
         .con__diamante{
-            display: flex;
-            height: 90px;
-            width: 100px;
+            @include diamante;
         }
     }
     .con__nav{
@@ -170,43 +167,34 @@
 
 .con__footer{
     grid-area: foo;
-    background-color: $colorbase;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    @include foo;
     .con__add{
-        background-color:$colorbase;
-        display: flex;
+        @include add;
         .con__div-a{
             display: flex;
-            text-align: center;
-            .con__ul-a{
-                display: flex;
-                padding-top: 8px;
-                .con__titulo1{
-                    @include fottitulo;
-                }
-                .con__lista{
-                    @include fotlista;
-                    .con--links{
-                        @include fotlink;
-                        padding-right: 5px;
-                    }
+            align-items: center;
+            .con__tituloa{
+                @include fottitulo;
+            }
+            .con--link{
+                @include link;
+                .con_link-logo{
+                    @include logo;
                 }
             }
         }
         .con__div-b{
             display: flex;
-            text-align: center;
-            .con__ul-b{
-                display: flex;
-                padding-top: 8px;
-                .con__titulo2{
-                    @include fottitulo;
+            align-items: center;
+            .con__titulob{
+                @include fottitulo;
                 }
-                .con__lista{
-                    @include fotlista;
-                    padding-left: 5px;
-                    .con--links{
-                        @include fotlink;
-                    }
+            .con--link{
+                @include link;
+                .con_link-logo{
+                    @include logo;
                 }
             }
         }

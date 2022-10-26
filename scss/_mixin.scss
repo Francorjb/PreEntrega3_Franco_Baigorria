@@ -1,4 +1,14 @@
 /*CODIGOS DEL HEADER*/
+@mixin indtitulo {
+    display: flex;
+    align-items: center;
+    text-align: start;
+}
+@mixin diamante {
+    display: flex;
+    height: 80px;
+    width: 90px;
+}
 @mixin btnheader {
     font-size: $texto;
     font-family: $roboto400;
