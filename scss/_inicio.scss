@@ -234,7 +234,672 @@
 }
 
 /*DESKTOP FIRST INICIO*/
+@media screen and (max-width: 1200px) {
+    .grilla {
+        display: grid;
+        grid-template-rows: 130px 1fr 70px ;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas:"pe pe pe pe"
+                            "main main main main"
+                            "footer footer footer footer";
+    }
+    .ind__header{
+        grid-area:pe;
+        display: flex;
+        .ind__div{
+            @include indtitulo;
+            margin-left: 15px;
+            .nav__tit{
+                font-size: $titulo;
+                font-family: $antontitulo;
+                text-shadow: 5px 5px 5px $colorbase;
+            }
+            .ind__diamante{
+                @include diamante;
+            }
+    
+        }
+        .ind__nav {
+            display:flex;
+            align-items: center;
+    
+            .ind__ul{
+                display: flex;
+                text-align: center;
+    
+                .indlista__uno{
+                    @include btnheader;
+                }
+                .indlista__uno:hover{
+                    @include btnhover;
+                }
+                .indlista__dos{
+                    @include btnheader;
+                }
+                .indlista__dos:hover{
+                    @include btnhover;
+                }
+                .indlista__tres{
+                    @include btnheader;
+                }
+                .indlista__tres:hover{
+                    @include btnhover;
+                }
+                .indlista__cuatro{
+                    @include btnheader;
+                }
+                .indlista__cuatro:hover{
+                    @include btnhover;
+                }
+            }
+        }
+    }
+    
+    .ind__main {
+        grid-area:main;
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .container__img {
+                display: flex;
+                width: 95%;
+                height: 600px;
+            }
+    
+        }
+        .text--img{
+            font-family: $roboto400;
+            font-size: $texto;
+            font-weight: bold;
+            text-align: center;
+            padding-top: 5px;
+            padding-bottom: 15px;
+            .botonemis {
+                outline: none;
+                border: none;
+                cursor: pointer;
+                color: rgb(0, 0, 0);
+                text-shadow: 3px 3px 1px #EDDEC9;
+                border-bottom: solid #EDDEC9;
+            
+                /*Animacion */
+                animation-name: cambiarcolor ;
+                animation-duration: 5s;
+                animation-iteration-count: infinite;
+            } 
+            
+            @keyframes cambiarcolor {
+            
+                0% {
+                    color: rgb(0, 0, 0);
+                    text-shadow: 3px 3px 1px #EDDEC9;
+                    border-bottom: solid #EDDEC9;
+                    transform: translateY(20px , 20px);
+                }
+                40% {
+                    color: #EDDEC9;
+                    text-shadow: 3px 3px 1px rgb(0, 0, 0);
+                    border-bottom: solid rgb(0, 0, 0);
+                    transform: translateY(30px, 30px);
+            
+                }
+                70% {
+                    color: rgb(0, 0, 0)#EDDEC9;
+                    text-shadow: 3px 3px 1px #b98f54;
+                    border-bottom: solid rgb(0, 0, 0 );
+                    transform: translateY(40px, 40px) ;
+                }
+            
+                100% {
+                    color: rgb(0, 0, 0)#EDDEC9;
+                    text-shadow: 3px 3px 1px #b98f54;
+                    border-bottom: solid rgb(0, 0, 0 );
+                    transform: translateY(50px , 50px) ;
+                }
+            }
+            
+        }
+        .container__dos {
+            display: flex;
+            .img1 {
+                width: 300px;
+                height: 300px;
+                border-radius:  90% 90% 90% 90%;
+                border: .5em outset $colorbase;
+            }
+            .div__uno {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            
+            }
+            .div__dos {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+    
+            }
+            .div__tres {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+    
+        }
+        .container__tres {
+            display: flex;
+            .img1 {
+                width: 300px;
+                height: 300px;
+                border-radius:  90% 90% 90% 90%;
+                border: .5em outset $colorbase;
+            }
+            .div__cuatro {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .div__cinco {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .div__seis {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        .priparrafo{
+            display: flex;
+            justify-content: center;
+            font-size: $texto;
+            font-weight: 600;
+            font-family: $scriptletras;
+            color: $negro;
+            padding-bottom: 12px;
+            padding-top: 8px;
+        }
+    
+        
+    }
+    
+    .ind__footer{
+        grid-area:footer;
+        @include foo;
+        .ind__add {
+            @include add;
+            .ind__div-a{
+                display: flex;
+                align-items: center;
+                .ind__tituloa{
+                    @include fottitulo;
+                }
+                .ind--link{
+                    @include link;
+                    .link-logo{
+                        @include logo;
+                    }
+                }
+            }
+            .ind__div-b{
+                display: flex;
+                align-items: center;
+                .ind__titulob{
+                    @include fottitulo;
+                    }
+                .ind--link{
+                    @include link;
+                    .link-logo{
+                        @include logo;
+                    }
+                }
+            }
+        }
+    }
+}
 
-  @media (max-width:1200px){ 
+@media screen and (max-width: 1000px){
+    .grilla {
+        display: grid;
+        grid-template-rows: 150px 1fr 70px ;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:"pe pe"
+                            "main main"
+                            "footer footer";
+    }
+    .ind__header{
+        grid-area:pe;
+        display: flex;
+        flex-direction: column;
+        .ind__div{
+            @include indtitulo;
+            align-items: center;
+            text-align: center;
+            width: 90%;
+            .nav__tit{
+                font-size: $titulo;
+                font-family: $antontitulo;
+                text-shadow: 5px 5px 5px $colorbase;
+            }
+            .ind__diamante{
+                @include diamante;
+            }
+    
+        }
+        .ind__nav {
+            display:flex;
+            align-items: center;
+    
+            .ind__ul{
+                display: flex;
+                text-align: center;
+            }
+        }
+    }
+    .ind__main {
+        grid-area:main;
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .container__img {
+                display: flex;
+                width: 95%;
+                height: 500px;
+            }
+    
+        }
+        .div_section{
+            display: flex;
+            flex-direction: row;
+            .container__dos {
+                display: flex;
+                flex-direction: column;
+                .img1 {
+                    width: 300px;
+                    height: 300px;
+                    border-radius:  90% 90% 90% 90%;
+                    border: .5em outset $colorbase;
+                }
+                .div__uno {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                
+                }
+                .div__dos {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+        
+                }
+                .div__tres {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+        
+            }
+            .container__tres {
+                display: flex;
+                flex-direction: column;
+                .img1 {
+                    width: 300px;
+                    height: 300px;
+                    border-radius:  90% 90% 90% 90%;
+                    border: .5em outset $colorbase;
+                }
+                .div__cuatro {
+                    display: flex;
+                    align-items: center;
+                }
+                .div__cinco {
+                    display: flex;
+                    align-items: center;
+                }
+                .div__seis {
+                    display: flex;
+                    align-items: center;
+                }
+            }
+            .priparrafo{
+                display: flex;
+                justify-content: center;
+                font-size: $texto;
+                font-weight: 600;
+                font-family: $scriptletras;
+                color: $negro;
+                padding-bottom: 12px;
+                padding-top: 8px;
+            }
+        
+        }
+        
+    }
+    .ind__footer{
+        background-color: $colorbase;
+        .ind__add{
+            width: 80%;
+            .ind--link{
+                margin-right: 15px;
+            }
+        }
+    }
+}
 
-  }
+@media screen and (max-width: 690px){
+    .grilla {
+        display: grid;
+        grid-template-rows: 150px 1fr 120px ;
+        grid-template-columns:1fr;
+        grid-template-areas:"pe"
+                            "main"
+                            "footer";
+    }
+    .ind__header{
+        grid-area:pe;
+        display: flex;
+        flex-direction: column;
+        .ind__div{
+            @include indtitulo;
+            text-align: center;
+            width: 85%;
+            .nav__tit{
+                font-size: $titulo;
+                font-family: $antontitulo;
+                text-shadow: 5px 5px 5px $colorbase;
+            }
+            .ind__diamante{
+                @include diamante;
+                height: 70px;
+                width: 80px;
+            }
+    
+        }
+        .ind__nav {
+            display:flex;
+            align-items: center;
+    
+            .ind__ul{
+                display: flex;
+                text-align: center;
+            }
+        }
+    }
+    .ind__main {
+        grid-area:main;
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .container__img {
+                display: flex;
+                width: 95%;
+                height: 400px;
+            }
+    
+        }
+        .text--img{
+            font-family: $roboto400;
+            font-size: $texto;
+            font-weight: bold;
+            text-align: center;
+            padding-top: 5px;
+            padding-bottom: 15px;
+            
+        }
+        .div_section{
+            display: flex;
+            flex-direction: column;
+            .container__dos {
+                display: flex;
+                flex-direction: column;
+                .img1 {
+                    width: 400px;
+                    height: 400px;
+                    border-radius:  90% 90% 90% 90%;
+                    border: .5em outset $colorbase;
+                }
+        
+            }
+            .container__tres {
+                display: flex;
+                flex-direction: column;
+                .img1 {
+                    width: 400px;
+                    height: 400px;
+                    border-radius:  90% 90% 90% 90%;
+                    border: .5em outset $colorbase;
+                }
+    
+            }
+            .priparrafo{
+                display: flex;
+                justify-content: center;
+                font-size: ($texto)+10px;
+                font-weight: 600;
+                font-family: $scriptletras;
+                color: $negro;
+                padding-bottom: 15px;
+                padding-top: 8px;
+            }
+        }
+    }
+
+    .ind__footer{
+        grid-area:footer;
+        @include foo;
+        .ind__add {
+            @include add;
+            flex-direction: column;
+            justify-content: space-evenly;
+            width: 70%;
+            .ind__div-a{
+                display: flex;
+                background-color: $colorbase;
+                .ind__tituloa{
+                    @include fottitulo;
+                    justify-content: flex-start;
+                }
+                .ind--link{
+                    @include link;
+                    .link-logo{
+                        @include logo;
+                    }
+                }
+            }
+            .ind__div-b{
+                display: flex;
+                background-color: $colorbase;
+                .ind__titulob{
+                    @include fottitulo;
+                    justify-content: flex-start;
+                    }
+                .ind--link{
+                    @include link;
+                    .link-logo{
+                        @include logo;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:340px){
+    .grilla {
+        display: grid;
+        grid-template-rows: 150px 1fr 120px ;
+        grid-template-columns: 1fr;
+        grid-template-areas:"pe"
+                            "main"
+                            "footer";
+    }
+    .ind__header{
+        grid-area:pe;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        .ind__div{
+            @include indtitulo;
+            text-align: start;
+            width: 85%;
+            margin-bottom: 8px;
+            .nav__tit{
+                font-size: ($titulo)-10px;
+                font-family: $antontitulo;
+                text-shadow: 5px 5px 5px $colorbase;
+            }
+            .ind__diamante{
+                @include diamante;
+                margin-left: 3px;
+                height: 50px;
+                width: 60px;
+            }
+    
+        }
+        .ind__nav {
+            display:flex;
+            align-items: center;
+    
+            .ind__ul{
+                display: flex;
+                text-align: center;
+    
+                .indlista__uno{
+                    @include btnheader;
+                    font-size: ($texto)-5px;
+                }
+                .indlista__uno:hover{
+                    @include btnhover;
+                    font-size: ($texto)-5px;
+                }
+                .indlista__dos{
+                    @include btnheader;
+                    font-size: ($texto)-5px;
+                }
+                .indlista__dos:hover{
+                    @include btnhover;
+                    font-size: ($texto)-5px;
+                }
+                .indlista__tres{
+                    @include btnheader;
+                    font-size: ($texto)-5px;
+                }
+                .indlista__tres:hover{
+                    @include btnhover;
+                    font-size: ($texto)-5px;
+                }
+                .indlista__cuatro{
+                    @include btnheader;
+                    font-size: ($texto)-5px;
+                }
+                .indlista__cuatro:hover{
+                    @include btnhover;
+                    font-size: ($texto)-5px;
+                }
+            }
+        }
+    }
+    /*MAIN*/
+    .ind__main {
+        grid-area:main;
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .container__img {
+                display: flex;
+                width: 95%;
+                height: 350px;
+            }
+    
+        }
+        .text--img{
+            font-family: $roboto400;
+            font-size: ($texto)-3px;
+            font-weight: bold;
+            text-align: center;
+            padding-top: 5px;
+            padding-bottom: 15px;
+            
+        }
+        .div_section{
+            display: flex;
+            flex-direction: column;
+            .container__dos {
+                display: flex;
+                flex-direction: column;
+                .img1 {
+                    width: 400px;
+                    height: 400px;
+                    border-radius:  90% 90% 90% 90%;
+                    border: .5em outset $colorbase;
+                }
+        
+            }
+            .container__tres {
+                display: flex;
+                flex-direction: column;
+                .img1 {
+                    width: 400px;
+                    height: 400px;
+                    border-radius:  90% 90% 90% 90%;
+                    border: .5em outset $colorbase;
+                }
+    
+            }
+            .priparrafo{
+                display: flex;
+                justify-content: center;
+                font-size: ($texto)+10px;
+                font-weight: 600;
+                font-family: $scriptletras;
+                color: $negro;
+                padding-bottom: 15px;
+                padding-top: 8px;
+            }
+        }  
+    }
+    /*FOOTER*/
+    .ind__footer{
+        grid-area:footer;
+        @include foo;
+        .ind__add {
+            @include add;
+            flex-direction: column;
+            justify-content: space-evenly;
+            width: 80%;
+            .ind__div-a{
+                display: flex;
+                background-color: $colorbase;
+                .ind__tituloa{
+                    @include fottitulo;
+                    justify-content: flex-start;
+                }
+                .ind--link{
+                    @include link;
+                    .link-logo{
+                        @include logo;
+                    }
+                }
+            }
+            .ind__div-b{
+                display: flex;
+                background-color: $colorbase;
+                .ind__titulob{
+                    @include fottitulo;
+                    justify-content: flex-start;
+                    }
+                .ind--link{
+                    @include link;
+                    .link-logo{
+                        @include logo;
+                    }
+                }
+            }
+        }
+    }
+}
