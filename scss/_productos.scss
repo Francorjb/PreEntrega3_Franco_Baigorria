@@ -185,7 +185,7 @@
 
 /*DESKTOP FIRST PRODUCTOS*/
 
-@media screen and (max-width:950px) {
+@media screen and (max-width:960px) {
     .grillaprodu {
         display: grid;
         grid-template-rows: 140px 1fr 1fr 1fr 1fr 1fr 1fr 70px;
@@ -203,6 +203,7 @@
     .pronavegacion{
         display: flex;
         flex-direction: column;
+        align-items: center;
         .pro__div{
             @include indtitulo;
             justify-content: center;
@@ -347,6 +348,7 @@
     .pronavegacion{
         display: flex;
         flex-direction: column;
+        align-items: center;
         .pro__div{
             @include indtitulo;
             justify-content: center;
@@ -466,14 +468,11 @@
             @include indtitulo;
             justify-content: center;
             text-align: center;
-            width: 90%;
+            width:95%;
             .pronavegacion__titulo{
-                font-size: ($titulo)-15px;
+                font-size: ($titulo)-8px;
                 font-family: $antontitulo;
-                text-shadow: 5px 5px 5px $colorbase;
-                .srl__pronav{
-                    color: $negro;
-                }
+                text-shadow: 4px 4px 4px $colorbase;
             }
             .pro__diamante{
                 @include diamante;

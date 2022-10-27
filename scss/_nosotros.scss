@@ -123,4 +123,318 @@
         }
     }
 }
-    /*DESKTOP FIRST NOSOTROS*/
+/*DESKTOP FIRST NOSOTROS*/
+
+@media screen and (max-width:960px) { 
+    .nos__header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 15px;
+        .nos__div{
+            @include indtitulo;
+            width: 80%;
+        }
+        .nos__nav{
+            display:flex;
+            align-items: center;
+            .nos__nav-ul{
+                display: flex;
+                text-align: center;
+                .link--uno{
+                    @include btnheader;
+                }
+                .link--uno:hover{
+                    @include btnhover;
+                }
+                .link--dos{
+                    @include btnheader;
+                    border-bottom: solid 4px black;
+                }
+                .link--dos:hover{
+                    @include btnhover;
+                }
+                .link--tres{
+                    @include btnheader;
+                }
+                .link--tres:hover{
+                    @include btnhover;
+                }
+                .link--cuatro{
+                    @include btnheader;
+                }
+                .link--cuatro:hover{
+                    @include btnhover;
+                }      
+            }
+        }
+    }
+
+    .nos__main{
+        .nos__section{
+            margin-left: 40px;
+        }
+    }
+    .nos__footer{
+        @include foo;
+        .nos__add {
+            @include add;
+            width: 90%;
+        }
+    }
+    
+}
+
+@media screen and (max-width:700px){
+    .nos__header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 15px;
+        .nos__div{
+            @include indtitulo;
+            margin-left: 0px;
+            width: 90%;
+        }
+    }
+    .nos__main{
+    .nos__section{
+        margin-bottom: 15px ;
+        margin-top: 15px;
+        width: 100%;
+        margin-left:0px;
+        }
+    }
+    .nos__footer{
+        grid-area: nup;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        @include foo;
+        .nos__add {
+            @include add;
+            width: 100%;
+            .nos__div-a{
+                .nos--link{
+                    @include link;
+                    margin-right: 10px;
+                }
+            }
+            .nos__div-b{
+                .nos--link{
+                    @include link;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:540px){
+    .sobre__grilla {
+        display: grid;
+        grid-template-rows: 150px 1000px 120px ;
+        grid-template-columns: 1fr;
+        grid-template-areas:"nip"
+                            "nop"
+                            "nup";
+    }
+    .nos__header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        .nos__div{
+            @include indtitulo;
+            justify-content: center;
+            text-align: start;
+            width: 100%;
+            .nos__titulo{
+                font-size: ($titulo)-10px;
+                font-family: $antontitulo;
+                text-shadow: 5px 5px 5px $colorbase;
+            }
+            .nos__diamante{
+                @include diamante;
+                height: 60px;
+                width: 70px;
+            }
+        }
+        .nos__nav{
+            display:flex;
+            align-items: center;
+            .nos__nav-ul{
+                display: flex;
+                text-align: center;
+                .link--uno{
+                    @include btnheader;
+                    font-size: ($texto)-5px;
+                }
+                .link--uno:hover{
+                    @include btnhover;
+                    font-size: ($texto)-5px;
+                }
+                .link--dos{
+                    @include btnheader;
+                    font-size: ($texto)-5px;
+                    border-bottom: solid 4px black;
+                }
+                .link--dos:hover{
+                    @include btnhover;
+                    font-size: ($texto)-5px;
+                }
+                .link--tres{
+                    @include btnheader;
+                    font-size: ($texto)-5px;
+                }
+                .link--tres:hover{
+                    @include btnhover;
+                    font-size: ($texto)-5px;
+                }
+                .link--cuatro{
+                    @include btnheader;
+                    font-size: ($texto)-5px;
+                }
+                .link--cuatro:hover{
+                    @include btnhover;
+                    font-size: ($texto)-5px;
+                }      
+            }
+        }
+    }
+    .nos__main {
+        grid-area: nop;
+        .nos__h2{
+            display:flex;
+            text-align: center;
+            font-size: 27px;
+            background-color: $colorbase;
+            font-family: $roboto400;
+            justify-content: center;
+        }
+    }
+    .nos__footer{
+        @include foo;
+        .nos__add {
+            @include add;
+            flex-direction: column;
+            justify-content: space-evenly;
+            width: 80%;
+            .nos__div-a{
+                display: flex;
+                background-color: $colorbase;
+                .nos__tituloa{
+                    @include fottitulo;
+                    justify-content: flex-start;
+                }
+                .nos--link{
+                    @include link;
+                    .nos_link-logo{
+                        @include logo;
+                    }
+                }
+            }
+            .nos__div-b{
+                display: flex;
+                background-color: $colorbase;
+                .nos__titulob{
+                    @include fottitulo;
+                    justify-content: flex-start;
+                    }
+                .nos--link{
+                    @include link;
+                    .nos_link-logo{
+                        @include logo;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:420px){
+    .sobre__grilla {
+        display: grid;
+        grid-template-rows: 150px 1fr 120px ;
+        grid-template-columns: 1fr;
+        grid-template-areas:"nip"
+                            "nop"
+                            "nup";
+    }
+    .nos__header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-width: 380px;
+        .nos__div{
+            @include indtitulo;
+            justify-content: center;
+            text-align: start;
+            width: 95%;
+            .nos__titulo{
+                font-size: ($titulo)-15px;
+                font-family: $antontitulo;
+                text-shadow: 3px 3px 3px $colorbase;
+            }
+            .nos__diamante{
+                @include diamante;
+                height: 50px;
+                width: 60px;
+            }
+        }
+        .nos__nav{
+            display:flex;
+            align-items: center;
+            .nos__nav-ul{
+                display: flex;
+                text-align: center;
+                .link--uno{
+                    @include btnheader;
+                    font-size: ($texto)-8px;
+                }
+                .link--uno:hover{
+                    @include btnhover;
+                    font-size: ($texto)-8px;
+                }
+                .link--dos{
+                    @include btnheader;
+                    font-size: ($texto)-8px;
+                    border-bottom: solid 4px black;
+                }
+                .link--dos:hover{
+                    @include btnhover;
+                    font-size: ($texto)-8px;
+                }
+                .link--tres{
+                    @include btnheader;
+                    font-size: ($texto)-8px;
+                }
+                .link--tres:hover{
+                    @include btnhover;
+                    font-size: ($texto)-8px;
+                }
+                .link--cuatro{
+                    @include btnheader;
+                    font-size: ($texto)-8px;
+                }
+                .link--cuatro:hover{
+                    @include btnhover;
+                    font-size: ($texto)-8px;
+                }      
+            }
+        }
+    }
+    .nos__main{
+        min-width: 380px;
+    }
+    .nos__footer{
+        @include foo;
+        min-width: 380px;
+        .nos__add {
+            @include add;
+            flex-direction: column;
+            justify-content: space-evenly;
+            width: 90%;
+        }
+    }
+}
