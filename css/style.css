@@ -1946,7 +1946,8 @@
       font-size: 17px;
       margin-top: 10px;
       margin-bottom: 10px;
-      text-align: center; }
+      text-align: center;
+      min-height: 450px; }
 
 .nos__footer {
   grid-area: nup;
