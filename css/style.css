@@ -1856,7 +1856,8 @@
 
 .nos__header {
   grid-area: nip;
-  display: flex; }
+  display: flex;
+  margin-bottom: 20px; }
   .nos__header .nos__div {
     display: flex;
     align-items: center;
@@ -1945,6 +1946,7 @@
       font-family: "Roboto Mono", monospace;
       font-size: 17px;
       margin-top: 10px;
+      padding-top: 20px;
       margin-bottom: 10px;
       text-align: center;
       min-height: 450px; }
