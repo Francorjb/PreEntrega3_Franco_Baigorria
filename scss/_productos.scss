@@ -1,5 +1,4 @@
 .grillaprodu {
-    width: 100%;
     display: grid;
     grid-template-rows: 130px 1fr 1fr 1fr 1fr 1fr 1fr 70px;
     grid-template-columns: 1fr 1fr 1fr;
@@ -185,3 +184,384 @@
 }
 
 /*DESKTOP FIRST PRODUCTOS*/
+
+@media screen and (max-width:950px) {
+    .grillaprodu {
+        display: grid;
+        grid-template-rows: 140px 1fr 1fr 1fr 1fr 1fr 1fr 70px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:"pe pe pe"
+                            "main main main"
+                            "main main main"
+                            "main main main"
+                            "main main main"
+                            "main main main"
+                            "main main main"
+                            "footer footer footer";
+    
+    }
+    .pronavegacion{
+        display: flex;
+        flex-direction: column;
+        .pro__div{
+            @include indtitulo;
+            justify-content: center;
+            text-align: center;
+            width: 80%;
+            .pronavegacion__titulo{
+                font-size: $titulo;
+                font-family: $antontitulo;
+                text-shadow: 5px 5px 5px $colorbase;
+                .srl__pronav{
+                    color: $negro;
+                }
+            }
+            .pro__diamante{
+                @include diamante;
+            }
+        }
+    
+        .pronavegacion__nav{
+            display:flex;
+            align-items: center;
+    
+            .pronavegacion__lista{
+                display: flex;
+                text-align: center;
+    
+                .plista__uno{
+                    @include btnheader;
+                    border-bottom: solid 4px black;
+                }
+                .plista__uno:hover {
+                    @include btnhover;
+                }
+                .plista__dos{
+                    @include btnheader;
+                }
+                .plista__dos:hover{
+                    @include btnhover;
+                }
+                .plista__tres{
+                    @include btnheader;
+                }
+                .plista__tres:hover{
+                    @include btnhover;
+                }
+                .plista__cuatro{
+                    @include btnheader;
+                }
+                .plista__cuatro:hover{
+                    @include btnhover;
+                }
+            }
+        }
+    }
+    .pro__main {
+        grid-area:main;
+        margin-bottom: 10px;
+        .imgp{
+            display: flex;
+            justify-content: space-evenly;
+            .div__prod {
+                display: flex;
+                justify-content: space-evenly;
+                text-align: center;
+                align-items: center;
+                .imgpe {
+                    max-width: 200px;
+                    height: 200px;
+                    border: .3em outset #EDDEC9;
+                    padding: .6rem;
+                    background-image:$tricolor;
+                    margin: 1rem;
+                }
+                .div__pa{
+                    font-size: 1.2em;
+                    font-family: $scriptletras;
+                    font-weight: 700;
+                    margin-bottom: 10px;
+                }
+                .boton{
+                    @include btncompra;
+                    width:90px;
+                    height:30px;
+                }
+                .boton:hover{
+                    @include btncompra;
+                    width:90px;
+                    height:30px;
+                    color: $negro;
+                    background-color: $colorbase;
+                }
+            }
+        }
+    }
+    .pro__footer{
+        grid-area:footer;
+        margin-top: 10px;
+        @include foo;
+        .pro__add{
+            @include add;
+            width: 80%;
+            .pro__div-a{
+                display: flex;
+                align-items: center;
+                .pro--link{
+                    @include link;
+                    margin-right: 10px;
+                }
+            }
+            .pro__div-b{
+                display: flex;
+                align-items: center;
+                .pro__titulob{
+                    @include fottitulo;
+                    }
+                .pro--link{
+                    @include link;
+                    .pro_link-logo{
+                        @include logo;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:700px) {
+    .grillaprodu {
+        display: grid;
+        grid-template-rows: 140px 1fr 1fr 1fr 1fr 1fr 1fr 70px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:"pe pe"
+                            "main main"
+                            "main main"
+                            "main main"
+                            "main main"
+                            "main main"
+                            "main main"
+                            "footer footer";
+    
+    }
+    .pronavegacion{
+        display: flex;
+        flex-direction: column;
+        .pro__div{
+            @include indtitulo;
+            justify-content: center;
+            text-align: center;
+            width: 80%;
+            .pronavegacion__titulo{
+                font-size: $titulo;
+                font-family: $antontitulo;
+                text-shadow: 5px 5px 5px $colorbase;
+                .srl__pronav{
+                    color: $negro;
+                }
+            }
+            .pro__diamante{
+                @include diamante;
+                height: 70px;
+                width: 80px;
+            }
+        }
+    
+        .pronavegacion__nav{
+            display:flex;
+            align-items: center;
+    
+            .pronavegacion__lista{
+                display: flex;
+                text-align: center;
+    
+                .plista__uno{
+                    @include btnheader;
+                    border-bottom: solid 4px black;
+                }
+                .plista__uno:hover {
+                    @include btnhover;
+                }
+                .plista__dos{
+                    @include btnheader;
+                }
+                .plista__dos:hover{
+                    @include btnhover;
+                }
+                .plista__tres{
+                    @include btnheader;
+                }
+                .plista__tres:hover{
+                    @include btnhover;
+                }
+                .plista__cuatro{
+                    @include btnheader;
+                }
+                .plista__cuatro:hover{
+                    @include btnhover;
+                }
+            }
+        }
+    }
+    .pro__main {
+        grid-area:main;
+        .prod__subt {
+            text-align: center;
+            font-size: ($subtitulos)-6px;
+            }
+        .imgp{
+            display: flex;
+            justify-content: baseline;
+            flex-direction: column;
+            .div__prod {
+                display: flex;
+                text-align: center;
+                align-items: center;
+                .imgpe {
+                    max-width: 300px;
+                    height: 300px;
+                    border: .3em outset #EDDEC9;
+                    padding: .6rem;
+                    background-image:$tricolor;
+                    margin: 1rem;
+                }
+                .div__pa{
+                    font-size: 1.5em;
+                    font-family: $scriptletras;
+                    font-weight: 700;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+    .pro__footer{
+        margin-top: 10px;
+        @include foo;
+        .pro__add{
+            @include add;
+            width: 100%;
+        }
+    }
+}
+@media screen and (max-width:540px){
+    .grillaprodu {
+        display: grid;
+        grid-template-rows: 130px 1fr 1fr 1fr 1fr 1fr 1fr 120px;
+        grid-template-columns: 1fr;
+        grid-template-areas:"pe"
+                            "main"
+                            "main"
+                            "main"
+                            "main"
+                            "main"
+                            "main"
+                            "footer";
+    
+    }
+    .pronavegacion{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .pro__div{
+            @include indtitulo;
+            justify-content: center;
+            text-align: center;
+            width: 90%;
+            .pronavegacion__titulo{
+                font-size: ($titulo)-15px;
+                font-family: $antontitulo;
+                text-shadow: 5px 5px 5px $colorbase;
+                .srl__pronav{
+                    color: $negro;
+                }
+            }
+            .pro__diamante{
+                @include diamante;
+                height: 60px;
+                width: 70px;
+            }
+        }
+    
+        .pronavegacion__nav{
+            display:flex;
+            align-items: center;
+    
+            .pronavegacion__lista{
+                display: flex;
+                text-align: center;
+    
+                .plista__uno{
+                    @include btnheader;
+                    font-size: ($texto)-5px;
+                    border-bottom: solid 4px black;
+                }
+                .plista__uno:hover {
+                    @include btnhover;
+                    font-size: ($texto)-5px;
+                }
+                .plista__dos{
+                    @include btnheader;
+                    font-size: ($texto)-5px;
+                }
+                .plista__dos:hover{
+                    @include btnhover;
+                    font-size: ($texto)-5px;
+                }
+                .plista__tres{
+                    @include btnheader;
+                    font-size: ($texto)-5px;
+                }
+                .plista__tres:hover{
+                    @include btnhover;
+                    font-size: ($texto)-5px;
+                }
+                .plista__cuatro{
+                    @include btnheader;
+                    font-size: ($texto)-5px;
+                }
+                .plista__cuatro:hover{
+                    @include btnhover;
+                    font-size: ($texto)-5px;
+                }
+            }
+        }
+    }
+    .pro__footer{
+        grid-area:footer;
+        @include foo;
+        .pro__add{
+            @include add;
+            flex-direction: column;
+            justify-content: space-evenly;
+            width: 80%;
+            .pro__div-a{
+                display: flex;
+                background-color: $colorbase;
+                .pro__tituloa{
+                    @include fottitulo;
+                    justify-content: flex-start;
+                }
+                .pro--link{
+                    @include link;
+                    .pro_link-logo{
+                        @include logo;
+                    }
+                }
+            }
+            .pro__div-b{
+                display: flex;
+                background-color: $colorbase;
+                .pro__titulob{
+                    @include fottitulo;
+                    justify-content: flex-start;
+                    }
+                .pro--link{
+                    @include link;
+                    .pro_link-logo{
+                        @include logo;
+                    }
+                }
+            }
+        }
+    }
+}
