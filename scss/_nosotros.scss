@@ -10,6 +10,7 @@
 .nos__header{
     grid-area: nip;
     display: flex;
+    margin-top: 10px;
     margin-bottom: 20px;
     .nos__div{
         @include indtitulo;
@@ -137,39 +138,6 @@
         .nos__div{
             @include indtitulo;
             width: 80%;
-        }
-        .nos__nav{
-            display:flex;
-            align-items: center;
-            .nos__nav-ul{
-                display: flex;
-                text-align: center;
-                .link--uno{
-                    @include btnheader;
-                }
-                .link--uno:hover{
-                    @include btnhover;
-                }
-                .link--dos{
-                    @include btnheader;
-                    border-bottom: solid 4px black;
-                }
-                .link--dos:hover{
-                    @include btnhover;
-                }
-                .link--tres{
-                    @include btnheader;
-                }
-                .link--tres:hover{
-                    @include btnhover;
-                }
-                .link--cuatro{
-                    @include btnheader;
-                }
-                .link--cuatro:hover{
-                    @include btnhover;
-                }      
-            }
         }
     }
 

@@ -9,6 +9,8 @@
 .cre__header{
     grid-area: pa;
     display: flex;
+    margin-top: 10px;
+    margin-bottom: 20px;
     .cre__div-uno{
         @include indtitulo;
         margin-left: 15px;
@@ -79,8 +81,8 @@
             margin-bottom: 5px;
             .cre_div-parra{
                 font-family: $roboto400;
-                font-size:($texto)-4px;
-                width: 400px;
+                font-size: ($texto)-2px;
+                width: 390px;
             }
             .video{
                 width: 800px;
@@ -99,37 +101,44 @@
             display: flex;
             margin-top: 5px;
             margin-bottom: 5px;
+            align-items: center;
 
             .div2__final1{
                 font-family: $roboto400;
                 display: flex;
-                justify-content: space-evenly;
+                justify-content: center;
+                width: 550px;
                 .div2__fin-parrafo1{
                     font-size: ($texto)-4px;
                 }
             }
-            .div2__final2{
-                font-family: $roboto400;
-                .cre__ulparra{
-                    display: flex;
-                    text-align: center;
-                    font-size: $texto;
-                    font-weight:bold;
+            .div__creacion{
+                display: flex;
+                justify-content: center;
+                .div2__final2{
+                    margin-top: 5px;
+                    margin-right: 10px;
+                    .cre__ulparra{
+                        display: flex;
+                        text-align: center;
+                        font-size: $texto;
+                        font-weight:bold;
+                    }
+                    .cre__ul1{
+                        font-size: $texto;
+                    }
                 }
-                .cre__ul1{
-                    font-size: ($texto)-4px;
-                }
-            }
-            .div2__final3{
-                font-family: $roboto400;
-                .cre__ulparra2{
-                    display: flex;
-                    justify-content: center;
-                    font-size: $texto;
-                    font-weight:bold;
-                }
-                .cre__ul2{
-                    font-size: ($texto)-4px;
+                .div2__final3{
+                    margin-top: 5px;
+                    .cre__ulparra2{
+                        display: flex;
+                        justify-content: center;
+                        font-size: $texto;
+                        font-weight:bold;
+                    }
+                    .cre__ul2{
+                        font-size: $texto;
+                    }
                 }
             }
         }
@@ -169,5 +178,352 @@
                 }
             }
         }
+    }
+}
+
+/*DESKTOP FIRST NOSOTROS*/
+
+@media screen and (max-width:1000px) {
+    .cre__header{
+        flex-direction: column;
+        align-items: center;
+        .cre__div-uno{
+            width: 80%;
+        }
+    }
+    .cre__main{
+        grid-area: po;
+        .cre__articulo{
+            .cre_div-h1{
+                text-align: center;
+            }
+            .cre_art-div{
+                .cre_div-parra{
+                    font-family: $roboto400;
+                    font-size:($texto)-4px;
+                    max-width: 300px;
+                }
+                .video{
+                    max-width: 600px;
+                    height: 300px;
+                    border: solid 3px $colorbase;
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+    .cre__footer{
+        .cre__add{
+            @include add;
+            width: 80%;
+            .cre__div-a{
+                .cre--link{
+                    @include link;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:820px){
+    .cre__main{
+        grid-area: po;
+        .cre__articulo{
+            .cre_art-div{
+
+                .cre_div-parra{
+                    font-family: $roboto400;
+                    font-size: $texto;
+                    width: 600px;
+                }
+            }
+            .div2--div{
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                .div2__final1{
+                    width: 90%;
+                    .div2__fin-parrafo1{
+                        font-size: ($texto)-4px;
+                    }
+                }
+                .div__creacion{
+                    max-width: 90%;
+                    display: flex;
+                    .div2__final2{
+                        max-width: 90%;
+                        .cre__ulparra{
+                            display: flex;
+                            text-align: center;
+                            font-size:$texto;
+                            font-weight:bold;
+                        }
+                        .cre__ul1{
+                            font-size: ($texto)-4px;
+                        }
+                    }
+                    .div2__final3{
+                        max-width: 90%;
+                        .cre__ulparra2{
+                            display: flex;
+                            justify-content: center;
+                            font-size: $texto;
+                            font-weight:bold;
+                        }
+                        .cre__ul2{
+                            font-size: ($texto)-4px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:720px){
+    .grilla__cre {
+        display: grid;
+        grid-template-rows: 150px 1fr 70px;
+        grid-template-columns:1fr 1fr ;
+        grid-template-areas:"pa pa"
+                            "po po"
+                            "pi pi";
+    }
+    .cre__header{
+        .cre__div-uno{
+            width: 90%;
+            .cre__diamante{
+                @include diamante;
+                height: 70px;
+                width: 80px;
+            }
+        }
+    }
+    .cre__main{
+        grid-area: po;
+        .cre__articulo{
+            .cre_div-h1{
+                font-size: ($subtitulos)-6px;
+            }
+            .cre_art-div{
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                .cre_div-parra{
+
+                    font-family: $roboto400;
+                    font-size:($texto)-4px;
+                    max-width: 95%;
+                    margin-bottom: 10px;
+                }
+                .video{
+                    width: 95%;
+                    height: 300px;
+                    margin-right: 0px;
+                }
+            }
+        }
+        .div2--div{
+            flex-direction: column;
+            width: 90%;
+            .div2__final1{
+                width: 90%;
+                .div2__fin-parrafo1{
+                    font-size: ($texto)-4px;
+                }
+            }
+            .div__creacion{
+                display: flex;
+                .div2__final2{
+                    max-width: 90%;
+                    .cre__ulparra{
+                        display: flex;
+                        text-align: center;
+                        font-size:($texto)-4px;
+                        font-weight:bold;
+                    }
+                    .cre__ul1{
+                        font-size: ($texto)-4px;
+                    }
+                }
+                .div2__final3{
+                    max-width: 90%;
+                    .cre__ulparra2{
+                        display: flex;
+                        justify-content: center;
+                        font-size: $texto;
+                        font-weight:bold;
+                    }
+                    .cre__ul2{
+                        font-size: ($texto)-4px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:540px){
+    .grilla__cre {
+        display: grid;
+        grid-template-rows: 150px 1fr 120px;
+        grid-template-columns:1fr ;
+        grid-template-areas:"pa"
+                            "po"
+                            "pi";
+    }
+    .cre__header{
+        .cre__div-uno{
+            width: 90%;
+            .cre__titulo{
+                text-align: start;
+                font-size: ($titulo)-14px;
+                margin-right: 3px;
+            }
+            .cre__diamante{
+                height: 50px;
+                width: 60px;
+            }
+        }
+        .cre__nav{
+            .cre__nav-ul{
+                .cre_link-uno{
+                    @include btnheader;
+                    font-size: ($texto)-5px;
+
+                }
+                .cre_link-uno:hover{
+                    @include btnhover;
+                    font-size: ($texto)-5px;
+                }
+                .cre_link-dos{
+                    @include btnheader;
+                    font-size: ($texto)-5px;
+                }
+                .cre_link-dos:hover{
+                    @include btnhover;
+                    font-size: ($texto)-5px;
+                }
+                .cre_link-tres{
+                    @include btnheader;
+                    font-size: ($texto)-5px;
+                    border-bottom: solid 4px black;
+                }
+                .cre_link-tres:hover{
+                    @include btnhover;
+                    font-size: ($texto)-5px;
+                }
+                .cre_link-cuatro{
+                    @include btnheader;
+                    font-size: ($texto)-5px;
+                }
+                .cre_link-cuatro:hover{
+                    @include btnhover;
+                    font-size: ($texto)-5px;
+                }
+            }
+        }
+    
+    }
+    .cre__main{
+        .cre__articulo{
+            .cre_div-h1{
+                font-size: ($subtitulos)-8px;
+            }
+            .cre_art-div{
+                .cre_div-parra{
+                    font-size: ($texto)-6px;
+                    width: 90%;
+                }
+                .video{
+                    width: 95%;
+                    height: 250px;
+                }
+            }
+            .cre_div-h2{
+                font-size: ($subtitulos)-9px;
+            }
+            .div2--div{
+                .div2__final1{
+                    width: 95%;
+                    .div2__fin-parrafo1{
+                        font-size: ($texto)-8px;
+                    }
+                }
+                .div__creacion{
+                    flex-direction: column;
+                    max-width: 90%;
+                    .div2__final2{
+                        .cre__ulparra{
+                            display: flex;
+                            font-size: ($texto)-1px;
+                            justify-content: center;
+                        }
+                        .cre__ul1{
+                            font-size: ($texto)-6px;
+                        }
+                    }
+                    .div2__final3{
+                        margin-top: 5px;
+                        .cre__ulparra2{
+                            display: flex;
+                            justify-content: center;
+                            font-size: ($texto)-1px;
+                            font-weight:bold;
+                        }
+                        .cre__ul2{
+                            font-size: ($texto)-6px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .cre__footer{
+        .cre__add{
+            flex-direction: column;
+            justify-content: space-evenly;
+            width: 80%;
+            .cre__div-a{
+                display: flex;
+                background-color: $colorbase;
+                .cre__tituloa{
+                    @include fottitulo;
+                    justify-content: flex-start;
+                }
+                .cre--link{
+                    @include link;
+                    .cre_link-logo{
+                        @include logo;
+                    }
+                }
+            }
+            .cre__div-b{
+                display: flex;
+                background-color: $colorbase;
+                .cre__titulob{
+                    @include fottitulo;
+                    justify-content: flex-start;
+                    }
+                .cre--link{
+                    @include link;
+                    .cre_link-logo{
+                        @include logo;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:420px){
+    .cre__header{
+        min-width: 410px;    
+    }
+    .cre__main{
+        min-width: 410px; 
+    }
+    .cre__footer{
+        min-width: 410px; 
     }
 }

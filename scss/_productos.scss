@@ -467,17 +467,17 @@
         .pro__div{
             @include indtitulo;
             justify-content: center;
-            text-align: center;
-            width:95%;
+            text-align: start;
+            width: 95%;
             .pronavegacion__titulo{
-                font-size: ($titulo)-8px;
+                font-size: ($titulo)-15px;
                 font-family: $antontitulo;
-                text-shadow: 4px 4px 4px $colorbase;
+                text-shadow: 3px 3px 3px $colorbase;
             }
             .pro__diamante{
                 @include diamante;
-                height: 60px;
-                width: 70px;
+                height: 50px;
+                width: 60px;
             }
         }
     
@@ -491,38 +491,45 @@
     
                 .plista__uno{
                     @include btnheader;
-                    font-size: ($texto)-5px;
+                    font-size: ($texto)-8px;
                     border-bottom: solid 4px black;
                 }
                 .plista__uno:hover {
                     @include btnhover;
-                    font-size: ($texto)-5px;
+                    font-size: ($texto)-8px;
                 }
                 .plista__dos{
                     @include btnheader;
-                    font-size: ($texto)-5px;
+                    font-size: ($texto)-8px;
                 }
                 .plista__dos:hover{
                     @include btnhover;
-                    font-size: ($texto)-5px;
+                    font-size: ($texto)-8px;
                 }
                 .plista__tres{
                     @include btnheader;
-                    font-size: ($texto)-5px;
+                    font-size: ($texto)-8px;
                 }
                 .plista__tres:hover{
                     @include btnhover;
-                    font-size: ($texto)-5px;
+                    font-size: ($texto)-8px;
                 }
                 .plista__cuatro{
                     @include btnheader;
-                    font-size: ($texto)-5px;
+                    font-size: ($texto)-8px;
                 }
                 .plista__cuatro:hover{
                     @include btnhover;
-                    font-size: ($texto)-5px;
+                    font-size: ($texto)-8px;
                 }
             }
+        }
+    }
+    .pro__main {
+        grid-area:main;
+        .prod__subt {
+            text-align: center;
+            font-size: ($subtitulos)-10px;
         }
     }
     .pro__footer{

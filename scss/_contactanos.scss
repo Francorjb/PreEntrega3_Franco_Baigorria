@@ -10,6 +10,8 @@
 .con__header{
     grid-area: head;
     display: flex;
+    margin-top: 10px;
+    margin-bottom: 20px;
     .con__div{
         @include indtitulo;
         margin-left: 15px;
