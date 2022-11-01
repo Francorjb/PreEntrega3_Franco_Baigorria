@@ -2150,7 +2150,7 @@
       width: 80%; }
   .con__main .con__maps {
     height: 450px;
-    min-width: 400px;
+    width: 400px;
     margin-right: 10px; }
   .con__footer .con__add .con__div-a .con__tituloa {
     margin-right: 5px; } }
@@ -2335,6 +2335,106 @@
         .con__footer .con__add .con__div-b .con--link .con_link-logo {
           width: 50px;
           height: 50px; } }
+
+@media screen and (max-width: 430px) {
+  .con__grilla {
+    display: grid;
+    grid-template-rows: 130px 1fr 120px;
+    grid-template-columns: 1fr;
+    grid-template-areas: "head" "ma" "foo"; }
+  .con__header {
+    display: flex;
+    justify-items: center;
+    text-align: start;
+    margin-top: 10px;
+    margin-bottom: 0px; }
+    .con__header .con__div {
+      display: flex;
+      align-items: center;
+      text-align: start;
+      margin-left: 0px; }
+      .con__header .con__div .con__titulo {
+        font-size: 55px;
+        text-shadow: 4px 4px 4px #EDDEC9; }
+      .con__header .con__div .con__diamante {
+        display: flex;
+        height: 80px;
+        width: 90px;
+        height: 50px;
+        width: 60px; }
+    .con__header .con__nav .con__ul .links_uno {
+      font-size: 22px;
+      font-family: "Roboto Mono", monospace;
+      color: black;
+      border-bottom: solid 4px #EDDEC9;
+      font-size: 14px; }
+    .con__header .con__nav .con__ul .links_uno:hover {
+      background: #EDDEC9;
+      padding: 6px;
+      color: black;
+      border-radius: 6px;
+      transition: .3s;
+      font-size: 14px; }
+    .con__header .con__nav .con__ul .links_dos {
+      font-size: 22px;
+      font-family: "Roboto Mono", monospace;
+      color: black;
+      border-bottom: solid 4px #EDDEC9;
+      font-size: 14px; }
+    .con__header .con__nav .con__ul .links_dos:hover {
+      background: #EDDEC9;
+      padding: 6px;
+      color: black;
+      border-radius: 6px;
+      transition: .3s;
+      font-size: 14px; }
+    .con__header .con__nav .con__ul .links_tres {
+      font-size: 22px;
+      font-family: "Roboto Mono", monospace;
+      color: black;
+      border-bottom: solid 4px #EDDEC9;
+      font-size: 14px; }
+    .con__header .con__nav .con__ul .links_tres:hover {
+      background: #EDDEC9;
+      padding: 6px;
+      color: black;
+      border-radius: 6px;
+      transition: .3s;
+      font-size: 14px; }
+    .con__header .con__nav .con__ul .links_cuatro {
+      font-size: 22px;
+      font-family: "Roboto Mono", monospace;
+      color: black;
+      border-bottom: solid 4px #EDDEC9;
+      font-size: 14px;
+      border-bottom: solid 4px black; }
+    .con__header .con__nav .con__ul .links_cuatro:hover {
+      background: #EDDEC9;
+      padding: 6px;
+      color: black;
+      border-radius: 6px;
+      transition: .3s;
+      font-size: 14px; }
+  .con__main .con__h1 {
+    font-size: 27px; }
+  .con__main .con__div-central {
+    justify-content: center; }
+    .con__main .con__div-central .con__form {
+      width: 380px;
+      height: 480px; }
+      .con__main .con__div-central .con__form .con__fieldset {
+        height: 450px;
+        width: 380px; }
+    .con__main .con__div-central .con__maps {
+      width: 380px;
+      height: 480px; }
+      .con__main .con__div-central .con__maps .ubi {
+        font-family: "Roboto Mono", monospace;
+        font-size: 25px;
+        margin-bottom: 20px; }
+      .con__main .con__div-central .con__maps .mapa {
+        width: 370px;
+        height: 400px; } }
 
 /*FINAL DE CONTACTOS*/
 .sobre__grilla {
