@@ -390,37 +390,37 @@
             .cre__nav-ul{
                 .cre_link-uno{
                     @include btnheader;
-                    font-size: ($texto)-5px;
+                    font-size: ($texto)-8px;
 
                 }
                 .cre_link-uno:hover{
                     @include btnhover;
-                    font-size: ($texto)-5px;
+                    font-size: ($texto)-8px;
                 }
                 .cre_link-dos{
                     @include btnheader;
-                    font-size: ($texto)-5px;
+                    font-size: ($texto)-8px;
                 }
                 .cre_link-dos:hover{
                     @include btnhover;
-                    font-size: ($texto)-5px;
+                    font-size: ($texto)-8px;
                 }
                 .cre_link-tres{
                     @include btnheader;
-                    font-size: ($texto)-5px;
+                    font-size: ($texto)-8px;
                     border-bottom: solid 4px black;
                 }
                 .cre_link-tres:hover{
                     @include btnhover;
-                    font-size: ($texto)-5px;
+                    font-size: ($texto)-8px;
                 }
                 .cre_link-cuatro{
                     @include btnheader;
-                    font-size: ($texto)-5px;
+                    font-size: ($texto)-8px;
                 }
                 .cre_link-cuatro:hover{
                     @include btnhover;
-                    font-size: ($texto)-5px;
+                    font-size: ($texto)-8px;
                 }
             }
         }

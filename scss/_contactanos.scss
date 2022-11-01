@@ -82,7 +82,7 @@
         align-items: center;
         .con__form{
             width: 500px;
-            height: 450px;
+            height: 500px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -91,7 +91,7 @@
             
             .con__fieldset{
                 background-color: $colorbase; 
-                height: 380px;
+                height: 450px;
                 width: 400px;
                 border-radius: 6px;
                 box-shadow: 2px 2px 3px black;
@@ -105,11 +105,12 @@
                 }
                 .con__inp{
                     width: 300px;
+                    height: 30px;
                     border-radius: 6px;
                 }
                 .comentarios{
                     width: 300px;
-                    height: 50px;
+                    height: 80px;
                     border-radius: 6px;
                 }
 
@@ -149,8 +150,8 @@
             }
         }
         .con__maps{
+            height: 450px;
             width: 400px;
-            height: 380px;
             display: flex;
             align-items: center;
             text-align: center;
@@ -161,6 +162,7 @@
             box-shadow: 2px 2px 3px black;
             .ubi{
                 font-family: $roboto400;
+                font-size: 25px;
                 margin-bottom: 30px;
             }
         }
@@ -203,3 +205,228 @@
     }
 }
 /*DESTOK FIRTS*/
+
+@media screen and (max-width:1000px){
+    .con__grilla{
+        display: grid;
+        grid-template-rows: 165px 1fr 70px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: "head head head"
+                             "ma ma ma"
+                             "foo foo foo";
+    }
+    .con__header{
+        flex-direction: column;
+        align-items: center;
+
+        .con__div{
+            width: 80%;
+        }
+    }
+    .con__main{
+        .con__maps{
+            height: 450px;
+            min-width: 400px;
+            margin-right: 10px;
+        }
+    }
+    .con__footer{
+        .con__add{
+            .con__div-a{
+                .con__tituloa{
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:830px){
+    .con__main{
+        grid-area: ma;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .con__div-central{
+            display: flex;
+            flex-direction: column;
+            .con__form{
+                margin-top:10px;
+                margin-bottom:10px;
+                width: 500px;
+                height: 500px;
+                .con__fieldset{
+                    height: 450px;
+                    width: 400px;
+                }
+            }
+            .con__maps{
+                margin-left: 10px;
+                margin-bottom: 30px;
+                height: 500px;
+                width: 405px;
+            }
+        }
+    }
+    .con__footer{
+        grid-area: foo;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        @include foo;
+        .con__add{
+            @include add;
+            width: 90%;
+            .con__div-a{
+                .con__tituloa{
+                    margin-right: 5px;
+                }
+                .con--link{
+                    @include link;
+                    margin-right: 10px;
+                }
+            }
+            .con__div-b{
+                .con--link{
+                    @include link;
+                    margin-right: 15px;
+                }
+            }
+        }
+    }
+    
+}
+
+@media screen and (max-width:720px){
+    .con__header{
+        .con__div{
+            width: 95%;
+            .con__diamante{
+                @include diamante;
+                height: 70px;
+                width: 80px;
+            }
+        }
+    }
+}
+@media screen and (max-width:560px){
+    .con__grilla{
+        display: grid;
+        grid-template-rows: 165px 1fr 120px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "head head"
+                             "ma ma"
+                             "foo foo";
+    }
+    .con__header{
+        .con__div{
+            @include indtitulo;
+            margin-left: 0px;
+            .con__titulo{
+                font-size: ($titulo)-10px;
+                text-shadow: 4px 4px 4px $colorbase;
+            }
+            .con__diamante{
+                @include diamante;
+                height: 60px;
+                width: 70px;
+            }
+        }
+        .con__nav{
+            .con__ul{
+                .links_uno{
+                    @include btnheader;
+                    font-size: ($texto)-3px;
+                }
+                .links_uno:hover{
+                    @include btnhover;
+                    font-size: ($texto)-3px;
+                }
+                .links_dos{
+                    @include btnheader;
+                    font-size: ($texto)-3px;
+                }
+                .links_dos:hover{
+                    @include btnhover;
+                    font-size: ($texto)-3px;
+                }
+                .links_tres{
+                    @include btnheader;
+                    font-size: ($texto)-3px;
+                }
+                .links_tres:hover{
+                    @include btnhover;
+                    font-size: ($texto)-3px;
+                }
+                .links_cuatro{
+                    @include btnheader;
+                    font-size: ($texto)-3px;
+                    border-bottom: solid 4px black;
+                }
+                .links_cuatro:hover{
+                    @include btnhover;
+                    font-size: ($texto)-3px;
+                }
+            }
+        }
+    }
+    .con__main{
+        .con__h1{
+            font-size: ($subtitulos)-4px;
+        }
+        .con__div-central{
+            justify-content: center;
+            .con__form{
+                width: 420px;
+                height: 450px;
+                .con__fieldset{
+                    height: 450px;
+                    width: 400px;
+                }
+            }
+            .con__maps{
+                max-height: 500px;
+                max-width: 405px;
+            }
+        }
+    }
+    .con__footer{
+        .con__add{
+            flex-direction: column;
+            justify-content: space-evenly;
+            width: 80%;
+            .con__div-a{
+                display: flex;
+                background-color: $colorbase;
+                .con__tituloa{
+                    @include fottitulo;
+                    justify-content: flex-start;
+                }
+                .con--link{
+                    @include link;
+                    .con_link-logo{
+                        @include logo;
+                    }
+                }
+            }
+            .con__div-b{
+                background-color: $colorbase;
+                .con__titulob{
+                    @include fottitulo;
+                    justify-content: flex-start;
+                    }
+                .con--link{
+                    @include link;
+                    .con_link-logo{
+                        @include logo;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+@media screen and (max-width:420px){
+
+}
