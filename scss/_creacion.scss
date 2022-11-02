@@ -231,7 +231,6 @@
         grid-area: po;
         .cre__articulo{
             .cre_art-div{
-
                 .cre_div-parra{
                     font-family: $roboto400;
                     font-size: $texto;
@@ -376,6 +375,7 @@
     .cre__header{
         .cre__div-uno{
             width: 90%;
+            margin-left: 0px;
             .cre__titulo{
                 text-align: start;
                 font-size: ($titulo)-14px;
@@ -390,37 +390,36 @@
             .cre__nav-ul{
                 .cre_link-uno{
                     @include btnheader;
-                    font-size: ($texto)-8px;
-
+                    font-size: ($texto)-3px;
                 }
                 .cre_link-uno:hover{
                     @include btnhover;
-                    font-size: ($texto)-8px;
+                    font-size: ($texto)-3px;
                 }
                 .cre_link-dos{
                     @include btnheader;
-                    font-size: ($texto)-8px;
+                    font-size: ($texto)-3px;
                 }
                 .cre_link-dos:hover{
                     @include btnhover;
-                    font-size: ($texto)-8px;
+                    font-size: ($texto)-3px;
                 }
                 .cre_link-tres{
                     @include btnheader;
-                    font-size: ($texto)-8px;
+                    font-size: ($texto)-3px;
                     border-bottom: solid 4px black;
                 }
                 .cre_link-tres:hover{
                     @include btnhover;
-                    font-size: ($texto)-8px;
+                    font-size: ($texto)-3px;
                 }
                 .cre_link-cuatro{
                     @include btnheader;
-                    font-size: ($texto)-8px;
+                    font-size: ($texto)-3px;
                 }
                 .cre_link-cuatro:hover{
                     @include btnhover;
-                    font-size: ($texto)-8px;
+                    font-size: ($texto)-3px;
                 }
             }
         }
@@ -518,12 +517,116 @@
 }
 @media screen and (max-width:420px){
     .cre__header{
-        min-width: 410px;    
+        .cre__div-uno{
+            width: 95%;
+            align-items: center;
+            margin-left: 0px;
+            .cre__titulo{
+                text-align: start;
+                font-size: ($titulo)-23px;
+                margin-right: 3px;
+            }
+            .cre__diamante{
+                height: 50px;
+                width: 60px;
+            }
+        }
+        .cre__nav{
+            .cre__nav-ul{
+                .cre_link-uno{
+                    @include btnheader;
+                    font-size: ($texto)-6px;
+
+                }
+                .cre_link-uno:hover{
+                    @include btnhover;
+                    font-size: ($texto)-6px;
+                }
+                .cre_link-dos{
+                    @include btnheader;
+                    font-size: ($texto)-6px;
+                }
+                .cre_link-dos:hover{
+                    @include btnhover;
+                    font-size: ($texto)-6px;
+                }
+                .cre_link-tres{
+                    @include btnheader;
+                    font-size: ($texto)-6px;
+                    border-bottom: solid 4px black;
+                }
+                .cre_link-tres:hover{
+                    @include btnhover;
+                    font-size: ($texto)-6px;
+                }
+                .cre_link-cuatro{
+                    @include btnheader;
+                    font-size: ($texto)-6px;
+                }
+                .cre_link-cuatro:hover{
+                    @include btnhover;
+                    font-size: ($texto)-6px;
+                }
+            }
+        }
+    
     }
-    .cre__main{
-        min-width: 410px; 
-    }
-    .cre__footer{
-        min-width: 410px; 
+}
+
+@media screen and (max-width:320px){
+    .cre__header{
+        .cre__div-uno{
+            align-items: center;
+            width: 100%;
+            .cre__titulo{
+                text-align: start;
+                font-size: ($titulo)-25px;
+                margin-right: 3px;
+            }
+            .cre__diamante{
+                height: 50px;
+                width: 60px;
+                margin-left: 3px;
+            }
+        }
+        .cre__nav{
+            .cre__nav-ul{
+                .cre_link-uno{
+                    @include btnheader;
+                    font-size: ($texto)-8px;
+
+                }
+                .cre_link-uno:hover{
+                    @include btnhover;
+                    font-size: ($texto)-8px;
+                }
+                .cre_link-dos{
+                    @include btnheader;
+                    font-size: ($texto)-8px;
+                }
+                .cre_link-dos:hover{
+                    @include btnhover;
+                    font-size: ($texto)-8px;
+                }
+                .cre_link-tres{
+                    @include btnheader;
+                    font-size: ($texto)-8px;
+                    border-bottom: solid 4px black;
+                }
+                .cre_link-tres:hover{
+                    @include btnhover;
+                    font-size: ($texto)-8px;
+                }
+                .cre_link-cuatro{
+                    @include btnheader;
+                    font-size: ($texto)-8px;
+                }
+                .cre_link-cuatro:hover{
+                    @include btnhover;
+                    font-size: ($texto)-8px;
+                }
+            }
+        }
+    
     }
 }

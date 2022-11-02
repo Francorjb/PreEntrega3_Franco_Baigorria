@@ -243,11 +243,6 @@
 
 @media screen and (max-width:830px){
     .con__main{
-        grid-area: ma;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
         .con__div-central{
             display: flex;
             flex-direction: column;
@@ -309,6 +304,7 @@
         }
     }
 }
+
 @media screen and (max-width:560px){
     .con__grilla{
         display: grid;
@@ -385,8 +381,8 @@
                 }
             }
             .con__maps{
-                max-height: 500px;
-                max-width: 405px;
+                height: 500px;
+                width: 405px;
             }
         }
     }
@@ -437,6 +433,103 @@
                              "foo";
     }
     .con__header{
+        .con__div{
+            @include indtitulo;
+            margin-left: 0px;
+            .con__titulo{
+                font-size: ($titulo)-18px;
+                text-shadow: 3px 3px 3px $colorbase;
+            }
+            .con__diamante{
+                @include diamante;
+                height: 50px;
+                width: 60px;
+            }
+        }
+        .con__nav{
+            .con__ul{
+                .links_uno{
+                    @include btnheader;
+                    font-size: ($texto)-6px;
+                }
+                .links_uno:hover{
+                    @include btnhover;
+                    font-size: ($texto)-6px;
+                }
+                .links_dos{
+                    @include btnheader;
+                    font-size: ($texto)-6px;
+                }
+                .links_dos:hover{
+                    @include btnhover;
+                    font-size: ($texto)-6px;
+                }
+                .links_tres{
+                    @include btnheader;
+                    font-size: ($texto)-6px;
+                }
+                .links_tres:hover{
+                    @include btnhover;
+                    font-size: ($texto)-6px;
+                }
+                .links_cuatro{
+                    @include btnheader;
+                    font-size: ($texto)-6px;
+                    border-bottom: solid 4px black;
+                }
+                .links_cuatro:hover{
+                    @include btnhover;
+                    font-size: ($texto)-6px;
+                }
+            }
+        }
+    }
+    .con__main{
+        .con__h1{
+            font-size: ($subtitulos)-8px;
+        }
+        .con__div-central{
+            justify-content: center;
+            .con__form{
+                width: 340px;
+                height: 480px;
+                .con__fieldset{
+                    height:450px;
+                    width: 340px;
+                    .con__nom{
+                        font-family: $roboto400;
+                        font-size: 16px;
+                    }
+                    .con__inp{
+                        width: 80%;
+                        padding-bottom: 20px;
+                        border-radius: 6px;
+                    }
+                    .comentarios{
+                        width: 80%;
+                        padding-bottom: 50px;
+                    }
+                }
+            }
+            .con__maps{
+                width: 340px;
+                height: 480px;
+                .ubi{
+                    font-family: $roboto400;
+                    font-size: 25px;
+                    margin-bottom: 20px;
+                }
+                .mapa{
+                    width: 330px;
+                    height: 400px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:340px){
+    .con__header{
         display: flex;
         justify-items: center;
         text-align: start;
@@ -446,8 +539,8 @@
             @include indtitulo;
             margin-left: 0px;
             .con__titulo{
-                font-size: ($titulo)-15px;
-                text-shadow: 4px 4px 4px $colorbase;
+                font-size: ($titulo)-20px;
+                text-shadow: 3px 3px 3px $colorbase;
             }
             .con__diamante{
                 @include diamante;
@@ -489,35 +582,6 @@
                 .links_cuatro:hover{
                     @include btnhover;
                     font-size: ($texto)-8px;
-                }
-            }
-        }
-    }
-    .con__main{
-        .con__h1{
-            font-size: ($subtitulos)-8px;
-        }
-        .con__div-central{
-            justify-content: center;
-            .con__form{
-                width: 380px;
-                height: 480px;
-                .con__fieldset{
-                    height:450px;
-                    width: 380px;
-                }
-            }
-            .con__maps{
-                width: 380px;
-                height: 480px;
-                .ubi{
-                    font-family: $roboto400;
-                    font-size: 25px;
-                    margin-bottom: 20px;
-                }
-                .mapa{
-                    width: 370px;
-                    height: 400px;
                 }
             }
         }

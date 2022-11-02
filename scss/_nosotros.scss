@@ -129,7 +129,7 @@
 }
 /*DESKTOP FIRST NOSOTROS*/
 
-@media screen and (max-width:960px) { 
+@media screen and (max-width:1000px) { 
     .nos__header{
         display: flex;
         flex-direction: column;
@@ -214,6 +214,7 @@
         flex-direction: column;
         justify-content: center;
         width: 100%;
+        margin-left: 0px;
         .nos__div{
             @include indtitulo;
             justify-content: center;
