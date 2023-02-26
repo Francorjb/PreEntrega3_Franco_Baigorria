@@ -2677,13 +2677,14 @@
     .nos__main .nos__section .nos__p {
       background-color: #EDDEC9;
       display: flex;
+      justify-content: center;
+      align-items: center;
       font-family: "Roboto Mono", monospace;
       font-size: 17px;
-      margin-top: 10px;
-      padding-top: 20px;
-      margin-bottom: 10px;
+      margin: 10px 0 10px 0;
+      padding: 0 1em 0 1em;
       text-align: center;
-      min-height: 450px; }
+      min-height: 80vh; }
 
 .nos__footer {
   grid-area: nup;
