@@ -2,9 +2,9 @@
     display: grid;
     grid-template-rows: 130px 1fr 70px;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: "head head head"
-                         "ma ma ma"
-                         "foo foo foo";
+    grid-template-areas:"head head head"
+                        "ma ma ma"
+                        "foo foo foo";
 }
 
 .con__header{
@@ -64,9 +64,10 @@
 
 .con__main{
     grid-area: ma;
+    min-height: 80vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     .con__h1{
         display: flex;
